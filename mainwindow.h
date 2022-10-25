@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "entry.h"
+#include "signup.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -19,5 +20,6 @@ public:
 private:
     Ui::MainWindow *ui;
     entry *Entry;
+    SignUp *signup;
 };
 #endif // MAINWINDOW_H
