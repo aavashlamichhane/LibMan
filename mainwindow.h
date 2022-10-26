@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "entry.h"
 #include "signup.h"
+#include "request.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,5 +25,6 @@ private:
     Ui::MainWindow *ui;
     entry *Entry;
     SignUp *signup;
+    Request *request;
 };
 #endif // MAINWINDOW_H

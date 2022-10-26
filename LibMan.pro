@@ -12,16 +12,19 @@ SOURCES += \
     entry.cpp \
     main.cpp \
     mainwindow.cpp \
+    request.cpp \
     signup.cpp
 
 HEADERS += \
     entry.h \
     mainwindow.h \
+    request.h \
     signup.h
 
 FORMS += \
     entry.ui \
     mainwindow.ui \
+    request.ui \
     signup.ui
 
 # Default rules for deployment.

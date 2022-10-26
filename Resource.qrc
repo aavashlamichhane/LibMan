@@ -1,2 +1,47 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/rec">
+        <file>drive-download-20221026T014232Z-001/001-home.png</file>
+        <file>drive-download-20221026T014232Z-001/002-right.png</file>
+        <file>drive-download-20221026T014232Z-001/003-bookmark.png</file>
+        <file>drive-download-20221026T014232Z-001/004-login.png</file>
+        <file>drive-download-20221026T014232Z-001/005-attach.png</file>
+        <file>drive-download-20221026T014232Z-001/006-zoom-out.png</file>
+        <file>drive-download-20221026T014232Z-001/007-copy.png</file>
+        <file>drive-download-20221026T014232Z-001/008-up.png</file>
+        <file>drive-download-20221026T014232Z-001/009-heart.png</file>
+        <file>drive-download-20221026T014232Z-001/010-edit.png</file>
+        <file>drive-download-20221026T014232Z-001/011-logout.png</file>
+        <file>drive-download-20221026T014232Z-001/012-like.png</file>
+        <file>drive-download-20221026T014232Z-001/013-zoom-in.png</file>
+        <file>drive-download-20221026T014232Z-001/014-clock.png</file>
+        <file>drive-download-20221026T014232Z-001/015-download.png</file>
+        <file>drive-download-20221026T014232Z-001/016-star.png</file>
+        <file>drive-download-20221026T014232Z-001/017-bell.png</file>
+        <file>drive-download-20221026T014232Z-001/018-cloud-download.png</file>
+        <file>drive-download-20221026T014232Z-001/019-resize.png</file>
+        <file>drive-download-20221026T014232Z-001/020-cloud.png</file>
+        <file>drive-download-20221026T014232Z-001/021-funnel.png</file>
+        <file>drive-download-20221026T014232Z-001/022-mute.png</file>
+        <file>drive-download-20221026T014232Z-001/023-down.png</file>
+        <file>drive-download-20221026T014232Z-001/024-drag.png</file>
+        <file>drive-download-20221026T014232Z-001/025-lock.png</file>
+        <file>drive-download-20221026T014232Z-001/026-unlock.png</file>
+        <file>drive-download-20221026T014232Z-001/027-cloud-upload.png</file>
+        <file>drive-download-20221026T014232Z-001/028-upload.png</file>
+        <file>drive-download-20221026T014232Z-001/book.png</file>
+        <file>drive-download-20221026T014232Z-001/closed-eyes.png</file>
+        <file>drive-download-20221026T014232Z-001/left.png</file>
+        <file>drive-download-20221026T014232Z-001/Logo new.png</file>
+        <file>drive-download-20221026T014232Z-001/Logo no BG and text.png</file>
+        <file>drive-download-20221026T014232Z-001/Logo no BG.png</file>
+        <file>drive-download-20221026T014232Z-001/PP.png</file>
+        <file>drive-download-20221026T014232Z-001/refresh-arrow.png</file>
+        <file>drive-download-20221026T014232Z-001/rotate-right.png</file>
+        <file>drive-download-20221026T014232Z-001/search.png</file>
+        <file>drive-download-20221026T014232Z-001/send.png</file>
+        <file>drive-download-20221026T014232Z-001/setting.png</file>
+        <file>drive-download-20221026T014232Z-001/sort.png</file>
+        <file>drive-download-20221026T014232Z-001/trash.png</file>
+        <file>drive-download-20221026T014232Z-001/user.png</file>
+    </qresource>
+</RCC>
