@@ -20,7 +20,6 @@ public:
 
 private slots:
 
-
 private:
     Ui::MainWindow *ui;
     entry *Entry;
