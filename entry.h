@@ -15,6 +15,9 @@ public:
     explicit entry(QWidget *parent = nullptr);
     ~entry();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::entry *ui;
 };
