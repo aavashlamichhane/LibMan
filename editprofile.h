@@ -3,6 +3,7 @@
 
 #include <QDialog>
 
+
 namespace Ui {
 class editProfile;
 }
@@ -14,6 +15,9 @@ class editProfile : public QDialog
 public:
     explicit editProfile(QWidget *parent = nullptr);
     ~editProfile();
+
+private slots:
+    void on_pushButton_2_clicked();
 
 private:
     Ui::editProfile *ui;
