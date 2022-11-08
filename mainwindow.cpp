@@ -31,7 +31,7 @@ void MainWindow::on_Login_3_clicked()
     homepage=new HomePage(this);
     homepage->show();
 }
-//giiuuuuuuuuuu
+
 
 
 
