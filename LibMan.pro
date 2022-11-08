@@ -17,6 +17,7 @@ SOURCES += \
     request.cpp \
     settings.cpp \
     signup.cpp \
+    studenthomepage.cpp \
     userinfo.cpp
 
 HEADERS += \
@@ -27,6 +28,7 @@ HEADERS += \
     request.h \
     settings.h \
     signup.h \
+    studenthomepage.h \
     userinfo.h
 
 FORMS += \
@@ -37,6 +39,7 @@ FORMS += \
     request.ui \
     settings.ui \
     signup.ui \
+    studenthomepage.ui \
     userinfo.ui
 
 # Default rules for deployment.
