@@ -17,7 +17,6 @@ public:
 
 private:
     Ui::entry *ui;
-    helo
 };
 
 #endif // ENTRY_H

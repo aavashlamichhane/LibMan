@@ -14,9 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow{background:rgb(170, 170, 255)}
-QGroupBox{background:rgb(253, 240, 255)}
-QDialog{background:rgb(170, 170, 255)}</string>
+   <string notr="true"/>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">

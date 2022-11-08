@@ -14,9 +14,7 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow{background:rgb(170, 170, 255)}
-QGroupBox{background:rgb(253, 240, 255)}
-QDialog{background:rgb(170, 170, 255)}</string>
+   <string notr="true"/>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -30,7 +28,7 @@ QDialog{background:rgb(170, 170, 255)}</string>
    <property name="title">
     <string/>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>14</x>

@@ -5,6 +5,9 @@
 #include "entry.h"
 #include "signup.h"
 #include "request.h"
+#include "homepage.h"
+#include "settings.h"
+#include "userinfo.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,12 +21,20 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
+
 private slots:
+
+    void on_pushButton_clicked();
+
+    void on_Login_clicked();
 
 private:
     Ui::MainWindow *ui;
     entry *Entry;
     SignUp *signup;
     Request *request;
+    HomePage *homepage;
+
 };
 #endif // MAINWINDOW_H

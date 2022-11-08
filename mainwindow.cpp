@@ -16,3 +16,19 @@ MainWindow::~MainWindow()
 }
 
 
+
+void MainWindow::on_pushButton_clicked()
+{
+    hide();
+    signup=new SignUp(this);
+    signup->show();
+}
+
+
+void MainWindow::on_Login_clicked()
+{
+    hide();
+    homepage=new HomePage(this);
+    homepage->show();
+}
+

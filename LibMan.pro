@@ -11,24 +11,33 @@ CONFIG += c++17
 SOURCES += \
     editprofile.cpp \
     entry.cpp \
+    homepage.cpp \
     main.cpp \
     mainwindow.cpp \
     request.cpp \
-    signup.cpp
+    settings.cpp \
+    signup.cpp \
+    userinfo.cpp
 
 HEADERS += \
     editprofile.h \
     entry.h \
+    homepage.h \
     mainwindow.h \
     request.h \
-    signup.h
+    settings.h \
+    signup.h \
+    userinfo.h
 
 FORMS += \
     editprofile.ui \
     entry.ui \
+    homepage.ui \
     mainwindow.ui \
     request.ui \
-    signup.ui
+    settings.ui \
+    signup.ui \
+    userinfo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -37,3 +46,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     Resource.qrc
+
+SUBDIRS += \
+    ../../../../Users/Aavash/Downloads/Libman-20221102T061658Z-001/Libman/Libman.pro
