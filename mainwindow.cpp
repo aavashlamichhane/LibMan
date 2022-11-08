@@ -17,7 +17,7 @@ MainWindow::~MainWindow()
 
 
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_6_clicked()
 {
     hide();
     signup=new SignUp(this);
@@ -25,11 +25,13 @@ void MainWindow::on_pushButton_clicked()
 }
 
 
-void MainWindow::on_Login_clicked()
+void MainWindow::on_Login_3_clicked()
 {
     hide();
     homepage=new HomePage(this);
     homepage->show();
 }
+
+
 
 
