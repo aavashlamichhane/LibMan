@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -52,3 +52,13 @@ RESOURCES += \
 
 SUBDIRS += \
     ../../../../Users/Aavash/Downloads/Libman-20221102T061658Z-001/Libman/Libman.pro
+
+win32: LIBS += -L$$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14/ -lmysqlcppconn8
+
+INCLUDEPATH += $$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14
+DEPENDPATH += $$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14
+
+win32: LIBS += -L$$PWD/../../../../Qt/6.3.2/mingw_64/bin/ -llibmysql
+
+INCLUDEPATH += $$PWD/../../../../Qt/6.3.2/mingw_64/bin
+DEPENDPATH += $$PWD/../../../../Qt/6.3.2/mingw_64/bin

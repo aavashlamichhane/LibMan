@@ -35,3 +35,22 @@ void MainWindow::on_Login_3_clicked()
 
 
 
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("127.0.0.1");
+    db.setUserName("root");
+    db.setPassword("rampyari1234");
+    db.setDatabaseName("libman");
+    if(db.open())
+    {
+        QMessageBox::information(this,"Connection","connected successfully.");
+
+    }
+    else
+    {
+        QMessageBox::information(this,"Connection","not connected.");
+    }
+}
+
