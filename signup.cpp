@@ -37,7 +37,22 @@ void SignUp::on_pushButton_clicked()
         QString fN = ui->lineEdit_fN->text();
         QString mN = ui->lineEdit_mN->text();
         QString lN = ui->lineEdit_lN->text();
-        QString fN = ui->lineEdit_fN->text();
+        QString user = ui->lineEdit_user->text();
+        QString email = ui->lineEdit_email->text();
+        QString pNum = ui->lineEdit_pNum->text();
+        QString dob = ui->dateEdit_dob->text();
+        QString password = ui->lineEdit_password->text();
+        QString cpassword = ui->lineEdit_cpassword->text();
+        if(password!=cpassword)
+        {
+            QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
+        }
+        else
+        {
+            QSqlQuery qry;
+            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,date_of_birth,user_email,phone_number)");
+
+        }
     }
 
 }
