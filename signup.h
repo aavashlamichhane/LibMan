@@ -2,6 +2,8 @@
 #define SIGNUP_H
 
 #include <QDialog>
+#include<QtSql>
+#include<QSqlDatabase>
 
 namespace Ui {
 class SignUp;
@@ -17,6 +19,8 @@ public:
 
 private slots:
     void on_commandLinkButton_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::SignUp *ui;

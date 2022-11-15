@@ -38,8 +38,8 @@ private:
     SignUp *signup;
     Request *request;
     HomePage *homepage;
-    //QSqlDatabase database;
-    //QSqlQueryModel *sqlquery;
+    QSqlDatabase database;
+    QSqlQueryModel *sqlquery;
 
 };
 #endif // MAINWINDOW_H

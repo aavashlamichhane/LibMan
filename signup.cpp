@@ -23,3 +23,22 @@ void SignUp::on_commandLinkButton_clicked()
     login->show();
 }
 
+
+void SignUp::on_pushButton_clicked()
+{
+    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    db.setHostName("127.0.0.1");
+    db.setUserName("root");
+    db.setPassword("rampyari1234");
+    db.setDatabaseName("libman");
+
+    if(db.open())
+    {
+        QString fN = ui->lineEdit_fN->text();
+        QString mN = ui->lineEdit_mN->text();
+        QString lN = ui->lineEdit_lN->text();
+        QString fN = ui->lineEdit_fN->text();
+    }
+
+}
+

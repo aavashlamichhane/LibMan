@@ -2,6 +2,9 @@
 #define STUDENTHOMEPAGE_H
 
 #include <QDialog>
+#include<QtSql>
+#include<QSqlDatabase>
+#include<QMessageBox>
 
 namespace Ui {
 class studentHomePage;
@@ -17,6 +20,8 @@ public:
 
 private:
     Ui::studentHomePage *ui;
+    QSqlDatabase db_stdhome;
+    QSqlQueryModel *query_stdhome;
 };
 
 #endif // STUDENTHOMEPAGE_H
