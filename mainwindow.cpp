@@ -8,6 +8,22 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+   // QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+   // db.setHostName("127.0.0.1");
+   // db.setUserName("root");
+   // db.setPassword("rampyari1234");
+   // db.setDatabaseName("libman");
+   // if(db.open())
+   // {
+   //     sqlquery = new QSqlQueryModel();
+   //     sqlquery->setQuery("SELECT * FROM books");
+   //     ui->tableView->setModel(sqlquery);
+   // }
+   // else
+   // {
+   //    QMessageBox::warning(this,"Connection","Database not connected.");
+   // }
+
 }
 
 MainWindow::~MainWindow()
