@@ -6,7 +6,7 @@ studentHomePage::studentHomePage(QWidget *parent) :
     ui(new Ui::studentHomePage)
 {
     ui->setupUi(this);
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    /*QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("127.0.0.1");
     db.setUserName("root");
     db.setPassword("rampyari1234");
@@ -20,7 +20,7 @@ studentHomePage::studentHomePage(QWidget *parent) :
     else
     {
        QMessageBox::warning(this,"Connection","Database not connected.");
-    }
+    }*/
 }
 
 studentHomePage::~studentHomePage()

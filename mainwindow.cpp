@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL","hello");
     db.setHostName("127.0.0.1");
     db.setUserName("root");
     db.setPassword("rampyari1234");
@@ -26,6 +26,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    QSqlDatabase db = QSqlDatabase::database();
+    db.close();
+    //QSqlDatabase::removeDatabase(db.());
     delete ui;
 }
 
@@ -33,6 +36,9 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_6_clicked()
 {
+    QSqlDatabase db = QSqlDatabase::database("libman");
+    db.close();
+    QSqlDatabase::removeDatabase("libman");
     hide();
     signup=new SignUp(this);
     signup->show();
