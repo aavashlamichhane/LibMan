@@ -628,7 +628,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_24">
               <item>
-               <widget class="QLineEdit" name="lineEdit_password"/>
+               <widget class="QLineEdit" name="lineEdit_password">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -695,7 +699,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_26">
               <item>
-               <widget class="QLineEdit" name="lineEdit_cpassword"/>
+               <widget class="QLineEdit" name="lineEdit_cpassword">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>

@@ -39,7 +39,7 @@ void SignUp::on_pushButton_clicked()
         QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
         QString pNum = ui->lineEdit_pNum->text();
-        //QString dob = ui->dateEdit_dob->text();
+        QString dob = ui->dateEdit_dob->text();
         QString password = ui->lineEdit_password->text();
         QString cpassword = ui->lineEdit_cpassword->text();
         if(password!=cpassword)
@@ -49,15 +49,15 @@ void SignUp::on_pushButton_clicked()
         else
         {
             QSqlQuery qry(database);
-            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,phone_number)""VALUES(:username,:password,:fN,:mN,:lN,:email,:pN)");
+            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number)");
             qry.bindValue(":username",user);
             qry.bindValue(":password",password);
-            qry.bindValue(":fN",fN);
-            qry.bindValue(":mN",mN);
-            qry.bindValue(":lN",lN);
-           // qry.bindValue(":dob",dob);
-            qry.bindValue(":email",email);
-            qry.bindValue(":pN",pNum);
+            qry.bindValue(":first_name",fN);
+            qry.bindValue(":middle_name",mN);
+            qry.bindValue(":last_name",lN);
+            qry.bindValue(":date_of_birth",dob);
+            qry.bindValue(":user_email",email);
+            qry.bindValue(":phone_number",pNum);
 
             if(qry.exec())
             {
