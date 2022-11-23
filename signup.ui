@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>653</width>
-    <height>565</height>
+    <width>728</width>
+    <height>652</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -239,7 +239,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_8">
               <item>
-               <widget class="QLineEdit" name="lineEdit_2"/>
+               <widget class="QLineEdit" name="lineEdit_fN"/>
               </item>
              </layout>
             </widget>
@@ -254,7 +254,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
               <item>
-               <widget class="QLineEdit" name="lineEdit"/>
+               <widget class="QLineEdit" name="lineEdit_mN"/>
               </item>
              </layout>
             </widget>
@@ -269,7 +269,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_9">
               <item>
-               <widget class="QLineEdit" name="lineEdit_3"/>
+               <widget class="QLineEdit" name="lineEdit_lN"/>
               </item>
              </layout>
             </widget>
@@ -336,7 +336,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QLineEdit" name="lineEdit_4">
+               <widget class="QLineEdit" name="lineEdit_user">
                 <property name="inputMask">
                  <string/>
                 </property>
@@ -413,7 +413,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_18">
               <item>
-               <widget class="QLineEdit" name="lineEdit_5"/>
+               <widget class="QLineEdit" name="lineEdit_email"/>
               </item>
              </layout>
             </widget>
@@ -480,7 +480,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_20">
               <item>
-               <widget class="QLineEdit" name="lineEdit_6"/>
+               <widget class="QLineEdit" name="lineEdit_pNum"/>
               </item>
              </layout>
             </widget>
@@ -553,7 +553,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_22">
               <item>
-               <widget class="QDateEdit" name="dateEdit">
+               <widget class="QDateEdit" name="dateEdit_dob">
                 <property name="date">
                  <date>
                   <year>2001</year>
@@ -628,7 +628,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_24">
               <item>
-               <widget class="QLineEdit" name="lineEdit_7"/>
+               <widget class="QLineEdit" name="lineEdit_password">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -695,7 +699,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_26">
               <item>
-               <widget class="QLineEdit" name="lineEdit_8"/>
+               <widget class="QLineEdit" name="lineEdit_cpassword">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>

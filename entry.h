@@ -2,6 +2,10 @@
 #define ENTRY_H
 
 #include <QDialog>
+#include<QtSql>
+#include<QSqlDatabase>
+#include<QMessageBox>
+
 
 namespace Ui {
 class entry;
@@ -18,8 +22,11 @@ public:
 private slots:
     void on_pushButton_2_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::entry *ui;
+    QSqlDatabase dEntry;
 };
 
 #endif // ENTRY_H

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>682</width>
+    <width>696</width>
     <height>591</height>
    </rect>
   </property>
@@ -221,7 +221,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_14">
             <item>
-             <widget class="QLineEdit" name="lineEdit"/>
+             <widget class="QLineEdit" name="lineEdit_name"/>
             </item>
            </layout>
           </widget>
@@ -288,7 +288,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_15">
             <item>
-             <widget class="QLineEdit" name="lineEdit_2"/>
+             <widget class="QLineEdit" name="lineEdit_author"/>
             </item>
            </layout>
           </widget>
@@ -361,7 +361,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_21">
             <item>
-             <widget class="QDateEdit" name="dateEdit"/>
+             <widget class="QDateEdit" name="dateEdit_pdate"/>
             </item>
            </layout>
           </widget>
@@ -428,7 +428,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_18">
             <item>
-             <widget class="QLineEdit" name="lineEdit_3"/>
+             <widget class="QLineEdit" name="lineEdit_isbn"/>
             </item>
            </layout>
           </widget>
@@ -495,7 +495,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_23">
             <item>
-             <widget class="QLineEdit" name="lineEdit_4"/>
+             <widget class="QLineEdit" name="lineEdit_pub"/>
             </item>
            </layout>
           </widget>
@@ -562,7 +562,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_13">
             <item>
-             <widget class="QLineEdit" name="lineEdit_5"/>
+             <widget class="QLineEdit" name="lineEdit_copies"/>
             </item>
            </layout>
           </widget>
@@ -629,7 +629,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
-             <widget class="QTextEdit" name="textEdit"/>
+             <widget class="QTextEdit" name="textEdit_description"/>
             </item>
            </layout>
           </widget>

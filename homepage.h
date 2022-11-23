@@ -5,6 +5,8 @@
 #include "settings.h"
 #include "userinfo.h"
 #include "entry.h"
+#include<QSqlDatabase>
+#include<QtSql>
 namespace Ui {
 class HomePage;
 }
@@ -29,6 +31,7 @@ private:
     Settings *settings;
     UserInfo *info;
     entry *newbook;
+    QSqlDatabase data;
 };
 
 #endif // HOMEPAGE_H
