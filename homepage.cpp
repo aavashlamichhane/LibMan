@@ -1,10 +1,28 @@
 #include "homepage.h"
 #include "ui_homepage.h"
+#include<QMessageBox>
 HomePage::HomePage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::HomePage)
 {
     ui->setupUi(this);
+    QSqlDatabase data = QSqlDatabase::addDatabase("QMYSQL","Home");
+    data.setHostName("127.0.0.1");
+    data.setUserName("root");
+    data.setPassword("rampyari1234");
+    data.setDatabaseName("libman");
+    data.open();
+    QSqlQuery query;
+    QString aux;
+    query.prepare("SELECT username FROM userbase");
+    query.exec();
+    query.first();
+    aux = query.value(0).toString() ;
+    ui->label_name->setText(aux);
+    if(!query.isActive())
+    {
+        QMessageBox::information(0,"Bad Query", "BAD Query. It's not active");
+    }
 }
 
 HomePage::~HomePage()
@@ -34,4 +52,5 @@ void HomePage::on_pushButton_adminpanel_clicked()
     newbook =new entry(this);
     newbook->show();
 }
+
 
