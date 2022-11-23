@@ -1,5 +1,6 @@
 #include "mybooklist.h"
 #include "ui_mybooklist.h"
+#include "mainwindow.h"
 
 mybooklist::mybooklist(QWidget *parent) :
     QDialog(parent),
@@ -12,3 +13,22 @@ mybooklist::~mybooklist()
 {
     delete ui;
 }
+
+void mybooklist::on_pushButton_load_clicked()
+{
+    MainWindow conn;
+    QSqlQueryModel * model=new QSqlQueryModel();
+
+    conn.connOpen();
+    QSqlQuery * qry=new QSqlQuery(conn.db);
+
+            qry->prepare("Select * from books");
+
+            qry->exec();
+            model->setQuery(*qry);
+            ui->tableView->setModel(model);
+
+    conn.connClose();
+    qDebug() <<(model->rowCount());
+}
+

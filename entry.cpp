@@ -64,8 +64,8 @@ void entry::on_pushButton_clicked()
                 QSqlDatabase::removeDatabase("QMYSQL");
             }
         }
+    dEntry.close();
         QSqlDatabase::removeDatabase("QMYSQL");
     }
-    dEntry.close();
-}
+
 

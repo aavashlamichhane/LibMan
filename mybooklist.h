@@ -15,6 +15,9 @@ public:
     explicit mybooklist(QWidget *parent = nullptr);
     ~mybooklist();
 
+private slots:
+    void on_pushButton_load_clicked();
+
 private:
     Ui::mybooklist *ui;
 };

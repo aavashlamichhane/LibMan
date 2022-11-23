@@ -12,15 +12,15 @@ MainWindow::MainWindow(QWidget *parent)
     dab.setHostName("127.0.0.1");
     dab.setUserName("root");
     dab.setPassword("rampyari1234");
-    dab.setDatabaseName("libman");
-    if(dab.open())
+    dab.setDatabaseName("libman");*/
+    if(!db.open())
     {
-
+         QMessageBox::information(this,"Connection","Database connected.");
     }
     else
     {
        QMessageBox::warning(this,"Connection","Database not connected.");
-    }*/
+    }
 
 }
 
