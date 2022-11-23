@@ -1,5 +1,6 @@
 #include "homepage.h"
 #include "ui_homepage.h"
+#include "mainwindow.h"
 #include<QMessageBox>
 HomePage::HomePage(QWidget *parent) :
     QDialog(parent),
@@ -14,7 +15,8 @@ HomePage::HomePage(QWidget *parent) :
     data.open();
     QSqlQuery query;
     QString aux;
-    query.prepare("SELECT username FROM userbase");
+    query.prepare("SELECT username FROM userbase WHERE username=:username");
+    //query.bindValue(":username",usernameg);
     query.exec();
     query.first();
     aux = query.value(0).toString() ;

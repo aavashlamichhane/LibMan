@@ -7,6 +7,7 @@
 #include<QMessageBox>
 
 
+
 namespace Ui {
 class entry;
 }

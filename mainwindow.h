@@ -64,7 +64,8 @@ private:
     SignUp *signup;
     Request *request;
     HomePage *homepage;
-
+    QSqlDatabase dab;
+    QString *usernameg;
 
 
 };
