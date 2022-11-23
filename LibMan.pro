@@ -14,6 +14,7 @@ SOURCES += \
     homepage.cpp \
     main.cpp \
     mainwindow.cpp \
+    mybooklist.cpp \
     request.cpp \
     settings.cpp \
     signup.cpp \
@@ -25,6 +26,7 @@ HEADERS += \
     entry.h \
     homepage.h \
     mainwindow.h \
+    mybooklist.h \
     request.h \
     settings.h \
     signup.h \
@@ -36,6 +38,7 @@ FORMS += \
     entry.ui \
     homepage.ui \
     mainwindow.ui \
+    mybooklist.ui \
     request.ui \
     settings.ui \
     signup.ui \
