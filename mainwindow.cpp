@@ -1,8 +1,10 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include"homepage.h"
 #include<QMessageBox>
 
 
+QString usernameg;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -71,10 +73,11 @@ void MainWindow::on_Login_3_clicked()
             QString passworddb=query_login.value(1).toString();
             if(usernamedb==username && passworddb==password)
             {
+                usernameg=usernamedb;
                 hide();
                 homepage=new HomePage(this);
                 homepage->show();
-                usernameg=&usernamedb;
+
             }
             else
             {

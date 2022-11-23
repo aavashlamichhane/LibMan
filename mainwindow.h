@@ -25,6 +25,7 @@ public:
 
 
 
+
 private slots:
     void on_Login_3_clicked();
 
@@ -39,7 +40,7 @@ private:
     Request *request;
     HomePage *homepage;
     QSqlDatabase dab;
-    QString *usernameg;
+
 
 
 };

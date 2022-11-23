@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>732</width>
-    <height>741</height>
+    <width>962</width>
+    <height>778</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_4">
+  <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
@@ -317,7 +317,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_8">
               <item>
-               <widget class="QLineEdit" name="lineEdit_2"/>
+               <widget class="QLineEdit" name="lineEdit_fN"/>
               </item>
              </layout>
             </widget>
@@ -332,7 +332,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
               <item>
-               <widget class="QLineEdit" name="lineEdit"/>
+               <widget class="QLineEdit" name="lineEdit_mN"/>
               </item>
              </layout>
             </widget>
@@ -347,7 +347,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_9">
               <item>
-               <widget class="QLineEdit" name="lineEdit_3"/>
+               <widget class="QLineEdit" name="lineEdit_lN"/>
               </item>
              </layout>
             </widget>
@@ -414,7 +414,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QLineEdit" name="lineEdit_4">
+               <widget class="QLineEdit" name="lineEdit_user">
                 <property name="inputMask">
                  <string/>
                 </property>
@@ -491,7 +491,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_18">
               <item>
-               <widget class="QLineEdit" name="lineEdit_5"/>
+               <widget class="QLineEdit" name="lineEdit_email"/>
               </item>
              </layout>
             </widget>
@@ -558,7 +558,7 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_20">
               <item>
-               <widget class="QLineEdit" name="lineEdit_6"/>
+               <widget class="QLineEdit" name="lineEdit_pH"/>
               </item>
              </layout>
             </widget>
@@ -596,6 +596,12 @@ hr { height: 1px; border-width: 0; }
               <size>
                <width>150</width>
                <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
               </size>
              </property>
              <property name="frameShape">
@@ -639,6 +645,95 @@ hr { height: 1px; border-width: 0; }
                   <day>11</day>
                  </date>
                 </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_33">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QFrame" name="frame_34">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_12">
+                <property name="text">
+                 <string>Sex</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_35">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_30">
+              <item>
+               <widget class="QComboBox" name="comboBox_sex">
+                <item>
+                 <property name="text">
+                  <string>Male</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Female</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Others</string>
+                 </property>
+                </item>
                </widget>
               </item>
              </layout>
@@ -706,7 +801,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_24">
               <item>
-               <widget class="QLineEdit" name="lineEdit_7"/>
+               <widget class="QLineEdit" name="lineEdit_pass">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -773,7 +872,11 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_26">
               <item>
-               <widget class="QLineEdit" name="lineEdit_8"/>
+               <widget class="QLineEdit" name="lineEdit_cpass">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>

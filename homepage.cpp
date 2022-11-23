@@ -1,7 +1,10 @@
 #include "homepage.h"
 #include "ui_homepage.h"
-#include "mainwindow.h"
+#include"mainwindow.h"
+
+
 #include<QMessageBox>
+
 HomePage::HomePage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::HomePage)
@@ -13,10 +16,11 @@ HomePage::HomePage(QWidget *parent) :
     data.setPassword("rampyari1234");
     data.setDatabaseName("libman");
     data.open();
-    QSqlQuery query;
+    QSqlQuery query(data);
+    extern QString usernameg;
     QString aux;
     query.prepare("SELECT username FROM userbase WHERE username=:username");
-    //query.bindValue(":username",usernameg);
+    query.bindValue(":username",usernameg);
     query.exec();
     query.first();
     aux = query.value(0).toString() ;

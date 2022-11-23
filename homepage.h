@@ -32,6 +32,7 @@ private:
     UserInfo *info;
     entry *newbook;
     QSqlDatabase data;
+
 };
 
 #endif // HOMEPAGE_H

@@ -39,9 +39,11 @@ void SignUp::on_pushButton_clicked()
         QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
         QString pNum = ui->lineEdit_pNum->text();
+        QString sex = ui->comboBox_sex->currentText();
         QString dob = ui->dateEdit_dob->text();
         QString password = ui->lineEdit_password->text();
         QString cpassword = ui->lineEdit_cpassword->text();
+
         if(password!=cpassword)
         {
             QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
@@ -49,7 +51,7 @@ void SignUp::on_pushButton_clicked()
         else
         {
             QSqlQuery qry(database);
-            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number)");
+            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number,sex)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number,:sex)");
             qry.bindValue(":username",user);
             qry.bindValue(":password",password);
             qry.bindValue(":first_name",fN);
@@ -58,6 +60,7 @@ void SignUp::on_pushButton_clicked()
             qry.bindValue(":date_of_birth",dob);
             qry.bindValue(":user_email",email);
             qry.bindValue(":phone_number",pNum);
+            qry.bindValue(":sex",sex);
 
             if(qry.exec())
             {
