@@ -74,6 +74,7 @@ void MainWindow::on_Login_3_clicked()
                 hide();
                 homepage=new HomePage(this);
                 homepage->show();
+                usernameg=&usernamedb;
             }
             else
             {
