@@ -649,6 +649,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_22">
               <item>
                <widget class="QDateEdit" name="dateEdit_dob">
+                <property name="displayFormat">
+                 <string>yyyy-MM-dd</string>
+                </property>
+                <property name="calendarPopup">
+                 <bool>true</bool>
+                </property>
                 <property name="date">
                  <date>
                   <year>2001</year>
