@@ -70,6 +70,7 @@ void SignUp::on_pushButton_clicked()
             else
             {
                 QMessageBox::warning(this,"Sign Up","Signed up failed.");
+                //qDebug() << qry.lastError().text()<<Qt::endl;
                 QSqlDatabase::removeDatabase("QMYSQL");
             }
         }
