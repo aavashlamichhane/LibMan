@@ -27,3 +27,9 @@ studentHomePage::~studentHomePage()
 {
     delete ui;
 }
+
+void studentHomePage::on_pushButton_search_clicked()
+{
+
+}
+

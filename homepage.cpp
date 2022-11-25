@@ -60,3 +60,42 @@ void HomePage::on_pushButton_adminpanel_clicked()
 }
 
 
+
+void HomePage::on_pushButton_search_clicked()
+{
+    data.open();
+
+    QString title=ui->lineEdit_search->text();
+    QSqlQuery query_search(QSqlDatabase::database("LibMan"));
+    query_search.prepare(QString("SELECT * FROM books WHERE title=:title"));
+    query_search.bindValue(":title",title);
+
+    while(query_search.next())
+    {
+        QString bookname=query_search.value(0).toString();
+
+        int check=QString :: compare(title,bookname,Qt::CaseInsensitive);
+
+        if(check==0)
+        {
+            if(ui->scrollcontent->layout()!=NULL)
+            {
+                QLayoutItem *item;
+
+                while((item=ui->scrollcontent->layout()->takeAt(0))!=NULL)
+                {
+                    delete item->widget();
+                    delete item;
+                }
+                delete ui->scrollcontent->layout();
+            }
+
+        }
+        else
+        {
+
+        }
+    }
+
+}
+

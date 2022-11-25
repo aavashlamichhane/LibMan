@@ -18,6 +18,9 @@ public:
     explicit studentHomePage(QWidget *parent = nullptr);
     ~studentHomePage();
 
+private slots:
+    void on_pushButton_search_clicked();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
