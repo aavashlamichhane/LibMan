@@ -38,6 +38,7 @@ void SignUp::on_pushButton_clicked()
         QString lN = ui->lineEdit_lN->text();
         QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
+        int pNum1 = ui->lineEdit_pNum->text().toInt();
         QString pNum = ui->lineEdit_pNum->text();
         QString sex = ui->comboBox_sex->currentText();
         QString dob = ui->dateEdit_dob->text();

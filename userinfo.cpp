@@ -1,8 +1,10 @@
 #include "userinfo.h"
 #include "ui_userinfo.h"
 #include "homepage.h"
+#include "studenthomepage.h"
 
 HomePage *hp;
+studentHomePage *shps;
 
 UserInfo::UserInfo(QWidget *parent) :
     QDialog(parent),
@@ -67,8 +69,20 @@ void UserInfo::on_pushButton_editprofile_clicked()
 
 void UserInfo::on_pushButton_home_clicked()
 {
-    hide();
-    hp=new HomePage(this);
-    hp->show();
+    extern QString check;
+
+    if(check=="1")
+    {
+        hide();
+        hp=new HomePage(this);
+        hp->show();
+    }
+    else
+    {
+        hide();
+        shps=new studentHomePage(this);
+        shps->show();
+
+    }
 }
 
