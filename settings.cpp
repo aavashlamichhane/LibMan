@@ -3,9 +3,12 @@
 #include "ui_settings.h"
 #include "mainwindow.h"
 #include "homepage.h"
+#include "studenthomepage.h"
 
 HomePage *hps;
 MainWindow *mp;
+studentHomePage *shp;
+
 Settings::Settings(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Settings)
@@ -28,8 +31,20 @@ void Settings::on_pushButton_logout_clicked()
 
 void Settings::on_pushButton_home_clicked()
 {
-    hide();
-    hps=new HomePage(this);
-    hps->show();
+    extern QString check;
+
+    if(check=="1")
+    {
+        hide();
+        hps=new HomePage(this);
+        hps->show();
+    }
+    else
+    {
+        hide();
+        shp=new studentHomePage(this);
+        shp->show();
+
+    }
 }
 
