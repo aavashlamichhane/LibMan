@@ -30,6 +30,8 @@ private slots:
 private slots:
 
 
+    void on_pushButton_search_clicked();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
@@ -37,7 +39,7 @@ private:
     Settings *settings;
     UserInfo *info;
 
-    QSqlDatabase sdata;
+    QSqlDatabase data;
 };
 
 #endif // STUDENTHOMEPAGE_H
