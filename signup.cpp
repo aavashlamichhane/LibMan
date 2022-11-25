@@ -4,6 +4,16 @@
 #include "mainwindow.h"
 
 MainWindow *login;
+int countDigit(long long n)
+{
+   int a=0;
+   while(n!=0)
+   {
+       a++;
+       n=n/10;
+   }
+   return a;
+}
 SignUp::SignUp(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SignUp)
@@ -38,7 +48,7 @@ void SignUp::on_pushButton_clicked()
         QString lN = ui->lineEdit_lN->text();
         QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
-        int pNum1 = ui->lineEdit_pNum->text().toInt();
+        long long pNum1=ui->lineEdit_pNum->text().toLongLong();
         QString pNum = ui->lineEdit_pNum->text();
         QString sex = ui->comboBox_sex->currentText();
         QString dob = ui->dateEdit_dob->text();
@@ -48,6 +58,10 @@ void SignUp::on_pushButton_clicked()
         if(password!=cpassword)
         {
             QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
+        }
+        else if(countDigit(pNum1)!=10)
+        {
+            QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
         }
         else
         {

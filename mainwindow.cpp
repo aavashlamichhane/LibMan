@@ -51,7 +51,7 @@ void MainWindow::on_Login_3_clicked()
     }
     else
     {
-        while(query_login.next())
+        if(query_login.next())
         {
             QString usernamedb=query_login.value(0).toString();
             QString passworddb=query_login.value(1).toString();
@@ -77,12 +77,12 @@ void MainWindow::on_Login_3_clicked()
                     shomepage->show();
 
                 }
+
             }
-            else
-            {
-                QMessageBox::warning(this,"Login","Username and password do not match.");
-            }
+
         }
+        else
+           QMessageBox::warning(this,"Login","Username and password do not match.");
     }
 
 }
