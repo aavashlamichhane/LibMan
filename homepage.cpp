@@ -1,6 +1,7 @@
 #include "homepage.h"
 #include "ui_homepage.h"
 #include"mainwindow.h"
+#include <QSqlQueryModel>
 
 
 #include<QMessageBox>
@@ -10,7 +11,7 @@ HomePage::HomePage(QWidget *parent) :
     ui(new Ui::HomePage)
 {
     ui->setupUi(this);
-    QSqlDatabase data = QSqlDatabase::addDatabase("QMYSQL","Home");
+    data = QSqlDatabase::addDatabase("QMYSQL","Home");
     data.setHostName("127.0.0.1");
     data.setUserName("root");
     data.setPassword("rampyari1234");
@@ -65,24 +66,53 @@ void HomePage::on_pushButton_search_clicked()
 {
     data.open();
 
-    QString title=ui->lineEdit_search->text();
-    QSqlQuery query_search(QSqlDatabase::database("LibMan"));
-    query_search.prepare(QString("SELECT * FROM books WHERE title=:title"));
-    query_search.bindValue(":title",title);
+    QString opp = ui->comboBox_searchopption->currentText();
 
-    while(query_search.next())
+
+
+    QSqlQueryModel *modal= new QSqlQueryModel();
+    QSqlQueryModel *modal1= new QSqlQueryModel();
+    QSqlQueryModel *modal2= new QSqlQueryModel();
+
+    QSqlQuery *title= new QSqlQuery(data);
+    QSqlQuery *isbn_no= new QSqlQuery(data);
+    QSqlQuery *author= new QSqlQuery(data);
+
+    title->prepare("SELECT title FROM books");
+    isbn_no->prepare("SELECT isbn_no FROM books");
+    author->prepare("SELECT author FROM books");
+
+    title->exec();
+    isbn_no->exec();
+    author->exec();
+
+    modal->setQuery(std::move(*title));
+    modal1->setQuery(std::move(*isbn_no));
+    modal2->setQuery(std::move(*author));
+    QVBoxLayout *lay=new QVBoxLayout(this);
+    QString search=ui->lineEdit_search->text();
+    QPushButton *label;
+
+
+
+    for(int j=0;j<=modal->rowCount();j++)
     {
-        QString bookname=query_search.value(0).toString();
+        QString strtitle=modal->record(j).value(0).toString();
+        QString strisbn=modal1->record(j).value(0).toString();
+        QString strauthor=modal2->record(j).value(0).toString();
 
-        int check=QString :: compare(title,bookname,Qt::CaseInsensitive);
-
+        if(opp=="Name")
+        {
+        //checking for match
+        int check = QString::compare(search, strtitle, Qt::CaseInsensitive);
+        //if matches....
         if(check==0)
         {
-            if(ui->scrollcontent->layout()!=NULL)
+            //clearing previous layout
+            if ( ui->scrollcontent->layout() != NULL )
             {
-                QLayoutItem *item;
-
-                while((item=ui->scrollcontent->layout()->takeAt(0))!=NULL)
+                QLayoutItem* item;
+                while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
                 {
                     delete item->widget();
                     delete item;
@@ -90,12 +120,112 @@ void HomePage::on_pushButton_search_clicked()
                 delete ui->scrollcontent->layout();
             }
 
-        }
-        else
-        {
 
+
+            ui->frame_display->setGeometry(10,50,900,550);
+
+
+
+            label=new QPushButton(strtitle);
+            label->setObjectName(strtitle);
+
+            QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
+            QFrame *line=new QFrame;
+            line->setFrameShape(QFrame::HLine);
+            line->setFrameShadow(QFrame::Sunken);
+
+            lay->addWidget(label);
+            lay->addWidget(lab);
+            lay->addWidget(line);
         }
     }
 
+    else if(opp=="Author")
+        {
+        //checking for match
+        int check = QString::compare(search, strauthor, Qt::CaseInsensitive);
+        //if matches....
+        if(check==0)
+        {
+            //clearing previous layout
+            if ( ui->scrollcontent->layout() != NULL )
+            {
+                QLayoutItem* item;
+                while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
+                {
+                    delete item->widget();
+                    delete item;
+                }
+                delete ui->scrollcontent->layout();
+            }
+
+
+
+            ui->frame_display->setGeometry(10,50,900,550);
+
+
+
+            label=new QPushButton(strtitle);
+            label->setObjectName(strtitle);
+
+            QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
+            QFrame *line=new QFrame;
+            line->setFrameShape(QFrame::HLine);
+            line->setFrameShadow(QFrame::Sunken);
+
+            lay->addWidget(label);
+            lay->addWidget(lab);
+            lay->addWidget(line);
+        }
+    }
+
+        else if(opp=="Code")
+            {
+            //checking for match
+            int check = QString::compare(search, strisbn, Qt::CaseInsensitive);
+            //if matches....
+            if(check==0)
+            {
+                //clearing previous layout
+                if ( ui->scrollcontent->layout() != NULL )
+                {
+                    QLayoutItem* item;
+                    while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
+                    {
+                        delete item->widget();
+                        delete item;
+                    }
+                    delete ui->scrollcontent->layout();
+                }
+
+
+
+                ui->frame_display->setGeometry(10,50,900,550);
+
+
+
+                label=new QPushButton(strtitle);
+                label->setObjectName(strtitle);
+
+                QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
+                QFrame *line=new QFrame;
+                line->setFrameShape(QFrame::HLine);
+                line->setFrameShadow(QFrame::Sunken);
+
+                lay->addWidget(label);
+                lay->addWidget(lab);
+                lay->addWidget(line);
+            }
+        }
+
+    ui->scrollcontent->setLayout(lay);
+    //ui->scrollContents->setStyleSheet("background: transparent;border-color: rgb(62, 62, 62);padding-left:20px;padding-top:20px");
+    ui->scrollcontent->setVisible(true);
+    ui->scrollcontent->show();
+    }
 }
+
+
+
+
 

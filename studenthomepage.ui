@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1265</width>
-    <height>724</height>
+    <width>1054</width>
+    <height>645</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_6">
+  <layout class="QHBoxLayout" name="horizontalLayout_6">
    <item>
     <layout class="QVBoxLayout" name="Layout_menu">
      <property name="spacing">
@@ -520,7 +520,7 @@
                <number>0</number>
               </property>
               <item row="0" column="0">
-               <widget class="QFrame" name="frame_3">
+               <widget class="QFrame" name="frame_display_head">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -539,7 +539,7 @@
                </widget>
               </item>
               <item row="1" column="0">
-               <widget class="QFrame" name="frame_4">
+               <widget class="QFrame" name="frame_display">
                 <property name="frameShape">
                  <enum>QFrame::StyledPanel</enum>
                 </property>
@@ -548,7 +548,21 @@
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <item>
-                  <widget class="QTableView" name="tableView_hot"/>
+                  <widget class="QScrollArea" name="scrollArea">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollcontent">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>912</width>
+                      <height>500</height>
+                     </rect>
+                    </property>
+                   </widget>
+                  </widget>
                  </item>
                 </layout>
                </widget>
