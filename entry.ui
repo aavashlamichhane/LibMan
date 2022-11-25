@@ -361,7 +361,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_21">
             <item>
-             <widget class="QDateEdit" name="dateEdit_pdate"/>
+             <widget class="QDateEdit" name="dateEdit_pdate">
+              <property name="displayFormat">
+               <string>yyyy-MM-dd</string>
+              </property>
+              <property name="calendarPopup">
+               <bool>true</bool>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
