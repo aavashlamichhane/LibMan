@@ -8,6 +8,7 @@
 #include "settings.h"
 #include "userinfo.h"
 #include "entry.h"
+#include "request.h"
 
 namespace Ui {
 class studentHomePage;
@@ -32,13 +33,17 @@ private slots:
 
     void on_pushButton_search_clicked();
 
+    void on_pushButton_adminpanel_clicked();
+
+    void on_pushButton_notifydelay_clicked();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
     QSqlQueryModel *query_stdhome;
     Settings *settings;
     UserInfo *info;
-
+    Request *request;
     QSqlDatabase data;
 };
 

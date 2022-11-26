@@ -204,3 +204,16 @@ void studentHomePage::on_pushButton_search_clicked()
 }
 
 
+
+void studentHomePage::on_pushButton_adminpanel_clicked()
+{
+    QMessageBox::information(this,"Admin Panel","Access Denied.");
+}
+
+
+void studentHomePage::on_pushButton_notifydelay_clicked()
+{
+    request = new Request(this);
+    request->show();
+}
+

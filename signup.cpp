@@ -4,7 +4,7 @@
 #include "mainwindow.h"
 
 MainWindow *login;
-int countDigit(long long n)
+int countDigits(long long n)
 {
    int a=0;
    while(n!=0)
@@ -59,7 +59,7 @@ void SignUp::on_pushButton_clicked()
         {
             QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
         }
-        else if(countDigit(pNum1)!=10)
+        else if(countDigits(pNum1)!=10)
         {
             QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
         }

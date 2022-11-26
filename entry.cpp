@@ -86,12 +86,11 @@ void entry::on_pushButton_clicked()
 
             }
         }
-    dEntry.close();
         QSqlDatabase::removeDatabase("QMYSQL");
 
     }
-    }
 }
+
 
 
 
