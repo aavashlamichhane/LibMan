@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "entry.h"
 #include "bookissue.h"
+#include "returnbook.h"
 
 
 namespace Ui {
@@ -23,10 +24,13 @@ private slots:
 
     void on_pushButton_issuebook_clicked();
 
+    void on_pushButton_returnbook_clicked();
+
 private:
     Ui::adminpannel *ui;
     entry *newbook;
     bookissue *issue;
+    returnBook *returnbook;
 };
 
 #endif // ADMINPANNEL_H

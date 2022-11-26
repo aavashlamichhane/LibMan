@@ -21,6 +21,7 @@ SOURCES += \
     mybooklist.cpp \
     privacyandsecurity.cpp \
     request.cpp \
+    returnbook.cpp \
     settings.cpp \
     signup.cpp \
     studenthomepage.cpp \
@@ -38,6 +39,7 @@ HEADERS += \
     mybooklist.h \
     privacyandsecurity.h \
     request.h \
+    returnbook.h \
     settings.h \
     signup.h \
     studenthomepage.h \
@@ -55,6 +57,7 @@ FORMS += \
     mybooklist.ui \
     privacyandsecurity.ui \
     request.ui \
+    returnbook.ui \
     settings.ui \
     signup.ui \
     studenthomepage.ui \

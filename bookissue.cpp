@@ -1,5 +1,8 @@
 #include "bookissue.h"
 #include "ui_bookissue.h"
+#include "adminpannel.h"
+
+adminpannel *app;
 
 bookissue::bookissue(QWidget *parent) :
     QDialog(parent),
@@ -23,5 +26,70 @@ void bookissue::on_pushButton_clicked()
     dabook.setDatabaseName("libman");
     dabook.open();
 
+    QString uN=ui->lineEdit_user->text();
+    QString isbn=ui->lineEdit_isbn->text();
+    QDate diss=ui->dateEdit_issue->date();
+    QDate dexp=ui->dateEdit_expiry->date();
+
+    QSqlQuery qry_user(dabook),qry_book(dabook),qry_in(dabook),qry_chk(dabook);
+    qry_user.prepare(QString("SELECT username FROM userbase WHERE username=:username"));
+    qry_book.prepare("SELECT isbn_no,title,num_copies FROM books WHERE isbn_no=:isbn_no");
+    qry_chk.prepare("SELECT * FROM borrows WHERE username=:username AND isbn_no=:isbn_no");
+    qry_chk.bindValue(":username",uN);
+    qry_chk.bindValue(":isbn_no",isbn);
+    qry_user.bindValue(":username",uN);
+    qry_book.bindValue(":isbn_no",isbn);
+    qry_user.exec();
+    qry_book.exec();
+    qry_chk.exec();
+    if(!qry_user.next())
+        QMessageBox::warning(this,"Issue","Username does not match.");
+    else if(!qry_book.next())
+    {
+        QMessageBox::warning(this,"Issue","Book does not match.");
+        qDebug() << qry_book.lastError().text()<<Qt::endl;
+    }
+    else if(qry_chk.next())
+        QMessageBox::warning(this,"Issue","Book already issued.");
+    else
+    {
+        QString title=qry_book.value(1).toString();
+        int copies=qry_book.value(2).toString().toInt();
+        copies--;
+        qry_in.prepare("INSERT INTO borrows(username,book_name,isbn_no,date_taken,date_tobeReturned)""VALUES(:username,:book_name,:isbn_no,:date_taken,:date_tobeReturned)");
+        qry_in.bindValue(":username",uN);
+        qry_in.bindValue(":book_name",title);
+
+        qry_in.bindValue(":isbn_no",isbn);
+        qry_in.bindValue(":date_taken",diss);
+        qry_in.bindValue(":date_tobeReturned",dexp);
+        if(qry_in.exec())
+        {
+            QMessageBox::information(this,"Issue","Book issue successful.");
+            QSqlQuery qry_cop(dabook);
+            qry_cop.prepare("UPDATE books SET num_copies=:num_copies WHERE isbn_no=:isbn_no");
+            qry_cop.bindValue(":num_copies",copies);
+            qry_cop.bindValue(":isbn_no",isbn);
+            qry_cop.exec();
+            QSqlDatabase::removeDatabase("issue");
+
+        }
+        else
+        {
+            qDebug() << qry_in.lastError().text()<<Qt::endl<<title<<dexp;
+            QMessageBox::warning(this,"Issue","Book issue failed.");
+            QSqlDatabase::removeDatabase("issue");
+
+        }
+
+    }
+}
+
+
+void bookissue::on_pushButton_back_clicked()
+{
+    close();
+    app =new adminpannel(this);
+    app->show();
 }
 

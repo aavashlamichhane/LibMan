@@ -15,7 +15,7 @@ adminpannel::~adminpannel()
 
 void adminpannel::on_pushButton_addbook_clicked()
 {
-    hide();
+    close();
     newbook = new entry(this);
     newbook->show();
 }
@@ -23,8 +23,16 @@ void adminpannel::on_pushButton_addbook_clicked()
 
 void adminpannel::on_pushButton_issuebook_clicked()
 {
-    hide();
+    close();
     issue = new bookissue(this);
     issue->show();
+}
+
+
+void adminpannel::on_pushButton_returnbook_clicked()
+{
+    close();
+    returnbook=new returnBook(this);
+    returnbook->show();
 }
 
