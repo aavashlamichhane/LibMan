@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminpannel.cpp \
     editprofile.cpp \
     entry.cpp \
     homepage.cpp \
@@ -22,6 +23,7 @@ SOURCES += \
     userinfo.cpp
 
 HEADERS += \
+    adminpannel.h \
     editprofile.h \
     entry.h \
     homepage.h \
@@ -34,6 +36,7 @@ HEADERS += \
     userinfo.h
 
 FORMS += \
+    adminpannel.ui \
     editprofile.ui \
     entry.ui \
     homepage.ui \
@@ -53,15 +56,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 RESOURCES += \
     Resource.qrc
 
-SUBDIRS += \
-    ../../../../Users/Aavash/Downloads/Libman-20221102T061658Z-001/Libman/Libman.pro
-
-win32: LIBS += -L$$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14/ -lmysqlcppconn8
-
-INCLUDEPATH += $$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14
-DEPENDPATH += $$PWD/../../../../Users/Aavash/Downloads/mysql-connector-c++-8.0.31-winx64/lib64/vs14
-
-win32: LIBS += -L$$PWD/../../../../Qt/6.3.2/mingw_64/bin/ -llibmysql
-
-INCLUDEPATH += $$PWD/../../../../Qt/6.3.2/mingw_64/bin
-DEPENDPATH += $$PWD/../../../../Qt/6.3.2/mingw_64/bin

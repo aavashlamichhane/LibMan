@@ -243,7 +243,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Books</string>
+               <string>Book List</string>
               </property>
               <property name="icon">
                <iconset resource="Resource.qrc">
@@ -260,11 +260,11 @@
                </size>
               </property>
               <property name="text">
-               <string>Circulation</string>
+               <string>My Book List</string>
               </property>
               <property name="icon">
                <iconset resource="Resource.qrc">
-                <normaloff>:/rec/drive-download-20221026T014232Z-001/refresh-arrow.png</normaloff>:/rec/drive-download-20221026T014232Z-001/refresh-arrow.png</iconset>
+                <normaloff>:/rec/drive-download-20221026T014232Z-001/003-bookmark.png</normaloff>:/rec/drive-download-20221026T014232Z-001/003-bookmark.png</iconset>
               </property>
              </widget>
             </item>
@@ -277,7 +277,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Notify Delay</string>
+               <string>Check Request</string>
               </property>
               <property name="icon">
                <iconset resource="Resource.qrc">
