@@ -50,5 +50,11 @@
         <file>drive-download-20221026T014232Z-001/Phone.png</file>
         <file>drive-download-20221026T014232Z-001/about.png</file>
         <file>drive-download-20221026T014232Z-001/sex.png</file>
+        <file>drive-download-20221026T014232Z-001/dob.png</file>
+        <file>drive-download-20221026T014232Z-001/promote.png</file>
+        <file>drive-download-20221026T014232Z-001/addbook.png</file>
+        <file>drive-download-20221026T014232Z-001/book-return.png</file>
+        <file>drive-download-20221026T014232Z-001/issue.png</file>
+        <file>drive-download-20221026T014232Z-001/updatebook.png</file>
     </qresource>
 </RCC>
