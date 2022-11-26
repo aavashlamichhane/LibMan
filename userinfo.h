@@ -2,7 +2,10 @@
 #define USERINFO_H
 
 #include <QDialog>
+#include<QSqlDatabase>
+#include<QtSql>
 #include"editprofile.h"
+#include<QSqlQuery>
 
 namespace Ui {
 class UserInfo;
@@ -24,6 +27,7 @@ private slots:
 private:
     Ui::UserInfo *ui;
     editProfile *ep;
+    QSqlDatabase data_info;
 };
 
 #endif // USERINFO_H

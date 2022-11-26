@@ -26,12 +26,15 @@ private slots:
 
     void on_pushButton_adminpanel_clicked();
 
+    void on_pushButton_search_clicked();
+
 private:
     Ui::HomePage *ui;
     Settings *settings;
     UserInfo *info;
     entry *newbook;
     QSqlDatabase data;
+
 };
 
 #endif // HOMEPAGE_H

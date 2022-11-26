@@ -2,7 +2,9 @@
 #define EDITPROFILE_H
 
 #include <QDialog>
-
+#include<QSqlQuery>
+#include<QtSql>
+#include<QSqlDatabase>
 
 namespace Ui {
 class editProfile;
@@ -19,8 +21,11 @@ public:
 private slots:
     void on_pushButton_2_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::editProfile *ui;
+    QSqlDatabase data_info;
 };
 
 #endif // EDITPROFILE_H

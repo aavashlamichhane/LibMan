@@ -5,6 +5,7 @@
 #include<QtSql>
 #include<QSqlDatabase>
 #include<QMessageBox>
+#include<Qt>
 
 namespace Ui {
 class SignUp;

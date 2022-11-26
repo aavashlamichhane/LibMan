@@ -8,8 +8,9 @@
 #include "signup.h"
 #include "request.h"
 #include "homepage.h"
-/*#include "settings.h"
-#include "userinfo.h"*/
+#include "settings.h"
+#include "userinfo.h"
+#include "studenthomepage.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -51,6 +52,7 @@ public:
 
 
 
+
 private slots:
     void on_Login_3_clicked();
 
@@ -64,8 +66,9 @@ private:
     SignUp *signup;
     Request *request;
     HomePage *homepage;
+    studentHomePage *shomepage;
     QSqlDatabase dab;
-    QString *usernameg;
+
 
 
 };
