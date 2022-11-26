@@ -2,6 +2,9 @@
 #define BOOKISSUE_H
 
 #include <QDialog>
+#include<QtSql>
+#include<QSqlDatabase>
+#include<QMessageBox>
 
 namespace Ui {
 class bookissue;
@@ -15,8 +18,12 @@ public:
     explicit bookissue(QWidget *parent = nullptr);
     ~bookissue();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::bookissue *ui;
+    QSqlDatabase dabook;
 };
 
 #endif // BOOKISSUE_H
