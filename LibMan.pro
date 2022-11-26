@@ -20,6 +20,7 @@ SOURCES += \
     mainwindow.cpp \
     mybooklist.cpp \
     privacyandsecurity.cpp \
+    promote.cpp \
     request.cpp \
     returnbook.cpp \
     settings.cpp \
@@ -38,6 +39,7 @@ HEADERS += \
     mainwindow.h \
     mybooklist.h \
     privacyandsecurity.h \
+    promote.h \
     request.h \
     returnbook.h \
     settings.h \
@@ -56,6 +58,7 @@ FORMS += \
     mainwindow.ui \
     mybooklist.ui \
     privacyandsecurity.ui \
+    promote.ui \
     request.ui \
     returnbook.ui \
     settings.ui \

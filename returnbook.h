@@ -2,7 +2,9 @@
 #define RETURNBOOK_H
 
 #include <QDialog>
-
+#include<QtSql>
+#include<QSqlDatabase>
+#include<QMessageBox>
 namespace Ui {
 class returnBook;
 }
@@ -18,8 +20,11 @@ public:
 private slots:
     void on_pushButton_back_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::returnBook *ui;
+    QSqlDatabase daret;
 };
 
 #endif // RETURNBOOK_H

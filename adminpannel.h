@@ -5,6 +5,7 @@
 #include "entry.h"
 #include "bookissue.h"
 #include "returnbook.h"
+#include "promote.h"
 
 
 namespace Ui {
@@ -26,11 +27,14 @@ private slots:
 
     void on_pushButton_returnbook_clicked();
 
+    void on_pushButton_promote_clicked();
+
 private:
     Ui::adminpannel *ui;
     entry *newbook;
     bookissue *issue;
     returnBook *returnbook;
+    promote *prom;
 };
 
 #endif // ADMINPANNEL_H

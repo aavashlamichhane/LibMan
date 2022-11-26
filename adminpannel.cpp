@@ -36,3 +36,11 @@ void adminpannel::on_pushButton_returnbook_clicked()
     returnbook->show();
 }
 
+
+void adminpannel::on_pushButton_promote_clicked()
+{
+    close();
+    prom = new promote(this);
+    prom->show();
+}
+
