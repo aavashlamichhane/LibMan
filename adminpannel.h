@@ -17,6 +17,9 @@ public:
     explicit adminpannel(QWidget *parent = nullptr);
     ~adminpannel();
 
+private slots:
+    void on_pushButton_addbook_clicked();
+
 private:
     Ui::adminpannel *ui;
     entry *newbook;

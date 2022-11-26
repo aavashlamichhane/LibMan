@@ -12,3 +12,10 @@ adminpannel::~adminpannel()
 {
     delete ui;
 }
+
+void adminpannel::on_pushButton_addbook_clicked()
+{
+    newbook = new entry(this);
+    newbook->show();
+}
+
