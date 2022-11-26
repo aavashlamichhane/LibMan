@@ -95,90 +95,12 @@ void studentHomePage::on_pushButton_search_clicked()
 
         if(opp=="Name")
         {
-        //checking for match
-        int check = QString::compare(search, strtitle, Qt::CaseInsensitive);
-        //if matches....
-        if(check==0)
-        {
-            //clearing previous layout
-            if ( ui->scrollcontent->layout() != NULL )
-            {
-                QLayoutItem* item;
-                while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
-                {
-                    delete item->widget();
-                    delete item;
-                }
-                delete ui->scrollcontent->layout();
-            }
 
+            int check = QString::compare(search, strtitle, Qt::CaseInsensitive);
 
-
-            ui->frame_display->setGeometry(10,50,900,550);
-
-
-
-            label=new QPushButton(strtitle);
-            label->setObjectName(strtitle);
-
-            QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
-            QFrame *line=new QFrame;
-            line->setFrameShape(QFrame::HLine);
-            line->setFrameShadow(QFrame::Sunken);
-
-            lay->addWidget(label);
-            lay->addWidget(lab);
-            lay->addWidget(line);
-        }
-    }
-
-    else if(opp=="Author")
-        {
-        //checking for match
-        int check = QString::compare(search, strauthor, Qt::CaseInsensitive);
-        //if matches....
-        if(check==0)
-        {
-            //clearing previous layout
-            if ( ui->scrollcontent->layout() != NULL )
-            {
-                QLayoutItem* item;
-                while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
-                {
-                    delete item->widget();
-                    delete item;
-                }
-                delete ui->scrollcontent->layout();
-            }
-
-
-
-            ui->frame_display->setGeometry(10,50,900,550);
-
-
-
-            label=new QPushButton(strtitle);
-            label->setObjectName(strtitle);
-
-            QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
-            QFrame *line=new QFrame;
-            line->setFrameShape(QFrame::HLine);
-            line->setFrameShadow(QFrame::Sunken);
-
-            lay->addWidget(label);
-            lay->addWidget(lab);
-            lay->addWidget(line);
-        }
-    }
-
-        else if(opp=="Code")
-            {
-            //checking for match
-            int check = QString::compare(search, strisbn, Qt::CaseInsensitive);
-            //if matches....
             if(check==0)
             {
-                //clearing previous layout
+
                 if ( ui->scrollcontent->layout() != NULL )
                 {
                     QLayoutItem* item;
@@ -187,14 +109,10 @@ void studentHomePage::on_pushButton_search_clicked()
                         delete item->widget();
                         delete item;
                     }
-                    delete ui->scrollcontent->layout();
+                delete ui->scrollcontent->layout();
                 }
 
-
-
                 ui->frame_display->setGeometry(10,50,900,550);
-
-
 
                 label=new QPushButton(strtitle);
                 label->setObjectName(strtitle);
@@ -209,6 +127,73 @@ void studentHomePage::on_pushButton_search_clicked()
                 lay->addWidget(line);
             }
         }
+
+        else if(opp=="Author")
+        {
+            int check = QString::compare(search, strauthor, Qt::CaseInsensitive);
+
+            if(check==0)
+            {
+
+                if ( ui->scrollcontent->layout() != NULL )
+                {
+                    QLayoutItem* item;
+                    while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
+                    {
+                        delete item->widget();
+                        delete item;
+                    }
+                    delete ui->scrollcontent->layout();
+                }
+
+                ui->frame_display->setGeometry(10,50,900,550);
+
+                label=new QPushButton(strtitle);
+                label->setObjectName(strtitle);
+
+                QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
+                QFrame *line=new QFrame;
+                line->setFrameShape(QFrame::HLine);
+                line->setFrameShadow(QFrame::Sunken);
+
+                lay->addWidget(label);
+                lay->addWidget(lab);
+                lay->addWidget(line);
+            }
+        }
+
+        else if(opp=="Code")
+            {
+                int check = QString::compare(search, strisbn, Qt::CaseInsensitive);
+                if(check==0)
+                {
+
+                    if ( ui->scrollcontent->layout() != NULL )
+                    {
+                        QLayoutItem* item;
+                        while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
+                        {
+                            delete item->widget();
+                            delete item;
+                        }
+                        delete ui->scrollcontent->layout();
+                    }
+
+                    ui->frame_display->setGeometry(10,50,900,550);
+
+                    label=new QPushButton(strtitle);
+                    label->setObjectName(strtitle);
+
+                    QLabel *lab=new QLabel("ISBN NUM: "+strisbn+", Author: "+strauthor+".");
+                    QFrame *line=new QFrame;
+                    line->setFrameShape(QFrame::HLine);
+                    line->setFrameShadow(QFrame::Sunken);
+
+                    lay->addWidget(label);
+                    lay->addWidget(lab);
+                    lay->addWidget(line);
+                }
+            }
 
     ui->scrollcontent->setLayout(lay);
     //ui->scrollContents->setStyleSheet("background: transparent;border-color: rgb(62, 62, 62);padding-left:20px;padding-top:20px");

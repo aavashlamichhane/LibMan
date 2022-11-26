@@ -580,6 +580,19 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>pushButton_search</tabstop>
+  <tabstop>pushButton_circulation</tabstop>
+  <tabstop>pushButton_user</tabstop>
+  <tabstop>pushButton_notifydelay</tabstop>
+  <tabstop>pushButton_adminpanel</tabstop>
+  <tabstop>pushButton_settings</tabstop>
+  <tabstop>comboBox_searchopption</tabstop>
+  <tabstop>lineEdit_search</tabstop>
+  <tabstop>pushButton_home</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>pushButton_books</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>
