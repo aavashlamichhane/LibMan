@@ -5,6 +5,9 @@
 #include "settings.h"
 #include "userinfo.h"
 #include "adminpannel.h"
+#include "mybooklist.h"
+#include "booklist.h"
+#include "chkreq.h"
 #include<QSqlDatabase>
 #include<QtSql>
 namespace Ui {
@@ -28,12 +31,21 @@ private slots:
 
     void on_pushButton_search_clicked();
 
+    void on_pushButton_circulation_clicked();
+
+    void on_pushButton_books_clicked();
+
+    void on_pushButton_notifydelay_clicked();
+
 private:
     Ui::HomePage *ui;
     Settings *settings;
     UserInfo *info;
     adminpannel *admin;
     QSqlDatabase data;
+    mybooklist *mblist;
+    booklist *blist;
+    chkreq *chk;
 
 };
 
