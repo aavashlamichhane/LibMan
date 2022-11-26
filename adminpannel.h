@@ -2,6 +2,8 @@
 #define ADMINPANNEL_H
 
 #include <QDialog>
+#include "entry.h"
+
 
 namespace Ui {
 class adminpannel;
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::adminpannel *ui;
+    entry *newbook;
 };
 
 #endif // ADMINPANNEL_H

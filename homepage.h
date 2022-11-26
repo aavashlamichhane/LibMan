@@ -4,7 +4,7 @@
 #include <QDialog>
 #include "settings.h"
 #include "userinfo.h"
-#include "entry.h"
+#include "adminpannel.h"
 #include<QSqlDatabase>
 #include<QtSql>
 namespace Ui {
@@ -32,7 +32,7 @@ private:
     Ui::HomePage *ui;
     Settings *settings;
     UserInfo *info;
-    entry *newbook;
+    adminpannel *admin;
     QSqlDatabase data;
 
 };

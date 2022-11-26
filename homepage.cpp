@@ -55,9 +55,8 @@ void HomePage::on_pushButton_user_clicked()
 
 void HomePage::on_pushButton_adminpanel_clicked()
 {
-    hide();
-    newbook =new entry(this);
-    newbook->show();
+    admin =new adminpannel(this);
+    admin->show();
 }
 
 
