@@ -8,7 +8,6 @@
 #include "signup.h"
 #include "request.h"
 #include "homepage.h"
-#include "settings.h"
 #include "userinfo.h"
 #include "studenthomepage.h"
 
@@ -19,6 +18,8 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+
+
 
 public:
     MainWindow(QWidget *parent = nullptr);

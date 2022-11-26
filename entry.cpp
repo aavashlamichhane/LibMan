@@ -4,7 +4,16 @@
 #include "mainwindow.h"
 
 HomePage *hp2;
-
+int countDigit(long long n)
+{
+   int a=0;
+   while(n!=0)
+   {
+       a++;
+       n=n/10;
+   }
+   return a;
+}
 entry::entry(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::entry)
@@ -27,7 +36,7 @@ void entry::on_pushButton_2_clicked()
 
 void entry::on_pushButton_clicked()
 {
-    dEntry = QSqlDatabase::addDatabase("QMYSQL");
+    dEntry = QSqlDatabase::addDatabase("QMYSQL","Entry");
     dEntry.setHostName("127.0.0.1");
     dEntry.setUserName("root");
     dEntry.setPassword("rampyari1234");
@@ -39,11 +48,16 @@ void entry::on_pushButton_clicked()
         QString aN = ui->lineEdit_author->text();
         QString pD = ui->dateEdit_pdate->text();
         QString iN = ui->lineEdit_isbn->text();
+        long long chk = ui->lineEdit_isbn->text().toLongLong();
         QString pB = ui->lineEdit_pub->text();
         QString nC = ui->lineEdit_copies->text();
         QString nP = ui->lineEdit_page->text();
         QString des = ui->textEdit_description->toPlainText();
 
+        if(countDigit(chk)!=13)
+            QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
+        else
+        {
             QSqlQuery qry(dEntry);
             qry.prepare("INSERT INTO books(isbn_no,title,author,pages,published_date,published_by,num_copies,description)""VALUES(:isbn_no,:title,:author,:pages,:published_date,:published_by,:num_copies,:description)");
             qry.bindValue(":title",bN);
@@ -66,10 +80,20 @@ void entry::on_pushButton_clicked()
             }
             else
             {
+                qDebug() << qry.lastError().text()<<Qt::endl;
                 QMessageBox::warning(this,"Entry","Entry failed.");
                 QSqlDatabase::removeDatabase("QMYSQL");
+
             }
         }
+    dEntry.close();
         QSqlDatabase::removeDatabase("QMYSQL");
+
+    }
+    }
 }
+
+
+
+
 
