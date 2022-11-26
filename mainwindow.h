@@ -8,7 +8,6 @@
 #include "signup.h"
 #include "request.h"
 #include "homepage.h"
-#include "settings.h"
 #include "userinfo.h"
 #include "studenthomepage.h"
 
