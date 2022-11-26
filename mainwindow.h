@@ -8,8 +8,8 @@
 #include "signup.h"
 #include "request.h"
 #include "homepage.h"
-#include "settings.h"
-#include "userinfo.h"
+/*#include "settings.h"
+#include "userinfo.h"*/
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
