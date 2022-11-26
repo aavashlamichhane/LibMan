@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     about.cpp \
     adminpannel.cpp \
+    bookissue.cpp \
     editprofile.cpp \
     entry.cpp \
     helpandsupport.cpp \
@@ -28,6 +29,7 @@ SOURCES += \
 HEADERS += \
     about.h \
     adminpannel.h \
+    bookissue.h \
     editprofile.h \
     entry.h \
     helpandsupport.h \
@@ -44,6 +46,7 @@ HEADERS += \
 FORMS += \
     about.ui \
     adminpannel.ui \
+    bookissue.ui \
     editprofile.ui \
     entry.ui \
     helpandsupport.ui \

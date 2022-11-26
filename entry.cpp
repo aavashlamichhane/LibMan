@@ -1,9 +1,11 @@
 #include "entry.h"
 #include "ui_entry.h"
 #include "homepage.h"
+#include "adminpannel.h"
 #include "mainwindow.h"
 
 HomePage *hp2;
+adminpannel *adm;
 int countDigit(long long n)
 {
    int a=0;
@@ -29,8 +31,8 @@ entry::~entry()
 void entry::on_pushButton_2_clicked()
 {
     hide();
-    hp2=new HomePage(this);
-    hp2->show();
+    adm = new adminpannel(this);
+    adm->show();
 }
 
 

@@ -15,7 +15,16 @@ adminpannel::~adminpannel()
 
 void adminpannel::on_pushButton_addbook_clicked()
 {
+    hide();
     newbook = new entry(this);
     newbook->show();
+}
+
+
+void adminpannel::on_pushButton_issuebook_clicked()
+{
+    hide();
+    issue = new bookissue(this);
+    issue->show();
 }
 
