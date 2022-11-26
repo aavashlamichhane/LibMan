@@ -1,6 +1,5 @@
 #include "mybooklist.h"
 #include "ui_mybooklist.h"
-#include "mainwindow.h"
 
 mybooklist::mybooklist(QWidget *parent) :
     QDialog(parent),
@@ -16,7 +15,7 @@ mybooklist::~mybooklist()
 
 void mybooklist::on_pushButton_load_clicked()
 {
-    MainWindow conn;
+    mybooklist conn;
     QSqlQueryModel * model=new QSqlQueryModel();
 
     conn.connOpen();
