@@ -27,7 +27,7 @@ void entry::on_pushButton_2_clicked()
 
 void entry::on_pushButton_clicked()
 {
-    dEntry = QSqlDatabase::addDatabase("QMYSQL");
+    dEntry = QSqlDatabase::addDatabase("QMYSQL","Entry");
     dEntry.setHostName("127.0.0.1");
     dEntry.setUserName("root");
     dEntry.setPassword("rampyari1234");
@@ -66,8 +66,10 @@ void entry::on_pushButton_clicked()
             }
             else
             {
+                qDebug() << qry.lastError().text()<<Qt::endl;
                 QMessageBox::warning(this,"Entry","Entry failed.");
                 QSqlDatabase::removeDatabase("QMYSQL");
+
             }
         }
     dEntry.close();
