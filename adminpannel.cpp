@@ -1,5 +1,8 @@
 #include "adminpannel.h"
 #include "ui_adminpannel.h"
+#include "homepage.h"
+
+HomePage *home;
 
 adminpannel::adminpannel(QWidget *parent) :
     QDialog(parent),
@@ -42,5 +45,21 @@ void adminpannel::on_pushButton_promote_clicked()
     close();
     prom = new promote(this);
     prom->show();
+}
+
+
+void adminpannel::on_pushButton_updatebook_clicked()
+{
+    close();
+    upd = new UpdateBook(this);
+    upd->show();
+}
+
+
+void adminpannel::on_pushButton_clicked()
+{
+   close();
+   home = new HomePage(this);
+   home->show();
 }
 

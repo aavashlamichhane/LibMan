@@ -26,6 +26,7 @@ SOURCES += \
     settings.cpp \
     signup.cpp \
     studenthomepage.cpp \
+    updatebook.cpp \
     userinfo.cpp
 
 HEADERS += \
@@ -45,6 +46,7 @@ HEADERS += \
     settings.h \
     signup.h \
     studenthomepage.h \
+    updatebook.h \
     userinfo.h
 
 FORMS += \
@@ -64,6 +66,7 @@ FORMS += \
     settings.ui \
     signup.ui \
     studenthomepage.ui \
+    updatebook.ui \
     userinfo.ui
 
 # Default rules for deployment.

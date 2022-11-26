@@ -39,7 +39,7 @@ HomePage::~HomePage()
 
 void HomePage::on_pushButton_settings_clicked()
 {
-    hide();
+    close();
     settings =new Settings(this);
     settings->show();
 }
@@ -47,7 +47,7 @@ void HomePage::on_pushButton_settings_clicked()
 
 void HomePage::on_pushButton_user_clicked()
 {
-    hide();
+    close();
     info = new UserInfo(this);
     info->show();
 }
@@ -55,6 +55,7 @@ void HomePage::on_pushButton_user_clicked()
 
 void HomePage::on_pushButton_adminpanel_clicked()
 {
+    hide();
     admin =new adminpannel(this);
     admin->show();
 }
