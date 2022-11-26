@@ -48,3 +48,24 @@ void Settings::on_pushButton_home_clicked()
     }
 }
 
+
+void Settings::on_pushButton_privacy_clicked()
+{
+    pvs=new privacyandsecurity(this);
+    pvs->show();
+}
+
+
+void Settings::on_pushButton_help_clicked()
+{
+    hlps=new helpandsupport(this);
+    hlps->show();
+}
+
+
+void Settings::on_pushButton_about_clicked()
+{
+    abt=new about(this);
+    abt->show();
+}
+
