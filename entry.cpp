@@ -55,7 +55,7 @@ void entry::on_pushButton_clicked()
         QString des = ui->textEdit_description->toPlainText();
 
         if(countDigit(chk)!=13)
-            QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
+            QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
         else
         {
             QSqlQuery qry(dEntry);
