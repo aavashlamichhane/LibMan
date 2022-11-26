@@ -5,6 +5,16 @@
 
 UserInfo *info1;
 
+int countDigitsss(long long n)
+{
+   int a=0;
+   while(n!=0)
+   {
+       a++;
+       n=n/10;
+   }
+   return a;
+}
 editProfile::editProfile(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::editProfile)
@@ -78,6 +88,7 @@ void editProfile::on_pushButton_clicked()
         QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
         QString pNum = ui->lineEdit_pH->text();
+        long long num = ui->lineEdit_pH->text().toLongLong();
         QString sex = ui->comboBox_sex->currentText();
         QString dob = ui->dateEdit->text();
         QString password = ui->lineEdit_pass->text();
@@ -87,6 +98,8 @@ void editProfile::on_pushButton_clicked()
         {
             QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
         }
+        else if(countDigitsss(num)!=10)
+            QMessageBox::warning(this,"Error","Phone number is incorrect.");
         else
         {
             QSqlQuery qry(data_info);

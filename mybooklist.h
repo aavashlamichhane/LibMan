@@ -15,30 +15,7 @@ class mybooklist : public QDialog
     Q_OBJECT
 
 public:
-    QSqlDatabase db;
-    void connClose()
-    {
-        db.close();
-        db.removeDatabase(QSqlDatabase::defaultConnection);
-    }
-    bool connOpen()
-    {
-        QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-        db.setHostName("127.0.0.1");
-        db.setUserName("root");
-        db.setPassword("rampyari1234");
-        db.setDatabaseName("libman");
-        if(!db.open())
-        {
-            QMessageBox::information(this,"Connection","connected successfully.");
-            return false;
-        }
-        else
-        {
-            QMessageBox::information(this,"Connection","not connected.");
-            return true;
-        }
-    }
+
 
 public:
     explicit mybooklist(QWidget *parent = nullptr);
@@ -49,6 +26,7 @@ private slots:
 
 private:
     Ui::mybooklist *ui;
+    QSqlDatabase dal;
 };
 
 #endif // MYBOOKLIST_H

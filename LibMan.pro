@@ -12,6 +12,8 @@ SOURCES += \
     about.cpp \
     adminpannel.cpp \
     bookissue.cpp \
+    booklist.cpp \
+    chkreq.cpp \
     editprofile.cpp \
     entry.cpp \
     helpandsupport.cpp \
@@ -33,6 +35,8 @@ HEADERS += \
     about.h \
     adminpannel.h \
     bookissue.h \
+    booklist.h \
+    chkreq.h \
     editprofile.h \
     entry.h \
     helpandsupport.h \
@@ -53,6 +57,8 @@ FORMS += \
     about.ui \
     adminpannel.ui \
     bookissue.ui \
+    booklist.ui \
+    chkreq.ui \
     editprofile.ui \
     entry.ui \
     helpandsupport.ui \

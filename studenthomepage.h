@@ -7,8 +7,9 @@
 #include<QMessageBox>
 #include "settings.h"
 #include "userinfo.h"
-#include "entry.h"
+#include "mybooklist.h"
 #include "request.h"
+#include "booklist.h"
 
 namespace Ui {
 class studentHomePage;
@@ -37,6 +38,10 @@ private slots:
 
     void on_pushButton_notifydelay_clicked();
 
+    void on_pushButton_circulation_clicked();
+
+    void on_pushButton_books_clicked();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
@@ -45,6 +50,8 @@ private:
     UserInfo *info;
     Request *request;
     QSqlDatabase data;
+    mybooklist *list;
+    booklist *book;
 };
 
 #endif // STUDENTHOMEPAGE_H
