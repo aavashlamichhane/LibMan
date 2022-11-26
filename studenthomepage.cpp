@@ -56,6 +56,7 @@ void studentHomePage::on_pushButton_user_clicked()
 
 void studentHomePage::on_pushButton_search_clicked()
 {
+
     data.open();
 
     QString opp = ui->comboBox_searchopption->currentText();
@@ -112,7 +113,12 @@ void studentHomePage::on_pushButton_search_clicked()
                 delete ui->scrollcontent->layout();
                 }
 
+                ui->frame_display_head->hide();
+
                 ui->frame_display->setGeometry(10,50,900,550);
+
+                QLabel *lab1=new QLabel("Search Result For "+strtitle);
+                // QFrame *line1=new QFrame;
 
                 label=new QPushButton(strtitle);
                 label->setObjectName(strtitle);
@@ -122,6 +128,22 @@ void studentHomePage::on_pushButton_search_clicked()
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
 
+                label->setStyleSheet(
+                            "   QPushButton {"
+                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                            " }"
+                            " QPushButton:hover {"
+                            "     color: rgb(0, 0, 0);font-size:25px;"
+                            " }");
+
+                lab1->setStyleSheet(
+                            "   QLabel {"
+                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:28px; color:black;"
+                            " }");
+
+
+                lay->addWidget(lab1);
+                //lay->addWidget(line1);
                 lay->addWidget(label);
                 lay->addWidget(lab);
                 lay->addWidget(line);
@@ -146,7 +168,11 @@ void studentHomePage::on_pushButton_search_clicked()
                     delete ui->scrollcontent->layout();
                 }
 
+                ui->frame_display_head->hide();
+
                 ui->frame_display->setGeometry(10,50,900,550);
+                QLabel *lab1=new QLabel("Search Result For "+strauthor);
+                // QFrame *line1=new QFrame;
 
                 label=new QPushButton(strtitle);
                 label->setObjectName(strtitle);
@@ -156,6 +182,21 @@ void studentHomePage::on_pushButton_search_clicked()
                 line->setFrameShape(QFrame::HLine);
                 line->setFrameShadow(QFrame::Sunken);
 
+                label->setStyleSheet(
+                            "   QPushButton {"
+                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                            " }"
+                            " QPushButton:hover {"
+                            "     color: rgb(0, 0, 0);font-size:25px;"
+                            " }");
+
+                lab1->setStyleSheet(
+                            "   QLabel {"
+                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:28px; color:black;"
+                            " }");
+
+                lay->addWidget(lab1);
+                //lay->addWidget(line1);
                 lay->addWidget(label);
                 lay->addWidget(lab);
                 lay->addWidget(line);
@@ -179,7 +220,11 @@ void studentHomePage::on_pushButton_search_clicked()
                         delete ui->scrollcontent->layout();
                     }
 
+                    ui->frame_display_head->hide();
+
                     ui->frame_display->setGeometry(10,50,900,550);
+                    QLabel *lab1=new QLabel("Search Result For "+strisbn);
+                    // QFrame *line1=new QFrame;
 
                     label=new QPushButton(strtitle);
                     label->setObjectName(strtitle);
@@ -189,6 +234,21 @@ void studentHomePage::on_pushButton_search_clicked()
                     line->setFrameShape(QFrame::HLine);
                     line->setFrameShadow(QFrame::Sunken);
 
+                    label->setStyleSheet(
+                                "   QPushButton {"
+                                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                                " }"
+                                " QPushButton:hover {"
+                                "     color: rgb(0, 0, 0);font-size:25px;"
+                                " }");
+
+                    lab1->setStyleSheet(
+                                "   QLabel {"
+                                "     background:transparent; Text-align:left;font-family:century gothic;font-size:28px; color:black;"
+                                " }");
+
+                    lay->addWidget(lab1);
+                    //lay->addWidget(line1);
                     lay->addWidget(label);
                     lay->addWidget(lab);
                     lay->addWidget(line);
