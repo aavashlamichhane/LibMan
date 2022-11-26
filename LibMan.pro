@@ -9,13 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    about.cpp \
     adminpannel.cpp \
     editprofile.cpp \
     entry.cpp \
+    helpandsupport.cpp \
     homepage.cpp \
     main.cpp \
     mainwindow.cpp \
     mybooklist.cpp \
+    privacyandsecurity.cpp \
     request.cpp \
     settings.cpp \
     signup.cpp \
@@ -23,12 +26,15 @@ SOURCES += \
     userinfo.cpp
 
 HEADERS += \
+    about.h \
     adminpannel.h \
     editprofile.h \
     entry.h \
+    helpandsupport.h \
     homepage.h \
     mainwindow.h \
     mybooklist.h \
+    privacyandsecurity.h \
     request.h \
     settings.h \
     signup.h \
@@ -36,12 +42,15 @@ HEADERS += \
     userinfo.h
 
 FORMS += \
+    about.ui \
     adminpannel.ui \
     editprofile.ui \
     entry.ui \
+    helpandsupport.ui \
     homepage.ui \
     mainwindow.ui \
     mybooklist.ui \
+    privacyandsecurity.ui \
     request.ui \
     settings.ui \
     signup.ui \
