@@ -1,15 +1,17 @@
 #include "homepage.h"
 #include "ui_homepage.h"
-#include"mainwindow.h"
 #include <QSqlQueryModel>
 
 
 #include<QMessageBox>
 
+setWindowFlags(Qt::WindowFlags() | Qt::WindowMinimizeButtonHint);
+
 HomePage::HomePage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::HomePage)
 {
+
     ui->setupUi(this);
     data = QSqlDatabase::addDatabase("QMYSQL","Home");
     data.setHostName("127.0.0.1");
