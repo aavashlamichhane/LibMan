@@ -34,7 +34,7 @@ void bookissue::on_pushButton_clicked()
     QSqlQuery qry_user(dabook),qry_book(dabook),qry_in(dabook),qry_chk(dabook);
     qry_user.prepare(QString("SELECT username FROM userbase WHERE username=:username"));
     qry_book.prepare("SELECT isbn_no,title,num_copies FROM books WHERE isbn_no=:isbn_no");
-    qry_chk.prepare("SELECT * FROM borrows WHERE username=:username AND isbn_no=:isbn_no");
+    qry_chk.prepare("SELECT date_returned FROM borrows WHERE username=:username AND isbn_no=:isbn_no");
     qry_chk.bindValue(":username",uN);
     qry_chk.bindValue(":isbn_no",isbn);
     qry_user.bindValue(":username",uN);
@@ -50,9 +50,17 @@ void bookissue::on_pushButton_clicked()
         qDebug() << qry_book.lastError().text()<<Qt::endl;
     }
     else if(qry_chk.next())
-        QMessageBox::warning(this,"Issue","Book already issued.");
+    {
+        QDate da=qry_chk.value(0).toDate();
+        QDate daa(0000,00,00);
+        if(da==daa)
+            QMessageBox::warning(this,"Issue","Book already issued.");
+        else
+            goto hihi;
+    }
     else
     {
+        hihi:
         QString title=qry_book.value(1).toString();
         int copies=qry_book.value(2).toString().toInt();
         copies--;
