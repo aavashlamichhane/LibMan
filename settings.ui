@@ -237,7 +237,7 @@
              <widget class="QPushButton" name="pushButton_privacy">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
@@ -345,7 +345,7 @@
              <widget class="QPushButton" name="pushButton_help">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
@@ -453,7 +453,7 @@
              <widget class="QPushButton" name="pushButton_about">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
