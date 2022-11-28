@@ -99,9 +99,15 @@
       </property>
       <item>
        <widget class="QFrame" name="frame_control">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>0</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
-          <width>120</width>
+          <width>170</width>
           <height>16777215</height>
          </size>
         </property>
@@ -168,6 +174,15 @@
               <layout class="QGridLayout" name="gridLayout_2">
                <item row="0" column="0">
                 <widget class="QPushButton" name="pushButton_user">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;</string>
+                 </property>
                  <property name="text">
                   <string/>
                  </property>
@@ -393,10 +408,16 @@
          </property>
          <item>
           <widget class="QFrame" name="frame_search">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>80</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>16777215</width>
-             <height>100</height>
+             <height>150</height>
             </size>
            </property>
            <property name="frameShape">
@@ -423,6 +444,12 @@
             </property>
             <item>
              <widget class="QFrame" name="frame_searchtype">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>0</height>
+               </size>
+              </property>
               <property name="maximumSize">
                <size>
                 <width>200</width>
@@ -441,7 +468,7 @@
                  <property name="maximumSize">
                   <size>
                    <width>16777215</width>
-                   <height>30</height>
+                   <height>40</height>
                   </size>
                  </property>
                  <property name="font">
@@ -498,6 +525,12 @@
             </item>
             <item>
              <widget class="QFrame" name="frame_searchbutton">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>0</height>
+               </size>
+              </property>
               <property name="maximumSize">
                <size>
                 <width>60</width>
@@ -515,12 +548,15 @@
                 <widget class="QPushButton" name="pushButton_search">
                  <property name="maximumSize">
                   <size>
-                   <width>30</width>
-                   <height>30</height>
+                   <width>40</width>
+                   <height>40</height>
                   </size>
                  </property>
                  <property name="acceptDrops">
                   <bool>false</bool>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background:transparent;</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -528,6 +564,12 @@
                  <property name="icon">
                   <iconset resource="Resource.qrc">
                    <normaloff>:/rec/drive-download-20221026T014232Z-001/search.png</normaloff>:/rec/drive-download-20221026T014232Z-001/search.png</iconset>
+                 </property>
+                 <property name="iconSize">
+                  <size>
+                   <width>40</width>
+                   <height>40</height>
+                  </size>
                  </property>
                 </widget>
                </item>
@@ -578,6 +620,12 @@
               <layout class="QVBoxLayout" name="verticalLayout_5">
                <item>
                 <widget class="QLabel" name="label_2">
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;Latest Books&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
@@ -608,8 +656,8 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>946</width>
-                    <height>505</height>
+                    <width>892</width>
+                    <height>467</height>
                    </rect>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_6">

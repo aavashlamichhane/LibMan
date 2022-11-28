@@ -321,3 +321,11 @@ void studentHomePage::on_lineEdit_search_returnPressed()
     on_pushButton_search_clicked();
 }
 
+
+void studentHomePage::on_pushButton_home_clicked()
+{
+    hide();
+    shp=new studentHomePage(this);
+    shp->show();
+}
+
