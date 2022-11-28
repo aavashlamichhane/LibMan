@@ -32,6 +32,7 @@ void bookissue::on_pushButton_clicked()
     QString isbn=ui->lineEdit_isbn->text();
     QDate diss=ui->dateEdit_issue->date();
     QDate dexp=ui->dateEdit_expiry->date();
+    int a=1;
 
     QSqlQuery qry_user(dabook),qry_book(dabook),qry_in(dabook),qry_chk(dabook);
     qry_user.prepare(QString("SELECT username FROM userbase WHERE username=:username"));
@@ -60,11 +61,18 @@ void bookissue::on_pushButton_clicked()
         else
             goto hihi;
     }
+    else if(a==0)
+    {
+        haha:
+        QMessageBox::warning(this,"Issue","Book unavailable.");
+    }
     else
     {
         hihi:
         QString title=qry_book.value(1).toString();
         int copies=qry_book.value(2).toString().toInt();
+        if(copies==0)
+            goto haha;
         copies--;
         qry_in.prepare("INSERT INTO borrows(username,book_name,isbn_no,date_taken,date_tobeReturned)""VALUES(:username,:book_name,:isbn_no,:date_taken,:date_tobeReturned)");
         qry_in.bindValue(":username",uN);
