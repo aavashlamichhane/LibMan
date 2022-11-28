@@ -69,6 +69,13 @@
            </property>
            <item>
             <widget class="QLabel" name="label_title">
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>24</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
              <property name="text">
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -144,6 +151,12 @@ hr { height: 1px; border-width: 0; }
               </property>
               <item>
                <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>First Name</string>
                 </property>
@@ -169,6 +182,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QVBoxLayout" name="verticalLayout_5">
               <item>
                <widget class="QLabel" name="label">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Middle Name</string>
                 </property>
@@ -191,6 +210,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QVBoxLayout" name="verticalLayout_4">
               <item>
                <widget class="QLabel" name="label_3">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Last Name</string>
                 </property>
@@ -239,7 +264,14 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_8">
               <item>
-               <widget class="QLineEdit" name="lineEdit_fN"/>
+               <widget class="QLineEdit" name="lineEdit_fN">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -254,7 +286,14 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
               <item>
-               <widget class="QLineEdit" name="lineEdit_mN"/>
+               <widget class="QLineEdit" name="lineEdit_mN">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -269,7 +308,14 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_9">
               <item>
-               <widget class="QLineEdit" name="lineEdit_lN"/>
+               <widget class="QLineEdit" name="lineEdit_lN">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -318,6 +364,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_15">
               <item>
                <widget class="QLabel" name="label_4">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Username:</string>
                 </property>
@@ -337,6 +389,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
                <widget class="QLineEdit" name="lineEdit_user">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="inputMask">
                  <string/>
                 </property>
@@ -395,6 +453,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_17">
               <item>
                <widget class="QLabel" name="label_5">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>E-mail:</string>
                 </property>
@@ -413,7 +477,14 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_18">
               <item>
-               <widget class="QLineEdit" name="lineEdit_email"/>
+               <widget class="QLineEdit" name="lineEdit_email">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -462,6 +533,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_19">
               <item>
                <widget class="QLabel" name="label_6">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Phone Number (+977):</string>
                 </property>
@@ -480,7 +557,14 @@ hr { height: 1px; border-width: 0; }
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_20">
               <item>
-               <widget class="QLineEdit" name="lineEdit_pNum"/>
+               <widget class="QLineEdit" name="lineEdit_pNum">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+               </widget>
               </item>
              </layout>
             </widget>
@@ -535,6 +619,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QVBoxLayout" name="verticalLayout_6">
               <item>
                <widget class="QLabel" name="label_12">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Sex</string>
                 </property>
@@ -554,6 +644,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_30">
               <item>
                <widget class="QComboBox" name="comboBox_sex">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <item>
                  <property name="text">
                   <string>Male</string>
@@ -624,6 +720,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_21">
               <item>
                <widget class="QLabel" name="label_9">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Date of Birth:</string>
                 </property>
@@ -649,6 +751,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_22">
               <item>
                <widget class="QDateEdit" name="dateEdit_dob">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="displayFormat">
                  <string>yyyy-MM-dd</string>
                 </property>
@@ -711,6 +819,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_23">
               <item>
                <widget class="QLabel" name="label_7">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Password:</string>
                 </property>
@@ -730,6 +844,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_24">
               <item>
                <widget class="QLineEdit" name="lineEdit_password">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="echoMode">
                  <enum>QLineEdit::Password</enum>
                 </property>
@@ -782,6 +902,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_25">
               <item>
                <widget class="QLabel" name="label_8">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Confirm Password:</string>
                 </property>
@@ -801,6 +927,12 @@ hr { height: 1px; border-width: 0; }
              <layout class="QHBoxLayout" name="horizontalLayout_26">
               <item>
                <widget class="QLineEdit" name="lineEdit_cpassword">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="echoMode">
                  <enum>QLineEdit::Password</enum>
                 </property>
@@ -844,6 +976,12 @@ hr { height: 1px; border-width: 0; }
                <height>0</height>
               </size>
              </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
              <property name="frameShape">
               <enum>QFrame::StyledPanel</enum>
              </property>
@@ -885,13 +1023,16 @@ hr { height: 1px; border-width: 0; }
               <enum>QFrame::Raised</enum>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_28">
-              <item>
-               <widget class="QCommandLinkButton" name="commandLinkButton">
-                <property name="text">
-                 <string>Log In</string>
+              <item alignment="Qt::AlignLeft">
+               <widget class="QPushButton" name="pushbutton_login">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
                 </property>
-                <property name="checkable">
-                 <bool>false</bool>
+                <property name="text">
+                 <string>Login</string>
                 </property>
                </widget>
               </item>
@@ -923,6 +1064,12 @@ hr { height: 1px; border-width: 0; }
                <width>200</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
              </property>
              <property name="text">
               <string>Sign Up</string>

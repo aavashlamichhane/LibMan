@@ -202,6 +202,12 @@
                 <layout class="QGridLayout" name="gridLayout">
                  <item row="0" column="0">
                   <widget class="QLabel" name="label_name">
+                   <property name="font">
+                    <font>
+                     <family>Times New Roman</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
                    <property name="text">
                     <string>Name</string>
                    </property>
@@ -230,6 +236,12 @@
                   <height>30</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Home</string>
                 </property>
@@ -246,6 +258,12 @@
                   <width>0</width>
                   <height>30</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Book List</string>
@@ -264,6 +282,12 @@
                   <height>30</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>My Book List</string>
                 </property>
@@ -280,6 +304,12 @@
                   <width>0</width>
                   <height>30</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Request Book</string>
@@ -298,6 +328,12 @@
                   <height>30</height>
                  </size>
                 </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>Admin Panel</string>
                 </property>
@@ -314,6 +350,12 @@
                   <width>0</width>
                   <height>30</height>
                  </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
                 </property>
                 <property name="text">
                  <string>Settings</string>
@@ -407,6 +449,12 @@
                      <height>30</height>
                     </size>
                    </property>
+                   <property name="font">
+                    <font>
+                     <family>Times New Roman</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
                    <item>
                     <property name="text">
                      <string>Name</string>
@@ -441,7 +489,8 @@
                    </property>
                    <property name="font">
                     <font>
-                     <pointsize>14</pointsize>
+                     <family>Times New Roman</family>
+                     <pointsize>12</pointsize>
                     </font>
                    </property>
                    <property name="placeholderText">
@@ -555,8 +604,8 @@
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>1003</width>
-                      <height>574</height>
+                      <width>998</width>
+                      <height>579</height>
                      </rect>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout">
@@ -571,6 +620,12 @@
                        <layout class="QVBoxLayout" name="verticalLayout_6">
                         <item>
                          <widget class="QPushButton" name="label_b1">
+                          <property name="font">
+                           <font>
+                            <family>century gothic</family>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
 
@@ -583,6 +638,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a1">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -593,6 +656,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i1">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -615,6 +686,12 @@
                        <layout class="QVBoxLayout" name="verticalLayout_7">
                         <item>
                          <widget class="QPushButton" name="label_b2">
+                          <property name="font">
+                           <font>
+                            <family>century gothic</family>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
 
@@ -627,6 +704,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a2">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -637,6 +722,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i2">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -659,6 +752,12 @@
                        <layout class="QVBoxLayout" name="verticalLayout_9">
                         <item>
                          <widget class="QPushButton" name="label_b3">
+                          <property name="font">
+                           <font>
+                            <family>century gothic</family>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
 
@@ -671,6 +770,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a3">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -681,6 +788,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i3">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -703,6 +818,12 @@
                        <layout class="QVBoxLayout" name="verticalLayout_10">
                         <item>
                          <widget class="QPushButton" name="label_b4">
+                          <property name="font">
+                           <font>
+                            <family>century gothic</family>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
 
@@ -715,6 +836,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a4">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -725,6 +854,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i4">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -747,6 +884,12 @@
                        <layout class="QVBoxLayout" name="verticalLayout_11">
                         <item>
                          <widget class="QPushButton" name="label_b5">
+                          <property name="font">
+                           <font>
+                            <family>century gothic</family>
+                            <pointsize>-1</pointsize>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
 
@@ -759,6 +902,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a5">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>
@@ -769,6 +920,14 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i5">
+                          <property name="font">
+                           <font>
+                            <family>Segoe UI</family>
+                            <pointsize>11</pointsize>
+                            <italic>false</italic>
+                            <bold>false</bold>
+                           </font>
+                          </property>
                           <property name="styleSheet">
                            <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
                           </property>

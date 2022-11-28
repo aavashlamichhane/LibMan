@@ -24,6 +24,14 @@ SignUp::SignUp(QWidget *parent) :
     database.setUserName("root");
     database.setPassword("rampyari1234");
     database.setDatabaseName("libman");
+
+    ui->pushbutton_login->setStyleSheet(
+                "   QPushButton {"
+                "     background:transparent; Text-align:left;font-family:timesnewroman gothic;font-size:12px; color:blue;"
+                " }"
+                " QPushButton:hover {"
+                "     color: rgb(0, 255, 255);font-size:16px;"
+                " }");
 }
 
 SignUp::~SignUp()
@@ -31,7 +39,7 @@ SignUp::~SignUp()
     delete ui;
 }
 
-void SignUp::on_commandLinkButton_clicked()
+void SignUp::on_pushbutton_login_clicked()
 {
     hide();
     login= new MainWindow(this);
@@ -93,4 +101,7 @@ void SignUp::on_pushButton_clicked()
     }
     database.close();
 }
+
+
+
 
