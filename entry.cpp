@@ -6,7 +6,8 @@
 
 HomePage *hp2;
 adminpannel *adm;
-int countDigit(long long n)
+template<class t>
+int countDigit(t n)
 {
    int a=0;
    while(n!=0)
@@ -48,7 +49,8 @@ void entry::on_pushButton_clicked()
     {
         QString bN = ui->lineEdit_name->text();
         QString aN = ui->lineEdit_author->text();
-        QString pD = ui->dateEdit_pdate->text();
+        QString pD = ui->lineEdit_year->text();
+        int yr=ui->lineEdit_year->text().toInt();
         QString iN = ui->lineEdit_isbn->text();
         long long chk = ui->lineEdit_isbn->text().toLongLong();
         QString pB = ui->lineEdit_pub->text();
@@ -57,8 +59,10 @@ void entry::on_pushButton_clicked()
         QString des = ui->textEdit_description->toPlainText();
         QDate today=QDate::currentDate();
 
-        if(countDigit(chk)!=13)
+        if(countDigit<long long>(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
+        else if(countDigit<int>(yr)!=4)
+            QMessageBox::warning(this,"Error","Date is not correct. Please try again.");
         else
         {
             QSqlQuery qry(dEntry);

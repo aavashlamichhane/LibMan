@@ -96,3 +96,9 @@ void MainWindow::on_pushButton_5_clicked()
 
 }
 
+
+void MainWindow::on_Login_3_pressed()
+{
+    MainWindow::on_Login_3_clicked();
+}
+

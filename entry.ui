@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>696</width>
-    <height>591</height>
+    <height>627</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -338,7 +338,7 @@
             <item>
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>Published date:</string>
+               <string>Published year:</string>
               </property>
              </widget>
             </item>
@@ -361,14 +361,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_21">
             <item>
-             <widget class="QDateEdit" name="dateEdit_pdate">
-              <property name="displayFormat">
-               <string>yyyy-MM-dd</string>
-              </property>
-              <property name="calendarPopup">
-               <bool>true</bool>
-              </property>
-             </widget>
+             <widget class="QLineEdit" name="lineEdit_year"/>
             </item>
            </layout>
           </widget>

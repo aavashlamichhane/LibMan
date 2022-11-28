@@ -35,6 +35,8 @@ private slots:
 
     void on_pushButton_5_clicked();
 
+    void on_Login_3_pressed();
+
 private:
     Ui::MainWindow *ui;
     entry *Entry;
