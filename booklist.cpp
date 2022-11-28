@@ -15,7 +15,7 @@ booklist::booklist(QWidget *parent) :
     QSqlQueryModel *modal=new QSqlQueryModel();
     QSqlQuery *qry= new QSqlQuery(dalb);
 
-    qry->prepare("SELECT isbn_no,title,author,pages,published_date,published_by,num_copies FROM books");
+    qry->prepare("SELECT isbn_no,title,author,pages,published_date,published_by,num_copies FROM books ORDER BY title");
 
     qry->exec();
     modal->setQuery(*qry);
