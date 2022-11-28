@@ -131,6 +131,12 @@
              <layout class="QHBoxLayout" name="horizontalLayout_4">
               <item>
                <widget class="QLabel" name="label_profile">
+                <property name="font">
+                 <font>
+                  <family>Times New Roman</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
                 <property name="text">
                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Profile&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                 </property>
@@ -250,6 +256,9 @@
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
                   <widget class="QLabel" name="label_name">
+                   <property name="styleSheet">
+                    <string notr="true">font: 700 20pt &quot;Segoe UI&quot;;</string>
+                   </property>
                    <property name="text">
                     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;Admin&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                    </property>
@@ -269,6 +278,9 @@
                 <layout class="QVBoxLayout" name="verticalLayout_5">
                  <item>
                   <widget class="QLabel" name="label_username">
+                   <property name="styleSheet">
+                    <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+                   </property>
                    <property name="text">
                     <string>@admin</string>
                    </property>
@@ -356,6 +368,9 @@
            </item>
            <item>
             <widget class="QLabel" name="label_mail">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+             </property>
              <property name="text">
               <string>admin@gmail.com</string>
              </property>
@@ -410,6 +425,9 @@
            </item>
            <item>
             <widget class="QLabel" name="label_sex">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+             </property>
              <property name="text">
               <string>Male</string>
              </property>
@@ -464,6 +482,9 @@
            </item>
            <item>
             <widget class="QLabel" name="label_age">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+             </property>
              <property name="text">
               <string>35</string>
              </property>
@@ -518,6 +539,9 @@
            </item>
            <item>
             <widget class="QLabel" name="label_phone">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+             </property>
              <property name="text">
               <string>+977 9876543210</string>
              </property>
@@ -572,6 +596,9 @@
            </item>
            <item>
             <widget class="QLabel" name="label_job">
+             <property name="styleSheet">
+              <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+             </property>
              <property name="text">
               <string>Staff</string>
              </property>
@@ -602,6 +629,12 @@
                <width>200</width>
                <height>16777215</height>
               </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Times New Roman</family>
+               <pointsize>12</pointsize>
+              </font>
              </property>
              <property name="text">
               <string>Edit Profile</string>

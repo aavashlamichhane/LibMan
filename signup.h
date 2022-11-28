@@ -20,9 +20,9 @@ public:
     ~SignUp();
 
 private slots:
-    void on_commandLinkButton_clicked();
-
     void on_pushButton_clicked();
+
+    void on_pushbutton_login_clicked();
 
 private:
     Ui::SignUp *ui;

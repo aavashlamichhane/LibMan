@@ -35,7 +35,9 @@ private slots:
 
     void on_pushButton_5_clicked();
 
-    void on_Login_3_pressed();
+    void on_username_login_returnPressed();
+
+    void on_password_login_returnPressed();
 
 private:
     Ui::MainWindow *ui;

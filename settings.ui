@@ -93,6 +93,13 @@
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QLabel" name="label_name">
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>24</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Settings&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
@@ -219,6 +226,12 @@
                 <height>50</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Privacy and Security</string>
               </property>
@@ -320,6 +333,12 @@
                 <width>130</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
               </property>
               <property name="text">
                <string>Help and Support</string>
@@ -423,6 +442,12 @@
                 <height>50</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>About</string>
               </property>
@@ -450,6 +475,12 @@
              <width>100</width>
              <height>30</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>12</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Log out</string>

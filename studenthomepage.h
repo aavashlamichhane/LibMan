@@ -42,6 +42,8 @@ private slots:
 
     void on_pushButton_books_clicked();
 
+    void on_lineEdit_search_returnPressed();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
