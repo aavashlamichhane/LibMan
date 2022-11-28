@@ -62,7 +62,7 @@ void returnBook::on_pushButton_clicked()
             qry_upt1.bindValue(":isbn_no",isbn);
             qry_upt1.bindValue(":num_copies",copies);
             qry_upt1.exec();
-            QMessageBox::information(this,"Return","Book returned succeddfully.");
+            QMessageBox::information(this,"Return","Book returned successfully.");
         }
         else
             QMessageBox::warning(this,"Return","Book return failed.");

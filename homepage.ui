@@ -409,11 +409,6 @@
                  </item>
                  <item>
                   <property name="text">
-                   <string>Author</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
                    <string>Code</string>
                   </property>
                  </item>
@@ -532,7 +527,7 @@
                <item>
                 <widget class="QLabel" name="label_2">
                  <property name="text">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;Trending Books&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; font-weight:700;&quot;&gt;Latest Books&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                 </widget>
                </item>
@@ -558,8 +553,8 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>914</width>
-                    <height>554</height>
+                    <width>883</width>
+                    <height>479</height>
                    </rect>
                   </property>
                  </widget>
