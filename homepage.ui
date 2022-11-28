@@ -409,7 +409,7 @@
                  </item>
                  <item>
                   <property name="text">
-                   <string>Code</string>
+                   <string>ISBN</string>
                   </property>
                  </item>
                 </widget>
