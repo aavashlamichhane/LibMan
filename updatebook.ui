@@ -322,7 +322,7 @@
                </size>
               </property>
               <property name="text">
-               <string>Return</string>
+               <string>Update</string>
               </property>
              </widget>
             </item>
