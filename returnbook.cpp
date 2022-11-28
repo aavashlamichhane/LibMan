@@ -9,6 +9,7 @@ returnBook::returnBook(QWidget *parent) :
     ui(new Ui::returnBook)
 {
     ui->setupUi(this);
+    ui->dateEdit_issue->setDate(QDate::currentDate());
 }
 
 returnBook::~returnBook()
