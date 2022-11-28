@@ -204,20 +204,20 @@ void studentHomePage::on_pushButton_search_clicked()
 
                 label->setStyleSheet(
                             "   QPushButton {"
-                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
+                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:24px; color:black;"
                             " }"
                             " QPushButton:hover {"
-                            "     color: rgb(0, 0, 0);font-size:25px;"
+                            "     color: rgb(0, 0, 0);font-size:36px;"
                             " }");
 
                 lab1->setStyleSheet(
                             "   QLabel {"
-                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:28px; color:black;"
+                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:30px; color:black;"
                             " }");
 
                 lab->setStyleSheet(
                             "   QLabel {"
-                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:12px; color:black;"
+                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:20px; color:black;"
                             " }");
 
 
@@ -264,20 +264,20 @@ void studentHomePage::on_pushButton_search_clicked()
 
                     label->setStyleSheet(
                                 "   QPushButton {"
-                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
+                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:24px; color:black;"
                                 " }"
                                 " QPushButton:hover {"
-                                "     color: rgb(0, 0, 0);font-size:25px;"
+                                "     color: rgb(0, 0, 0);font-size:36px;"
                                 " }");
 
                     lab1->setStyleSheet(
                                 "   QLabel {"
-                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:28px; color:black;"
+                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:30px; color:black;"
                                 " }");
 
                     lab->setStyleSheet(
                                 "   QLabel {"
-                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:12px; color:black;"
+                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:20px; color:black;"
                                 " }");
 
                     lay->addWidget(lab1);
