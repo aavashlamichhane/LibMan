@@ -455,7 +455,7 @@
                </font>
               </property>
               <property name="text">
-               <string>ISBN number:</string>
+               <string>ISBN:</string>
               </property>
              </widget>
             </item>
