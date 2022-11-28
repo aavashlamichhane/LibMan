@@ -105,6 +105,13 @@
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QLabel" name="label_name">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>24</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
               <property name="text">
                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt; font-weight:700;&quot;&gt;Promote User&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
@@ -193,6 +200,12 @@
                    <height>40</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Username</string>
                  </property>
@@ -214,7 +227,14 @@
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_3">
                <item>
-                <widget class="QLineEdit" name="lineEdit_user"/>
+                <widget class="QLineEdit" name="lineEdit_user">
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                </widget>
                </item>
               </layout>
              </widget>
@@ -238,6 +258,12 @@
                 <width>200</width>
                 <height>16777215</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
               </property>
               <property name="text">
                <string>Promote</string>

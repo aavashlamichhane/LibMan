@@ -73,6 +73,13 @@
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>24</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;Request a book:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
@@ -122,6 +129,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_7">
             <item>
              <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Book Name:</string>
               </property>
@@ -140,7 +153,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_8">
             <item>
-             <widget class="QLineEdit" name="lineEdit_name"/>
+             <widget class="QLineEdit" name="lineEdit_name">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -189,6 +209,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_9">
             <item>
              <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Author Name:</string>
               </property>
@@ -207,7 +233,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_10">
             <item>
-             <widget class="QLineEdit" name="lineEdit_aname"/>
+             <widget class="QLineEdit" name="lineEdit_aname">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -256,6 +289,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_11">
             <item>
              <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Published Date:</string>
               </property>
@@ -281,6 +320,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
              <widget class="QDateEdit" name="dateEdit">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="displayFormat">
                <string>yyyy-MM-dd</string>
               </property>
@@ -336,6 +381,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_13">
             <item>
              <widget class="QLabel" name="label_5">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Publication:</string>
               </property>
@@ -354,7 +405,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_15">
             <item>
-             <widget class="QLineEdit" name="lineEdit_pub"/>
+             <widget class="QLineEdit" name="lineEdit_pub">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -403,6 +461,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_16">
             <item>
              <widget class="QLabel" name="label_6">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>ISBN number:</string>
               </property>
@@ -421,7 +485,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_17">
             <item>
-             <widget class="QLineEdit" name="lineEdit_num"/>
+             <widget class="QLineEdit" name="lineEdit_num">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -445,6 +516,12 @@
              <width>200</width>
              <height>16777215</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Times New Roman</family>
+             <pointsize>12</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Request</string>

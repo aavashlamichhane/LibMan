@@ -111,6 +111,13 @@
            <layout class="QVBoxLayout" name="verticalLayout_8">
             <item>
              <widget class="QLabel" name="label_name">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>24</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
               <property name="text">
                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:700;&quot;&gt;Admin Pannel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
@@ -240,6 +247,12 @@
                 <height>50</height>
                </size>
               </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
               <property name="text">
                <string>Issue Book</string>
               </property>
@@ -341,6 +354,12 @@
                 <width>130</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
               </property>
               <property name="text">
                <string>Return Book</string>
@@ -468,6 +487,12 @@
                    <height>50</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
                  <property name="text">
                   <string>Update Book Stock</string>
                  </property>
@@ -572,6 +597,12 @@
                 <width>130</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
               </property>
               <property name="text">
                <string>Add books</string>
@@ -698,6 +729,12 @@
                    <width>130</width>
                    <height>50</height>
                   </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Times New Roman</family>
+                   <pointsize>12</pointsize>
+                  </font>
                  </property>
                  <property name="text">
                   <string>Promote to Admin</string>
