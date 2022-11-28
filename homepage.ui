@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1094</width>
-    <height>645</height>
+    <width>1169</width>
+    <height>691</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,29 +44,28 @@
       <property name="bottomMargin">
        <number>0</number>
       </property>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
+      <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+       <widget class="QLabel" name="Logo">
+        <property name="minimumSize">
          <size>
-          <width>350</width>
-          <height>20</height>
+          <width>0</width>
+          <height>140</height>
          </size>
         </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QLabel" name="Logo">
+        <property name="maximumSize">
+         <size>
+          <width>158</width>
+          <height>150</height>
+         </size>
+        </property>
         <property name="text">
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>:/Icon/Icon/Logo no BG.png</pixmap>
+         <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -656,8 +655,8 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>892</width>
-                    <height>467</height>
+                    <width>967</width>
+                    <height>435</height>
                    </rect>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_6">

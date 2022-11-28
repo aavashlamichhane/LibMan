@@ -190,7 +190,7 @@ void studentHomePage::on_pushButton_search_clicked()
 
                 ui->frame_display_head->hide();
 
-                ui->frame_display->setGeometry(10,50,900,550);
+                ui->frame_display->setGeometry(10,0,900,550);
 
                 QLabel *lab1=new QLabel("Search Result For "+strtitle);
                 // QFrame *line1=new QFrame;
@@ -251,7 +251,7 @@ void studentHomePage::on_pushButton_search_clicked()
 
                     ui->frame_display_head->hide();
 
-                    ui->frame_display->setGeometry(10,50,900,550);
+                    ui->frame_display->setGeometry(10,0,900,550);
                     QLabel *lab1=new QLabel("Search Result For "+strisbn);
                     // QFrame *line1=new QFrame;
 
