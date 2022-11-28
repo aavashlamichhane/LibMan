@@ -5,14 +5,19 @@
 
 #include<QMessageBox>
 
-setWindowFlags(Qt::WindowFlags() | Qt::WindowMinimizeButtonHint);
+
+
 
 HomePage::HomePage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::HomePage)
 {
 
-    ui->setupUi(this);
+
+    ui->setupUi(this);\
+
+
+
     data = QSqlDatabase::addDatabase("QMYSQL","Home");
     data.setHostName("127.0.0.1");
     data.setUserName("root");

@@ -87,7 +87,7 @@
               </property>
               <property name="icon">
                <iconset resource="Resource.qrc">
-                <normaloff>:/rec/drive-download-20221026T014232Z-001/left.png</normaloff>:/rec/drive-download-20221026T014232Z-001/left.png</iconset>
+                <normaloff>:/rec/drive-download-20221026T014232Z-001/001-home.png</normaloff>:/rec/drive-download-20221026T014232Z-001/001-home.png</iconset>
               </property>
               <property name="iconSize">
                <size>
