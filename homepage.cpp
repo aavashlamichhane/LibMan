@@ -42,21 +42,21 @@ HomePage::HomePage(QWidget *parent) :
         aname[i-1]=qry_lat.value(2).toString();
         qry_lat.next();
     }
-    ui->label_b1->setText(title[0]);
-    ui->label_a1->setText(aname[0]);
-    ui->label_i1->setText(isbn[0]);
-    ui->label_b2->setText(title[1]);
-    ui->label_a2->setText(aname[1]);
-    ui->label_i2->setText(isbn[1]);
-    ui->label_b3->setText(title[2]);
-    ui->label_a3->setText(aname[2]);
-    ui->label_i3->setText(isbn[2]);
-    ui->label_b4->setText(title[3]);
-    ui->label_a4->setText(aname[3]);
-    ui->label_i4->setText(isbn[3]);
-    ui->label_b5->setText(title[4]);
-    ui->label_a5->setText(aname[4]);
-    ui->label_i5->setText(isbn[4]);
+    ui->label_b1->setText("Book : "+title[0]);
+    ui->label_a1->setText("Author : "+aname[0]);
+    ui->label_i1->setText("ISBN Num : "+isbn[0]);
+    ui->label_b2->setText("Book : "+title[1]);
+    ui->label_a2->setText("Author : "+aname[1]);
+    ui->label_i2->setText("ISBN Num : "+isbn[1]);
+    ui->label_b3->setText("Book : "+title[2]);
+    ui->label_a3->setText("Author : "+aname[2]);
+    ui->label_i3->setText("ISBN Num : "+isbn[2]);
+    ui->label_b4->setText("Book : "+title[3]);
+    ui->label_a4->setText("Author : "+aname[3]);
+    ui->label_i4->setText("ISBN Num : "+isbn[3]);
+    ui->label_b5->setText("Book : "+title[4]);
+    ui->label_a5->setText("Author : "+aname[4]);
+    ui->label_i5->setText("ISBN Num : "+isbn[4]);
     if(!query.isActive())
     {
         QMessageBox::information(0,"Bad Query", "BAD Query. It's not active");

@@ -544,6 +544,9 @@
                 <layout class="QVBoxLayout" name="verticalLayout_8">
                  <item>
                   <widget class="QScrollArea" name="scrollArea">
+                   <property name="frameShape">
+                    <enum>QFrame::NoFrame</enum>
+                   </property>
                    <property name="widgetResizable">
                     <bool>true</bool>
                    </property>
@@ -552,8 +555,8 @@
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>950</width>
-                      <height>560</height>
+                      <width>1003</width>
+                      <height>574</height>
                      </rect>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout">
@@ -567,14 +570,22 @@
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_6">
                         <item>
-                         <widget class="QLabel" name="label_b1">
+                         <widget class="QPushButton" name="label_b1">
+                          <property name="styleSheet">
+                           <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
+
+</string>
+                          </property>
                           <property name="text">
-                           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           <string>PushButton</string>
                           </property>
                          </widget>
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a1">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Author:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                           </property>
@@ -582,6 +593,9 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i1">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>ISBN number:</string>
                           </property>
@@ -600,14 +614,22 @@
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_7">
                         <item>
-                         <widget class="QLabel" name="label_b2">
+                         <widget class="QPushButton" name="label_b2">
+                          <property name="styleSheet">
+                           <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
+
+</string>
+                          </property>
                           <property name="text">
-                           <string>TextLabel</string>
+                           <string>PushButton</string>
                           </property>
                          </widget>
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a2">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -615,6 +637,9 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i2">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -633,14 +658,22 @@
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_9">
                         <item>
-                         <widget class="QLabel" name="label_b3">
+                         <widget class="QPushButton" name="label_b3">
+                          <property name="styleSheet">
+                           <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
+
+</string>
+                          </property>
                           <property name="text">
-                           <string>TextLabel</string>
+                           <string>PushButton</string>
                           </property>
                          </widget>
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a3">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -648,6 +681,9 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i3">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -666,14 +702,22 @@
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_10">
                         <item>
-                         <widget class="QLabel" name="label_b4">
+                         <widget class="QPushButton" name="label_b4">
+                          <property name="styleSheet">
+                           <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
+
+</string>
+                          </property>
                           <property name="text">
-                           <string>TextLabel</string>
+                           <string>PushButton</string>
                           </property>
                          </widget>
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a4">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -681,6 +725,9 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i4">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -699,14 +746,22 @@
                        </property>
                        <layout class="QVBoxLayout" name="verticalLayout_11">
                         <item>
-                         <widget class="QLabel" name="label_b5">
+                         <widget class="QPushButton" name="label_b5">
+                          <property name="styleSheet">
+                           <string notr="true">background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;
+
+</string>
+                          </property>
                           <property name="text">
-                           <string>TextLabel</string>
+                           <string>PushButton</string>
                           </property>
                          </widget>
                         </item>
                         <item>
                          <widget class="QLabel" name="label_a5">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
@@ -714,6 +769,9 @@
                         </item>
                         <item>
                          <widget class="QLabel" name="label_i5">
+                          <property name="styleSheet">
+                           <string notr="true">font: 11pt &quot;Segoe UI&quot;;</string>
+                          </property>
                           <property name="text">
                            <string>TextLabel</string>
                           </property>
