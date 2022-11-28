@@ -50,28 +50,27 @@
          <number>0</number>
         </property>
         <item>
-         <spacer name="horizontalSpacer">
-          <property name="orientation">
-           <enum>Qt::Horizontal</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Fixed</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
+         <widget class="QLabel" name="Logo">
+          <property name="minimumSize">
            <size>
-            <width>350</width>
-            <height>20</height>
+            <width>0</width>
+            <height>148</height>
            </size>
           </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="Logo">
+          <property name="maximumSize">
+           <size>
+            <width>148</width>
+            <height>16777215</height>
+           </size>
+          </property>
           <property name="text">
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap>:/Icon/Icon/Logo no BG.png</pixmap>
+           <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
           </property>
          </widget>
         </item>
@@ -654,7 +653,7 @@
                       <x>0</x>
                       <y>0</y>
                       <width>929</width>
-                      <height>541</height>
+                      <height>463</height>
                      </rect>
                     </property>
                     <layout class="QVBoxLayout" name="verticalLayout">
