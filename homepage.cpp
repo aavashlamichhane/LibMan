@@ -60,7 +60,7 @@ HomePage::HomePage(QWidget *parent) :
 
     ui->label_b1->setStyleSheet(
                 "   QPushButton {"
-                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                 " }"
                 " QPushButton:hover {"
                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -68,7 +68,7 @@ HomePage::HomePage(QWidget *parent) :
 
     ui->label_b2->setStyleSheet(
                 "   QPushButton {"
-                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                 " }"
                 " QPushButton:hover {"
                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -76,7 +76,7 @@ HomePage::HomePage(QWidget *parent) :
 
     ui->label_b3->setStyleSheet(
                 "   QPushButton {"
-                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                 " }"
                 " QPushButton:hover {"
                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -84,7 +84,7 @@ HomePage::HomePage(QWidget *parent) :
 
     ui->label_b4->setStyleSheet(
                 "   QPushButton {"
-                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                 " }"
                 " QPushButton:hover {"
                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -92,7 +92,7 @@ HomePage::HomePage(QWidget *parent) :
 
     ui->label_b5->setStyleSheet(
                 "   QPushButton {"
-                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                 " }"
                 " QPushButton:hover {"
                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -217,7 +217,7 @@ void HomePage::on_pushButton_search_clicked()
 
                 label->setStyleSheet(
                             "   QPushButton {"
-                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                             " }"
                             " QPushButton:hover {"
                             "     color: rgb(0, 0, 0);font-size:25px;"
@@ -225,8 +225,13 @@ void HomePage::on_pushButton_search_clicked()
 
                 lab1->setStyleSheet(
                             "   QLabel {"
-                            "     background:transparent; Text-align:left;font-family:century gothic;font-size:28px; color:black;"
+                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:28px; color:black;"
                             " }");
+
+                lab->setStyleSheet(
+                                            "   QLabel {"
+                                            "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:12px; color:black;"
+                                            " }");
 
 
                 lay->addWidget(lab1);
@@ -272,7 +277,7 @@ void HomePage::on_pushButton_search_clicked()
 
                     label->setStyleSheet(
                                 "   QPushButton {"
-                                "     background:transparent; Text-align:left;font-family:century gothic;font-size:18px; color:black;"
+                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:18px; color:black;"
                                 " }"
                                 " QPushButton:hover {"
                                 "     color: rgb(0, 0, 0);font-size:25px;"
@@ -280,8 +285,13 @@ void HomePage::on_pushButton_search_clicked()
 
                     lab1->setStyleSheet(
                                 "   QLabel {"
-                                "     background:transparent; Text-align:left;font-family:century gothic;font-size:28px; color:black;"
+                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:28px; color:black;"
                                 " }");
+
+                    lab->setStyleSheet(
+                                                "   QLabel {"
+                                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:12px; color:black;"
+                                                " }");
 
                     lay->addWidget(lab1);
                     //lay->addWidget(line1);

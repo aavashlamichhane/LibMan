@@ -246,7 +246,7 @@
              <widget class="QPushButton" name="pushButton_issuebook">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
@@ -354,7 +354,7 @@
              <widget class="QPushButton" name="pushButton_returnbook">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
@@ -486,7 +486,7 @@
                 <widget class="QPushButton" name="pushButton_updatebook">
                  <property name="maximumSize">
                   <size>
-                   <width>130</width>
+                   <width>160</width>
                    <height>50</height>
                   </size>
                  </property>
@@ -597,7 +597,7 @@
              <widget class="QPushButton" name="pushButton_addbook">
               <property name="maximumSize">
                <size>
-                <width>130</width>
+                <width>160</width>
                 <height>50</height>
                </size>
               </property>
@@ -729,7 +729,7 @@
                 <widget class="QPushButton" name="pushButton_promote">
                  <property name="maximumSize">
                   <size>
-                   <width>130</width>
+                   <width>160</width>
                    <height>50</height>
                   </size>
                  </property>

@@ -317,7 +317,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>ISBN NUM</string>
+                  <string>ISBN</string>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
