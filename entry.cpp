@@ -55,13 +55,14 @@ void entry::on_pushButton_clicked()
         QString nC = ui->lineEdit_copies->text();
         QString nP = ui->lineEdit_page->text();
         QString des = ui->textEdit_description->toPlainText();
+        QDate today=QDate::currentDate();
 
         if(countDigit(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
         else
         {
             QSqlQuery qry(dEntry);
-            qry.prepare("INSERT INTO books(isbn_no,title,author,pages,published_date,published_by,num_copies,description)""VALUES(:isbn_no,:title,:author,:pages,:published_date,:published_by,:num_copies,:description)");
+            qry.prepare("INSERT INTO books(isbn_no,title,author,pages,published_date,published_by,num_copies,description,date_added)""VALUES(:isbn_no,:title,:author,:pages,:published_date,:published_by,:num_copies,:description,:date_added)");
             qry.bindValue(":title",bN);
             qry.bindValue(":author",aN);
             qry.bindValue(":pages",nP);
@@ -70,6 +71,7 @@ void entry::on_pushButton_clicked()
             qry.bindValue(":published_by",pB);
             qry.bindValue(":num_copies",nC);
             qry.bindValue(":description",des);
+            qry.bindValue(":date_added",today);
 
             if(qry.exec())
             {
