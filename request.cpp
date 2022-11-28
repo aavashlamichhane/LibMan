@@ -13,7 +13,8 @@ Request::~Request()
     delete ui;
 }
 
-int countDigitss(long long n)
+template<class tt>
+int countDigitss(tt n)
 {
    int a=0;
    while(n!=0)
@@ -35,12 +36,15 @@ void Request::on_pushButton_clicked()
     {
         QString bN=ui->lineEdit_name->text();
         QString aN=ui->lineEdit_aname->text();
-        QDate date=ui->dateEdit->date();
+        QString date=ui->lineEdit_year->text();
         QString pub=ui->lineEdit_pub->text();
         long long chk = ui->lineEdit_num->text().toLongLong();
+        int year=ui->lineEdit_year->text().toInt();
         QString iN=ui->lineEdit_num->text();
-        if(countDigitss(chk)!=13)
+        if(countDigitss<long long>(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
+        else if(countDigitss<int>(year)!=4)
+            QMessageBox::warning(this,"Error","Date is not correct. Please try again.");
         else
         {
             QSqlQuery qry(drequest);

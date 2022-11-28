@@ -296,7 +296,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Published Date:</string>
+               <string>Published Year:</string>
               </property>
              </widget>
             </item>
@@ -319,20 +319,7 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
-             <widget class="QDateEdit" name="dateEdit">
-              <property name="font">
-               <font>
-                <family>Times New Roman</family>
-                <pointsize>12</pointsize>
-               </font>
-              </property>
-              <property name="displayFormat">
-               <string>yyyy-MM-dd</string>
-              </property>
-              <property name="calendarPopup">
-               <bool>true</bool>
-              </property>
-             </widget>
+             <widget class="QLineEdit" name="lineEdit_year"/>
             </item>
            </layout>
           </widget>
