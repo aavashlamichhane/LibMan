@@ -37,6 +37,8 @@ private slots:
 
     void on_pushButton_notifydelay_clicked();
 
+    void on_lineEdit_search_returnPressed();
+
 private:
     Ui::HomePage *ui;
     Settings *settings;

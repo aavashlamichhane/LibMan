@@ -96,3 +96,15 @@ void MainWindow::on_pushButton_5_clicked()
 
 }
 
+
+void MainWindow::on_username_login_returnPressed()
+{
+    on_Login_3_clicked();
+}
+
+
+void MainWindow::on_password_login_returnPressed()
+{
+    on_Login_3_clicked();
+}
+
