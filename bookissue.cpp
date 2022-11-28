@@ -9,6 +9,8 @@ bookissue::bookissue(QWidget *parent) :
     ui(new Ui::bookissue)
 {
     ui->setupUi(this);
+    ui->dateEdit_issue->setDate(QDate::currentDate());
+    ui->dateEdit_expiry->setDate(QDate::currentDate().addMonths(1));
 }
 
 bookissue::~bookissue()
