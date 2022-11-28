@@ -1,7 +1,7 @@
 #include "signup.h"
-#include "ui_mainwindow.h"
 #include "ui_signup.h"
 #include "mainwindow.h"
+#include "ui_mainwindow.h"
 
 MainWindow *login;
 int countDigits(long long n)
@@ -15,9 +15,10 @@ int countDigits(long long n)
    return a;
 }
 SignUp::SignUp(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::SignUp)
 {
+    ui->setupUi(this);
     ui->setupUi(this);
     database = QSqlDatabase::addDatabase("QMYSQL");
     database.setHostName("127.0.0.1");
@@ -41,9 +42,9 @@ SignUp::~SignUp()
 
 void SignUp::on_pushbutton_login_clicked()
 {
-    hide();
+    close();
     login= new MainWindow(this);
-    login->show();
+    login->showMaximized();
 }
 
 
@@ -101,7 +102,3 @@ void SignUp::on_pushButton_clicked()
     }
     database.close();
 }
-
-
-
-

@@ -1,7 +1,7 @@
 #ifndef ADMINPANNEL_H
 #define ADMINPANNEL_H
 
-#include <QDialog>
+#include <QMainWindow>
 #include "entry.h"
 #include "bookissue.h"
 #include "returnbook.h"
@@ -12,14 +12,13 @@ namespace Ui {
 class adminpannel;
 }
 
-class adminpannel : public QDialog
+class adminpannel : public QMainWindow
 {
     Q_OBJECT
 
 public:
     explicit adminpannel(QWidget *parent = nullptr);
     ~adminpannel();
-
 private slots:
     void on_pushButton_addbook_clicked();
 

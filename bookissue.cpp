@@ -104,10 +104,10 @@ void bookissue::on_pushButton_clicked()
 }
 
 
+
+
 void bookissue::on_pushButton_back_clicked()
 {
     close();
-    app =new adminpannel(this);
-    app->show();
 }
 

@@ -3,9 +3,8 @@
 #include"mainwindow.h"
 #include <QSqlQueryModel>
 
-
 studentHomePage::studentHomePage(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::studentHomePage)
 {
     ui->setupUi(this);
@@ -105,17 +104,17 @@ studentHomePage::~studentHomePage()
 
 void studentHomePage::on_pushButton_settings_clicked()
 {
-    hide();
+    close();
     settings =new Settings(this);
-    settings->show();
+    settings->showMaximized();
 }
 
 
 void studentHomePage::on_pushButton_user_clicked()
 {
-    hide();
+    close();
     info = new UserInfo(this);
-    info->show();
+    info->showMaximized();
 }
 
 
@@ -334,8 +333,9 @@ void studentHomePage::on_lineEdit_search_returnPressed()
 
 void studentHomePage::on_pushButton_home_clicked()
 {
-    hide();
+    close();
     shp=new studentHomePage(this);
-    shp->show();
+    shp->showMaximized();
 }
+
 

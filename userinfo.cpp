@@ -7,7 +7,7 @@ HomePage *hp;
 studentHomePage *shps;
 
 UserInfo::UserInfo(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::UserInfo)
 {
     ui->setupUi(this);
@@ -50,20 +50,17 @@ UserInfo::UserInfo(QWidget *parent) :
     ui->label_job->setText("Customer");
     else
     ui->label_job->setText("Staff");
-
 }
 
 UserInfo::~UserInfo()
 {
-    data_info.close();
     delete ui;
 }
-
 void UserInfo::on_pushButton_editprofile_clicked()
 {
     hide();
     ep=new editProfile(this);
-    ep->show();
+    ep->showMaximized();
 }
 
 
@@ -75,14 +72,13 @@ void UserInfo::on_pushButton_home_clicked()
     {
         hide();
         hp=new HomePage(this);
-        hp->show();
+        hp->showMaximized();
     }
     else
     {
         hide();
         shps=new studentHomePage(this);
-        shps->show();
+        shps->showMaximized();
 
     }
 }
-

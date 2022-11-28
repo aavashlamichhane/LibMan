@@ -19,6 +19,12 @@ chkreq::chkreq(QWidget *parent) :
 
     qry->exec();
     modal->setQuery(*qry);
+    modal->setHeaderData(0, Qt::Horizontal, tr("Book Name"));
+    modal->setHeaderData(1, Qt::Horizontal, tr("Author"));
+    modal->setHeaderData(2, Qt::Horizontal, tr("Date Published"));
+    modal->setHeaderData(3, Qt::Horizontal, tr("Publication"));
+    modal->setHeaderData(4, Qt::Horizontal, tr("ISBN"));
+
     ui->tableView->setModel(modal);
 }
 

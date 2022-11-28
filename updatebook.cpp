@@ -52,10 +52,11 @@ void UpdateBook::on_pushButton_clicked()
 }
 
 
+
+
+
 void UpdateBook::on_pushButton_back_clicked()
 {
     close();
-    panel = new adminpannel(this);
-    panel->show();
 }
 

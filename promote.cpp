@@ -57,10 +57,10 @@ void promote::on_pushButton_clicked()
 }
 
 
+
+
 void promote::on_pushButton_back_clicked()
 {
     close();
-    apl = new adminpannel(this);
-    apl->show();
 }
 

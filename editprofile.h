@@ -1,7 +1,7 @@
 #ifndef EDITPROFILE_H
 #define EDITPROFILE_H
 
-#include <QDialog>
+#include <QMainWindow>
 #include<QSqlQuery>
 #include<QtSql>
 #include<QSqlDatabase>
@@ -10,7 +10,7 @@ namespace Ui {
 class editProfile;
 }
 
-class editProfile : public QDialog
+class editProfile : public QMainWindow
 {
     Q_OBJECT
 

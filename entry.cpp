@@ -29,12 +29,7 @@ entry::~entry()
     delete ui;
 }
 
-void entry::on_pushButton_2_clicked()
-{
-    hide();
-    adm = new adminpannel(this);
-    adm->show();
-}
+
 
 
 void entry::on_pushButton_clicked()
@@ -103,4 +98,10 @@ void entry::on_pushButton_clicked()
 
 
 
+
+
+void entry::on_pushButton_2_clicked()
+{
+    close();
+}
 

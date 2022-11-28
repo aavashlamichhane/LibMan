@@ -7,10 +7,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    HomePage h;
-    h.setWindowFlags(Qt::Window);
 
-    w.show();
+
+    w.showMaximized();
     return a.exec();
 
 

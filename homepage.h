@@ -1,7 +1,7 @@
 #ifndef HOMEPAGE_H
 #define HOMEPAGE_H
 
-#include <QDialog>
+#include <QMainWindow>
 #include "settings.h"
 #include "userinfo.h"
 #include "adminpannel.h"
@@ -10,11 +10,12 @@
 #include "chkreq.h"
 #include<QSqlDatabase>
 #include<QtSql>
+
 namespace Ui {
 class HomePage;
 }
 
-class HomePage : public QDialog
+class HomePage : public QMainWindow
 {
     Q_OBJECT
 
@@ -51,7 +52,6 @@ private:
     booklist *blist;
     chkreq *chk;
     HomePage *hp;
-
 };
 
 #endif // HOMEPAGE_H

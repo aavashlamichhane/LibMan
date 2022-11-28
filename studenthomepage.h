@@ -1,7 +1,7 @@
 #ifndef STUDENTHOMEPAGE_H
 #define STUDENTHOMEPAGE_H
 
-#include <QDialog>
+#include <QMainWindow>
 #include<QtSql>
 #include<QSqlDatabase>
 #include<QMessageBox>
@@ -15,7 +15,7 @@ namespace Ui {
 class studentHomePage;
 }
 
-class studentHomePage : public QDialog
+class studentHomePage : public QMainWindow
 {
     Q_OBJECT
 

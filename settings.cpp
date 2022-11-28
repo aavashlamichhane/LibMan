@@ -1,4 +1,3 @@
-
 #include "settings.h"
 #include "ui_settings.h"
 #include "mainwindow.h"
@@ -10,7 +9,7 @@ MainWindow *mp;
 studentHomePage *shp;
 
 Settings::Settings(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::Settings)
 {
     ui->setupUi(this);
@@ -23,9 +22,9 @@ Settings::~Settings()
 
 void Settings::on_pushButton_logout_clicked()
 {
-    hide();
+    close();
     mp=new MainWindow(this);
-    mp->show();
+    mp->showMaximized();
 }
 
 
@@ -35,15 +34,15 @@ void Settings::on_pushButton_home_clicked()
 
     if(check=="1")
     {
-        hide();
+        close();
         hps=new HomePage(this);
-        hps->show();
+        hps->showMaximized();
     }
     else
     {
-        hide();
+        close();
         shp=new studentHomePage(this);
-        shp->show();
+        shp->showMaximized();
 
     }
 }
@@ -68,4 +67,3 @@ void Settings::on_pushButton_about_clicked()
     abt=new about(this);
     abt->show();
 }
-

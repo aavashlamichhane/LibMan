@@ -1,7 +1,7 @@
 #ifndef USERINFO_H
 #define USERINFO_H
 
-#include <QDialog>
+#include <QMainWindow>
 #include<QSqlDatabase>
 #include<QtSql>
 #include"editprofile.h"
@@ -11,7 +11,7 @@ namespace Ui {
 class UserInfo;
 }
 
-class UserInfo : public QDialog
+class UserInfo : public QMainWindow
 {
     Q_OBJECT
 

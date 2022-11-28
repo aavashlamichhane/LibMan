@@ -1,20 +1,13 @@
 #include "homepage.h"
 #include "ui_homepage.h"
 #include <QSqlQueryModel>
-
-
 #include<QMessageBox>
 
-
 HomePage::HomePage(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::HomePage)
 {
-
-
-    ui->setupUi(this);\
-
-
+    ui->setupUi(this);
 
     data = QSqlDatabase::addDatabase("QMYSQL","Home");
     data.setHostName("127.0.0.1");
@@ -105,6 +98,7 @@ HomePage::HomePage(QWidget *parent) :
     }
 }
 
+
 HomePage::~HomePage()
 {
     delete ui;
@@ -114,23 +108,23 @@ void HomePage::on_pushButton_settings_clicked()
 {
     close();
     settings =new Settings(this);
-    settings->show();
+    settings->showMaximized();
 }
 
 
 void HomePage::on_pushButton_user_clicked()
 {
-    hide();
+    close();
     info = new UserInfo(this);
-    info->show();
+    info->showMaximized();
 }
 
 
 void HomePage::on_pushButton_adminpanel_clicked()
 {
-    hide();
+    close();
     admin =new adminpannel(this);
-    admin->show();
+    admin->showMaximized();
 }
 
 
@@ -342,8 +336,9 @@ void HomePage::on_lineEdit_search_returnPressed()
 
 void HomePage::on_pushButton_home_clicked()
 {
-    hide();
+    close();
     hp = new HomePage(this);
-    hp->show();
+    hp->showMaximized();
 }
+
 

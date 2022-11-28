@@ -17,12 +17,7 @@ returnBook::~returnBook()
     delete ui;
 }
 
-void returnBook::on_pushButton_back_clicked()
-{
-    close();
-    pan = new adminpannel(this);
-    pan->show();
-}
+
 
 
 void returnBook::on_pushButton_clicked()
@@ -69,5 +64,11 @@ void returnBook::on_pushButton_clicked()
             QMessageBox::warning(this,"Return","Book return failed.");
     }
 
+}
+
+
+void returnBook::on_pushButton_back_clicked()
+{
+    close();
 }
 

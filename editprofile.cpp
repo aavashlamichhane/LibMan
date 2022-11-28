@@ -15,8 +15,9 @@ int countDigitsss(long long n)
    }
    return a;
 }
+
 editProfile::editProfile(QWidget *parent) :
-    QDialog(parent),
+    QMainWindow(parent),
     ui(new Ui::editProfile)
 {
     ui->setupUi(this);
@@ -70,11 +71,12 @@ editProfile::~editProfile()
     delete ui;
 }
 
+
 void editProfile::on_pushButton_2_clicked()
 {
-    hide();
+    close();
     info1=new UserInfo(this);
-    info1->show();
+    info1->showMaximized();
 }
 
 

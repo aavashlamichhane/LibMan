@@ -32,7 +32,7 @@ void MainWindow::on_pushButton_6_clicked()
 {
     hide();
     signup=new SignUp(this);
-    signup->show();
+    signup->showMaximized();
 }
 
 
@@ -68,13 +68,13 @@ void MainWindow::on_Login_3_clicked()
                 {
                     hide();
                     homepage=new HomePage(this);
-                    homepage->show();
+                    homepage->showMaximized();
                 }
                 else
                 {
                     hide();
                     shomepage=new studentHomePage(this);
-                    shomepage->show();
+                    shomepage->showMaximized();
 
                 }
 
