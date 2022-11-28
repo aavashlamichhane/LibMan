@@ -15,11 +15,17 @@ mybooklist::mybooklist(QWidget *parent) :
     QSqlQueryModel *modal=new QSqlQueryModel();
     QSqlQuery *qry= new QSqlQuery(dal);
     extern QString usernameg;
-    qry->prepare("SELECT * FROM borrows WHERE username=:username");
+    qry->prepare("SELECT book_name,isbn_no,date_taken,date_returned,date_tobeReturned FROM borrows WHERE username=:username");
     qry->bindValue(":username",usernameg);
     qry->exec();
     modal->setQuery(*qry);
+    modal->setHeaderData(0, Qt::Horizontal, tr("Book Name"));
+    modal->setHeaderData(1, Qt::Horizontal, tr("ISBN"));
+    modal->setHeaderData(2, Qt::Horizontal, tr("Date Issued"));
+    modal->setHeaderData(3, Qt::Horizontal, tr("Date Returned"));
+    modal->setHeaderData(4, Qt::Horizontal, tr("Expiry Date"));
     ui->tableView->setModel(modal);
+    ui->tableView->resizeColumnsToContents();
 }
 
 mybooklist::~mybooklist()
