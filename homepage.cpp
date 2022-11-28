@@ -98,6 +98,7 @@ HomePage::HomePage(QWidget *parent) :
                 "     color: rgb(0, 0, 0);font-size:25px;"
                 " }");
 
+
     if(!query.isActive())
     {
         QMessageBox::information(0,"Bad Query", "BAD Query. It's not active");
@@ -326,5 +327,13 @@ void HomePage::on_pushButton_notifydelay_clicked()
 void HomePage::on_lineEdit_search_returnPressed()
 {
     on_pushButton_search_clicked();
+}
+
+
+void HomePage::on_pushButton_home_clicked()
+{
+    hide();
+    hp = new HomePage(this);
+    hp->show();
 }
 

@@ -44,6 +44,8 @@ private slots:
 
     void on_lineEdit_search_returnPressed();
 
+    void on_pushButton_home_clicked();
+
 private:
     Ui::studentHomePage *ui;
     QSqlDatabase db_stdhome;
@@ -54,6 +56,7 @@ private:
     QSqlDatabase data;
     mybooklist *list;
     booklist *book;
+    studentHomePage *shp;
 };
 
 #endif // STUDENTHOMEPAGE_H

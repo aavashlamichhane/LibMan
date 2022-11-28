@@ -39,6 +39,8 @@ private slots:
 
     void on_lineEdit_search_returnPressed();
 
+    void on_pushButton_home_clicked();
+
 private:
     Ui::HomePage *ui;
     Settings *settings;
@@ -48,6 +50,7 @@ private:
     mybooklist *mblist;
     booklist *blist;
     chkreq *chk;
+    HomePage *hp;
 
 };
 
