@@ -10,6 +10,7 @@ returnBook::returnBook(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->dateEdit_issue->setDate(QDate::currentDate());
+    this->setWindowTitle("LibMan");
 }
 
 returnBook::~returnBook()

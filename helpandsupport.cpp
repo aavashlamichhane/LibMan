@@ -6,6 +6,7 @@ helpandsupport::helpandsupport(QWidget *parent) :
     ui(new Ui::helpandsupport)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 helpandsupport::~helpandsupport()

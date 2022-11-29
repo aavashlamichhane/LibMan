@@ -9,6 +9,7 @@ adminpannel::adminpannel(QWidget *parent) :
     ui(new Ui::adminpannel)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 adminpannel::~adminpannel()

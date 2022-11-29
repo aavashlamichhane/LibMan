@@ -6,6 +6,7 @@ resetpass::resetpass(QWidget *parent) :
     ui(new Ui::resetpass)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 resetpass::~resetpass()

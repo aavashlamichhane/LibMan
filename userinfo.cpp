@@ -11,6 +11,7 @@ UserInfo::UserInfo(QWidget *parent) :
     ui(new Ui::UserInfo)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     data_info = QSqlDatabase::addDatabase("QMYSQL","Info");
     data_info.setHostName("127.0.0.1");
     data_info.setUserName("root");

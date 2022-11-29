@@ -9,6 +9,7 @@ promote::promote(QWidget *parent) :
     ui(new Ui::promote)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 promote::~promote()

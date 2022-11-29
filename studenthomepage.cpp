@@ -8,6 +8,7 @@ studentHomePage::studentHomePage(QWidget *parent) :
     ui(new Ui::studentHomePage)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     data = QSqlDatabase::addDatabase("QMYSQL","sHome");
     data.setHostName("127.0.0.1");
     data.setUserName("root");

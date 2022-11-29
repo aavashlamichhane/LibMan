@@ -38,6 +38,7 @@ forgotpass::forgotpass(QWidget *parent) :
     ui(new Ui::forgotpass)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 forgotpass::~forgotpass()

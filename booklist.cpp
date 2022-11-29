@@ -6,6 +6,7 @@ booklist::booklist(QWidget *parent) :
     ui(new Ui::booklist)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     dalb = QSqlDatabase::addDatabase("QMYSQL","BList");
     dalb.setHostName("127.0.0.1");
     dalb.setUserName("root");

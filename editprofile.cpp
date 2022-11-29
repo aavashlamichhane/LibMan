@@ -58,6 +58,7 @@ editProfile::editProfile(QWidget *parent) :
     ui(new Ui::editProfile)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     data_info = QSqlDatabase::addDatabase("QMYSQL","Info");
     data_info.setHostName("127.0.0.1");
     data_info.setUserName("root");

@@ -6,6 +6,7 @@ chkreq::chkreq(QWidget *parent) :
     ui(new Ui::chkreq)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     dala = QSqlDatabase::addDatabase("QMYSQL","rList");
     dala.setHostName("127.0.0.1");
     dala.setUserName("root");

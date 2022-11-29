@@ -9,6 +9,7 @@ UpdateBook::UpdateBook(QWidget *parent) :
     ui(new Ui::UpdateBook)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 UpdateBook::~UpdateBook()

@@ -22,6 +22,7 @@ entry::entry(QWidget *parent) :
     ui(new Ui::entry)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 entry::~entry()

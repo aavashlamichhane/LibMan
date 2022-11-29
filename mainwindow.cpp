@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("Login");
+    this->setWindowTitle("LibMan");
     QSqlDatabase dab = QSqlDatabase::addDatabase("QMYSQL","LibMan");
     dab.setHostName("127.0.0.1");
     dab.setUserName("root");

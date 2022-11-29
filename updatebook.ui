@@ -190,7 +190,7 @@
              <widget class="QFrame" name="frame_usertxxt">
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>175</width>
                 <height>0</height>
                </size>
               </property>
@@ -285,7 +285,7 @@
              <widget class="QFrame" name="frame_isbnlable">
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>175</width>
                 <height>0</height>
                </size>
               </property>
@@ -302,11 +302,11 @@
                <enum>QFrame::Raised</enum>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_9">
-               <item alignment="Qt::AlignRight">
+               <item>
                 <widget class="QLabel" name="label_isbn">
                  <property name="maximumSize">
                   <size>
-                   <width>110</width>
+                   <width>175</width>
                    <height>40</height>
                   </size>
                  </property>
@@ -317,7 +317,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>Books added:</string>
+                  <string>Number of books added:</string>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>

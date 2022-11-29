@@ -8,7 +8,7 @@ HomePage::HomePage(QWidget *parent) :
     ui(new Ui::HomePage)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("LibMan");
     data = QSqlDatabase::addDatabase("QMYSQL","Home");
     data.setHostName("127.0.0.1");
     data.setUserName("root");
@@ -309,7 +309,7 @@ void HomePage::on_pushButton_search_clicked()
 
 void HomePage::on_pushButton_circulation_clicked()
 {
-    mblist = new mybooklist(this);
+    mblist=new mybooklist(this);
     mblist->show();
 }
 
