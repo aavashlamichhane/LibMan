@@ -108,7 +108,7 @@ HomePage::~HomePage()
 void HomePage::on_pushButton_settings_clicked()
 {
     close();
-    settings =new Settings(this);
+    settings =new Settings();
     settings->showMaximized();
 }
 
@@ -116,7 +116,7 @@ void HomePage::on_pushButton_settings_clicked()
 void HomePage::on_pushButton_user_clicked()
 {
     close();
-    info = new UserInfo(this);
+    info = new UserInfo();
     info->showMaximized();
 }
 
@@ -124,7 +124,7 @@ void HomePage::on_pushButton_user_clicked()
 void HomePage::on_pushButton_adminpanel_clicked()
 {
     close();
-    admin =new adminpannel(this);
+    admin =new adminpannel();
     admin->showMaximized();
 }
 
@@ -338,7 +338,7 @@ void HomePage::on_lineEdit_search_returnPressed()
 void HomePage::on_pushButton_home_clicked()
 {
     close();
-    hp = new HomePage(this);
+    hp = new HomePage();
     hp->showMaximized();
 }
 

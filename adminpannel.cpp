@@ -57,7 +57,7 @@ void adminpannel::on_pushButton_updatebook_clicked()
 void adminpannel::on_pushButton_clicked()
 {
    close();
-   home = new HomePage(this);
+   home = new HomePage();
    home->showMaximized();
 }
 

@@ -61,7 +61,7 @@ UserInfo::~UserInfo()
 void UserInfo::on_pushButton_editprofile_clicked()
 {
     hide();
-    ep=new editProfile(this);
+    ep=new editProfile();
     ep->showMaximized();
 }
 
@@ -73,13 +73,13 @@ void UserInfo::on_pushButton_home_clicked()
     if(check=="1")
     {
         hide();
-        hp=new HomePage(this);
+        hp=new HomePage();
         hp->showMaximized();
     }
     else
     {
         hide();
-        shps=new studentHomePage(this);
+        shps=new studentHomePage();
         shps->showMaximized();
 
     }

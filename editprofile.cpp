@@ -114,7 +114,7 @@ editProfile::~editProfile()
 void editProfile::on_pushButton_2_clicked()
 {
     close();
-    info1=new UserInfo(this);
+    info1=new UserInfo();
     info1->showMaximized();
 }
 

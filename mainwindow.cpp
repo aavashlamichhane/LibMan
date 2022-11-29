@@ -32,8 +32,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_6_clicked()
 {
-    hide();
-    signup=new SignUp(this);
+    close();
+    signup=new SignUp();
     signup->showMaximized();
 }
 
@@ -69,13 +69,13 @@ void MainWindow::on_Login_3_clicked()
                 if(check=="1")
                 {
                     hide();
-                    homepage=new HomePage(this);
+                    homepage=new HomePage();
                     homepage->showMaximized();
                 }
                 else
                 {
                     hide();
-                    shomepage=new studentHomePage(this);
+                    shomepage=new studentHomePage();
                     shomepage->showMaximized();
 
                 }
@@ -96,7 +96,7 @@ void MainWindow::on_Login_3_clicked()
 void MainWindow::on_pushButton_5_clicked()
 {
     close();
-    forg = new forgotpass(this);
+    forg = new forgotpass();
     forg->showMaximized();
 }
 

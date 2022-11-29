@@ -25,7 +25,7 @@ Settings::~Settings()
 void Settings::on_pushButton_logout_clicked()
 {
     close();
-    mp=new MainWindow(this);
+    mp=new MainWindow();
     mp->showMaximized();
 }
 
@@ -37,13 +37,13 @@ void Settings::on_pushButton_home_clicked()
     if(check=="1")
     {
         close();
-        hps=new HomePage(this);
+        hps=new HomePage();
         hps->showMaximized();
     }
     else
     {
         close();
-        shp=new studentHomePage(this);
+        shp=new studentHomePage();
         shp->showMaximized();
 
     }

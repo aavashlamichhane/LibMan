@@ -27,7 +27,6 @@ SOURCES += \
     privacyandsecurity.cpp \
     promote.cpp \
     request.cpp \
-    resetpass.cpp \
     returnbook.cpp \
     settings.cpp \
     signup.cpp \
@@ -51,7 +50,6 @@ HEADERS += \
     privacyandsecurity.h \
     promote.h \
     request.h \
-    resetpass.h \
     returnbook.h \
     settings.h \
     signup.h \
@@ -75,7 +73,6 @@ FORMS += \
     privacyandsecurity.ui \
     promote.ui \
     request.ui \
-    resetpass.ui \
     returnbook.ui \
     settings.ui \
     signup.ui \

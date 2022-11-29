@@ -81,7 +81,7 @@ SignUp::~SignUp()
 void SignUp::on_pushbutton_login_clicked()
 {
     close();
-    login= new MainWindow(this);
+    login= new MainWindow();
     login->showMaximized();
 }
 

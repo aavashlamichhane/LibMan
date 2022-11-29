@@ -50,7 +50,7 @@ forgotpass::~forgotpass()
 void forgotpass::on_pushButton_2_clicked()
 {
     close();
-    mwin = new MainWindow(this);
+    mwin = new MainWindow();
     mwin->showMaximized();
 }
 

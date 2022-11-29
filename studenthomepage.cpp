@@ -107,7 +107,7 @@ studentHomePage::~studentHomePage()
 void studentHomePage::on_pushButton_settings_clicked()
 {
     close();
-    settings =new Settings(this);
+    settings =new Settings();
     settings->showMaximized();
 }
 
@@ -115,7 +115,7 @@ void studentHomePage::on_pushButton_settings_clicked()
 void studentHomePage::on_pushButton_user_clicked()
 {
     close();
-    info = new UserInfo(this);
+    info = new UserInfo();
     info->showMaximized();
 }
 
@@ -336,7 +336,7 @@ void studentHomePage::on_lineEdit_search_returnPressed()
 void studentHomePage::on_pushButton_home_clicked()
 {
     close();
-    shp=new studentHomePage(this);
+    shp=new studentHomePage();
     shp->showMaximized();
 }
 
