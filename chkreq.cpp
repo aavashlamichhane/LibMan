@@ -7,6 +7,7 @@ chkreq::chkreq(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("LibMan");
+    this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
     dala = QSqlDatabase::addDatabase("QMYSQL","rList");
     dala.setHostName("127.0.0.1");
     dala.setUserName("root");

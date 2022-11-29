@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
     this->setWindowTitle("LibMan");
     QSqlDatabase dab = QSqlDatabase::addDatabase("QMYSQL","LibMan");
     dab.setHostName("127.0.0.1");

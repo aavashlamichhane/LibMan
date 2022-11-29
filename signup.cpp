@@ -57,6 +57,7 @@ SignUp::SignUp(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("LibMan");
+    this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
     database = QSqlDatabase::addDatabase("QMYSQL","SignUp");
     database.setHostName("127.0.0.1");
     database.setUserName("root");

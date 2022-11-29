@@ -7,6 +7,7 @@ booklist::booklist(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("LibMan");
+    this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
     dalb = QSqlDatabase::addDatabase("QMYSQL","BList");
     dalb.setHostName("127.0.0.1");
     dalb.setUserName("root");

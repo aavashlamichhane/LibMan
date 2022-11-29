@@ -11,6 +11,7 @@ returnBook::returnBook(QWidget *parent) :
     ui->setupUi(this);
     ui->dateEdit_issue->setDate(QDate::currentDate());
     this->setWindowTitle("LibMan");
+    this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
 }
 
 returnBook::~returnBook()
