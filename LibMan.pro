@@ -18,6 +18,7 @@ SOURCES += \
     chkreq.cpp \
     editprofile.cpp \
     entry.cpp \
+    forgotpass.cpp \
     helpandsupport.cpp \
     homepage.cpp \
     main.cpp \
@@ -26,6 +27,7 @@ SOURCES += \
     privacyandsecurity.cpp \
     promote.cpp \
     request.cpp \
+    resetpass.cpp \
     returnbook.cpp \
     settings.cpp \
     signup.cpp \
@@ -41,6 +43,7 @@ HEADERS += \
     chkreq.h \
     editprofile.h \
     entry.h \
+    forgotpass.h \
     helpandsupport.h \
     homepage.h \
     mainwindow.h \
@@ -48,6 +51,7 @@ HEADERS += \
     privacyandsecurity.h \
     promote.h \
     request.h \
+    resetpass.h \
     returnbook.h \
     settings.h \
     signup.h \
@@ -63,6 +67,7 @@ FORMS += \
     chkreq.ui \
     editprofile.ui \
     entry.ui \
+    forgotpass.ui \
     helpandsupport.ui \
     homepage.ui \
     mainwindow.ui \
@@ -70,6 +75,7 @@ FORMS += \
     privacyandsecurity.ui \
     promote.ui \
     request.ui \
+    resetpass.ui \
     returnbook.ui \
     settings.ui \
     signup.ui \

@@ -10,6 +10,7 @@
 #include "homepage.h"
 #include "userinfo.h"
 #include "studenthomepage.h"
+#include "forgotpass.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -47,6 +48,7 @@ private:
     HomePage *homepage;
     studentHomePage *shomepage;
     QSqlDatabase dab;
+    forgotpass *forg;
 
 
 
