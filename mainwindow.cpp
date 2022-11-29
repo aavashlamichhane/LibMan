@@ -93,7 +93,9 @@ void MainWindow::on_Login_3_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    QMessageBox::question(this,"Login","Username and password do not match.");
+    close();
+    forg = new forgotpass(this);
+    forg->showMaximized();
 }
 
 
