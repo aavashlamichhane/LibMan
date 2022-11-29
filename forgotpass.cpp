@@ -1,8 +1,8 @@
 #include "forgotpass.h"
 #include "ui_forgotpass.h"
 #include "mainwindow.h"
-#include <CkMailMan.h>
-#include <CkEmail.h>
+//#include <CkMailMan.h>
+//#include <CkEmail.h>
 
 MainWindow *mwin;
 int code;
