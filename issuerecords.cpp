@@ -71,3 +71,9 @@ void IssueRecords::on_pushButton_update_clicked()
 
 }
 
+
+void IssueRecords::on_lineEdit_returnPressed()
+{
+    on_pushButton_update_clicked();
+}
+

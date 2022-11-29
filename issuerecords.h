@@ -20,6 +20,8 @@ public:
 private slots:
     void on_pushButton_update_clicked();
 
+    void on_lineEdit_returnPressed();
+
 private:
     Ui::IssueRecords *ui;
     QSqlDatabase daib;
