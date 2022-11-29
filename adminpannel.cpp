@@ -65,3 +65,10 @@ void adminpannel::on_pushButton_clicked()
    home->showMaximized();
 }
 
+
+void adminpannel::on_pushButton_record_clicked()
+{
+    iss= new IssueRecords(this);
+    iss->show();
+}
+

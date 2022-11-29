@@ -21,6 +21,7 @@ SOURCES += \
     forgotpass.cpp \
     helpandsupport.cpp \
     homepage.cpp \
+    issuerecords.cpp \
     main.cpp \
     mainwindow.cpp \
     mybooklist.cpp \
@@ -45,6 +46,7 @@ HEADERS += \
     forgotpass.h \
     helpandsupport.h \
     homepage.h \
+    issuerecords.h \
     mainwindow.h \
     mybooklist.h \
     privacyandsecurity.h \
@@ -68,6 +70,7 @@ FORMS += \
     forgotpass.ui \
     helpandsupport.ui \
     homepage.ui \
+    issuerecords.ui \
     mainwindow.ui \
     mybooklist.ui \
     privacyandsecurity.ui \

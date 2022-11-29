@@ -7,6 +7,7 @@
 #include "returnbook.h"
 #include "promote.h"
 #include "updatebook.h"
+#include "issuerecords.h"
 
 namespace Ui {
 class adminpannel;
@@ -32,6 +33,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_record_clicked();
+
 private:
     Ui::adminpannel *ui;
     entry *newbook;
@@ -39,6 +42,7 @@ private:
     returnBook *returnbook;
     promote *prom;
     UpdateBook *upd;
+    IssueRecords *iss;
 };
 
 #endif // ADMINPANNEL_H

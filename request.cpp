@@ -43,8 +43,14 @@ void Request::on_pushButton_clicked()
         long long chk = ui->lineEdit_num->text().toLongLong();
         int year=ui->lineEdit_year->text().toInt();
         QString iN=ui->lineEdit_num->text();
+        QSqlQuery qryc(drequest);
+        qryc.prepare("SELECT * FROM books WHERE isbn_no=:isbn_no");
+        qryc.bindValue(":isbn_no",iN);
+        qryc.exec();
         if(countDigitss<long long>(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
+        else if(qryc.next())
+            QMessageBox::warning(this,"Error","Book already exists.");
         else if(countDigitss<int>(year)!=4)
             QMessageBox::warning(this,"Error","Year is not correct. Please try again.");
         else

@@ -247,7 +247,7 @@
               <widget class="QPushButton" name="pushButton_issuebook">
                <property name="maximumSize">
                 <size>
-                 <width>160</width>
+                 <width>190</width>
                  <height>50</height>
                 </size>
                </property>
@@ -355,7 +355,7 @@
               <widget class="QPushButton" name="pushButton_returnbook">
                <property name="maximumSize">
                 <size>
-                 <width>160</width>
+                 <width>190</width>
                  <height>50</height>
                 </size>
                </property>
@@ -487,7 +487,7 @@
                  <widget class="QPushButton" name="pushButton_updatebook">
                   <property name="maximumSize">
                    <size>
-                    <width>160</width>
+                    <width>190</width>
                     <height>50</height>
                    </size>
                   </property>
@@ -598,7 +598,7 @@
               <widget class="QPushButton" name="pushButton_addbook">
                <property name="maximumSize">
                 <size>
-                 <width>160</width>
+                 <width>190</width>
                  <height>50</height>
                 </size>
                </property>
@@ -730,7 +730,7 @@
                  <widget class="QPushButton" name="pushButton_promote">
                   <property name="maximumSize">
                    <size>
-                    <width>160</width>
+                    <width>190</width>
                     <height>50</height>
                    </size>
                   </property>
@@ -746,6 +746,80 @@
                  </widget>
                 </item>
                </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_9">
+             <item>
+              <widget class="QPushButton" name="pushButton_record">
+               <property name="maximumSize">
+                <size>
+                 <width>190</width>
+                 <height>50</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Times New Roman</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Check Issue Records</string>
+               </property>
               </widget>
              </item>
             </layout>
