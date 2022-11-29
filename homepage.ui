@@ -555,6 +555,9 @@
                     <height>40</height>
                    </size>
                   </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
                   <property name="acceptDrops">
                    <bool>false</bool>
                   </property>
@@ -659,8 +662,8 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>588</width>
-                     <height>428</height>
+                     <width>561</width>
+                     <height>635</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_6">
