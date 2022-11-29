@@ -56,6 +56,7 @@ SignUp::SignUp(QWidget *parent) :
     ui(new Ui::SignUp)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
     database = QSqlDatabase::addDatabase("QMYSQL","SignUp");
     database.setHostName("127.0.0.1");
     database.setUserName("root");

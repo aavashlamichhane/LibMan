@@ -6,6 +6,7 @@ Request::Request(QWidget *parent) :
     ui(new Ui::Request)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 Request::~Request()

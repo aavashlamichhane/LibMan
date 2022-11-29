@@ -6,6 +6,7 @@ privacyandsecurity::privacyandsecurity(QWidget *parent) :
     ui(new Ui::privacyandsecurity)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 privacyandsecurity::~privacyandsecurity()

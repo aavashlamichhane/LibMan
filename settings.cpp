@@ -13,6 +13,7 @@ Settings::Settings(QWidget *parent) :
     ui(new Ui::Settings)
 {
     ui->setupUi(this);
+    this->setWindowTitle("LibMan");
 }
 
 Settings::~Settings()
