@@ -15,6 +15,43 @@ int countDigitsss(long long n)
    }
    return a;
 }
+bool chkChara(QChar c)
+{
+    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
+
+bool chkEmaila(QString email)
+{
+
+    if (!chkChara(email[0]))
+    {
+        return 0;
+    }
+
+    int at =-1, dot =-1;
+
+    for (int i = 0;
+         i < email.length(); i++) {
+
+        if (email[i] == '@') {
+
+            at = i;
+        }
+
+        else if (email[i] == '.') {
+
+            dot = i;
+        }
+    }
+
+    if (at == -1 || dot == -1)
+        return 0;
+
+    if (at > dot)
+        return 0;
+
+    return !(dot >= (email.length() - 1));
+}
 
 editProfile::editProfile(QWidget *parent) :
     QMainWindow(parent),
@@ -35,7 +72,7 @@ editProfile::editProfile(QWidget *parent) :
     query.bindValue(":username",usernameg);
     query.exec();
     query.first();
-    fN= query.value(1).toString() ;
+    fN= query.value(1).toString();
     mN= query.value(2).toString();
     lN= query.value(3).toString();
     uN=query.value(0).toString();
@@ -92,9 +129,19 @@ void editProfile::on_pushButton_clicked()
         QString pNum = ui->lineEdit_pH->text();
         long long num = ui->lineEdit_pH->text().toLongLong();
         QString sex = ui->comboBox_sex->currentText();
-        QString dob = ui->dateEdit->text();
+        QDate dob = ui->dateEdit->date();
         QString password = ui->lineEdit_pass->text();
         QString cpassword = ui->lineEdit_cpass->text();
+        QSqlQuery chku(data_info),chke(data_info),chkp(data_info);
+        chku.prepare("SELECT * FROM userbase WHERE username=:username");
+        chku.bindValue(":username",user);
+        chke.prepare("SELECT * FROM userbase WHERE user_email=:user_email");
+        chke.bindValue(":user_email",email);
+        chkp.prepare("SELECT * FROM userbase WHERE phone_number=:phone_number");
+        chkp.bindValue(":phone_number",pNum);
+        chku.exec();
+        chkp.exec();
+        chke.exec();
 
         if(password!=cpassword)
         {
@@ -102,6 +149,16 @@ void editProfile::on_pushButton_clicked()
         }
         else if(countDigitsss(num)!=10)
             QMessageBox::warning(this,"Error","Phone number is incorrect.");
+        else if(!dob.isValid())
+            QMessageBox::warning(this,"Error","Invalid Date.");
+        else if(chku.next())
+            QMessageBox::warning(this,"Error","Username already taken.");
+        else if(chke.next())
+            QMessageBox::warning(this,"Error","Email already used.");
+        else if(chkp.next())
+            QMessageBox::warning(this,"Error","Phone number already used.");
+        else if(!chkEmaila(email))
+            QMessageBox::warning(this,"Error","Invalid email.");
         else
         {
             QSqlQuery qry(data_info);

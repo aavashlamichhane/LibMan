@@ -52,6 +52,8 @@ void bookissue::on_pushButton_clicked()
         QMessageBox::warning(this,"Issue","Book does not match.");
         qDebug() << qry_book.lastError().text()<<Qt::endl;
     }
+    else if(!(diss.isValid() && dexp.isValid()))
+        QMessageBox::warning(this,"Error","Invalid Date.");
     else if(qry_chk.next())
     {
         QDate da=qry_chk.value(0).toDate();

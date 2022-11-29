@@ -14,6 +14,43 @@ int countDigits(long long n)
    }
    return a;
 }
+bool chkChar(QChar c)
+{
+    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
+
+bool chkEmail(QString email)
+{
+
+    if (!chkChar(email[0]))
+    {
+        return 0;
+    }
+
+    int at =-1, dot =-1;
+
+    for (int i = 0;
+         i < email.length(); i++) {
+
+        if (email[i] == '@') {
+
+            at = i;
+        }
+
+        else if (email[i] == '.') {
+
+            dot = i;
+        }
+    }
+
+    if (at == -1 || dot == -1)
+        return 0;
+
+    if (at > dot)
+        return 0;
+
+    return !(dot >= (email.length() - 1));
+}
 SignUp::SignUp(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::SignUp)
@@ -59,10 +96,19 @@ void SignUp::on_pushButton_clicked()
         long long pNum1=ui->lineEdit_pNum->text().toLongLong();
         QString pNum = ui->lineEdit_pNum->text();
         QString sex = ui->comboBox_sex->currentText();
-        QString dob = ui->dateEdit_dob->text();
+        QDate dob = ui->dateEdit_dob->date();
         QString password = ui->lineEdit_password->text();
         QString cpassword = ui->lineEdit_cpassword->text();
-
+        QSqlQuery chku(database),chke(database),chkp(database);
+        chku.prepare("SELECT * FROM userbase WHERE username=:username");
+        chku.bindValue(":username",user);
+        chke.prepare("SELECT * FROM userbase WHERE user_email=:user_email");
+        chke.bindValue(":user_email",email);
+        chkp.prepare("SELECT * FROM userbase WHERE phone_number=:phone_number");
+        chkp.bindValue(":phone_number",pNum);
+        chku.exec();
+        chkp.exec();
+        chke.exec();
         if(password!=cpassword)
         {
             QMessageBox::warning(this,"Error","Password doesn't match. Please try again.");
@@ -71,6 +117,16 @@ void SignUp::on_pushButton_clicked()
         {
             QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
         }
+        else if(!dob.isValid())
+            QMessageBox::warning(this,"Error","Invalid Date.");
+        else if(chku.next())
+            QMessageBox::warning(this,"Error","Username already taken.");
+        else if(chke.next())
+            QMessageBox::warning(this,"Error","Email already used.");
+        else if(chkp.next())
+            QMessageBox::warning(this,"Error","Phone number already used.");
+        else if(!chkEmail(email))
+            QMessageBox::warning(this,"Error","Invalid Email.");
         else
         {
             QSqlQuery qry(database);

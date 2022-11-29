@@ -44,7 +44,7 @@ void Request::on_pushButton_clicked()
         if(countDigitss<long long>(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
         else if(countDigitss<int>(year)!=4)
-            QMessageBox::warning(this,"Error","Date is not correct. Please try again.");
+            QMessageBox::warning(this,"Error","Year is not correct. Please try again.");
         else
         {
             QSqlQuery qry(drequest);

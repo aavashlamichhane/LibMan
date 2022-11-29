@@ -40,6 +40,8 @@ void returnBook::on_pushButton_clicked()
     qry_ret.exec();
     if(!qry_ret.next())
         QMessageBox::warning(this,"Return","Book not issued to given user.");
+    else if(!dret.isValid())
+        QMessageBox::warning(this,"Error","Invalid Date.");
     else
     {
         qry_upt.prepare("UPDATE borrows SET date_returned=:date_returned WHERE username=:username AND isbn_no=:isbn_no");
