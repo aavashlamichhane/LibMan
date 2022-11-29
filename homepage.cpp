@@ -312,6 +312,7 @@ void HomePage::on_pushButton_circulation_clicked()
 {
     mblist=new mybooklist(this);
     mblist->show();
+
 }
 
 
@@ -319,6 +320,7 @@ void HomePage::on_pushButton_books_clicked()
 {
     blist = new booklist(this);
     blist->show();
+
 }
 
 
@@ -326,6 +328,7 @@ void HomePage::on_pushButton_notifydelay_clicked()
 {
     chk = new chkreq(this);
     chk->show();
+
 }
 
 

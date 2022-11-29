@@ -23,6 +23,7 @@ void adminpannel::on_pushButton_addbook_clicked()
 {
     newbook = new entry(this);
     newbook->show();
+
 }
 
 
@@ -30,6 +31,7 @@ void adminpannel::on_pushButton_issuebook_clicked()
 {
     issue = new bookissue(this);
     issue->show();
+
 }
 
 
@@ -37,6 +39,7 @@ void adminpannel::on_pushButton_returnbook_clicked()
 {
     returnbook=new returnBook(this);
     returnbook->show();
+
 }
 
 
@@ -44,6 +47,7 @@ void adminpannel::on_pushButton_promote_clicked()
 {
     prom = new promote(this);
     prom->show();
+
 }
 
 

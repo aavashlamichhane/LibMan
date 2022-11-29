@@ -310,6 +310,7 @@ void studentHomePage::on_pushButton_notifydelay_clicked()
 {
     request = new Request(this);
     request->show();
+
 }
 
 
@@ -317,6 +318,7 @@ void studentHomePage::on_pushButton_circulation_clicked()
 {
     list = new mybooklist(this);
     list->show();
+
 }
 
 
@@ -324,6 +326,7 @@ void studentHomePage::on_pushButton_books_clicked()
 {
     book =new booklist(this);
     book->show();
+
 }
 
 
