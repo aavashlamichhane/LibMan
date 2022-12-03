@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1516</width>
-    <height>687</height>
+    <width>1526</width>
+    <height>705</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -252,7 +252,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>First Name</string>
+                  <string>First Name*</string>
                  </property>
                  <property name="textFormat">
                   <enum>Qt::AutoText</enum>
@@ -311,7 +311,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>Last Name</string>
+                  <string>Last Name*</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignCenter</set>
@@ -465,7 +465,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>Username:</string>
+                  <string>Username*:</string>
                  </property>
                 </widget>
                </item>
@@ -554,7 +554,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>E-mail:</string>
+                  <string>E-mail*:</string>
                  </property>
                 </widget>
                </item>
@@ -634,7 +634,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>Phone Number (+977):</string>
+                  <string>Phone Number (+977)*:</string>
                  </property>
                 </widget>
                </item>

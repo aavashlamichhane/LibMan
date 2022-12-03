@@ -118,7 +118,10 @@ void SignUp::on_pushButton_clicked()
         else if(countDigits(pNum1)!=10)
         {
             QMessageBox::warning(this,"Error","Phone number is not correct. Please try again.");
+
         }
+        else if(fN=="\0" || lN=="\0" || user=="\0" || email=="\0" || pNum=="\0")
+            QMessageBox::warning(this,"Error","Don't leave fields empty.");
         else if(!dob.isValid())
             QMessageBox::warning(this,"Error","Invalid Date.");
         else if(chku.next())
