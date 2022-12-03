@@ -134,16 +134,25 @@ void editProfile::on_pushButton_clicked()
         QDate dob = ui->dateEdit->date();
         QString password = ui->lineEdit_pass->text();
         QString cpassword = ui->lineEdit_cpass->text();
-        QSqlQuery chku(data_info),chke(data_info),chkp(data_info);
-        chku.prepare("SELECT * FROM userbase WHERE username=:username");
-        chku.bindValue(":username",user);
-        chke.prepare("SELECT * FROM userbase WHERE user_email=:user_email");
-        chke.bindValue(":user_email",email);
-        chkp.prepare("SELECT * FROM userbase WHERE phone_number=:phone_number");
-        chkp.bindValue(":phone_number",pNum);
-        chku.exec();
-        chkp.exec();
-        chke.exec();
+//        QSqlQuery chku(data_info),chke(data_info),chkp(data_info);
+//        chku.prepare("SELECT username FROM userbase WHERE username=:username");
+//        chku.bindValue(":username",user);
+//        chku.exec();
+//        chku.next();
+//        QString check=chku.value(0).toString();
+//        extern QString usernameg;
+//        chke.prepare("SELECT username FROM userbase WHERE user_email=:user_email");
+//        chke.bindValue(":user_email",email);
+//        chke.exec();
+//        chke.next();
+//        QString checke=chke.value(0).toString();
+//        chkp.prepare("SELECT username FROM userbase WHERE phone_number=:phone_number");
+//        chkp.bindValue(":phone_number",pNum);
+//        chkp.exec();
+//        chkp.next();
+//        QString checkp=chkp.value(0).toString();
+
+
 
         if(password!=cpassword)
         {
@@ -151,14 +160,16 @@ void editProfile::on_pushButton_clicked()
         }
         else if(countDigitsss(num)!=10)
             QMessageBox::warning(this,"Error","Phone number is incorrect.");
+        else if(fN=="\0" || lN=="\0" || user=="\0" || email=="\0" || pNum=="\0")
+            QMessageBox::warning(this,"Error","Don't leave fields empty.");
         else if(!dob.isValid())
             QMessageBox::warning(this,"Error","Invalid Date.");
-        else if(chku.next())
-            QMessageBox::warning(this,"Error","Username already taken.");
-        else if(chke.next())
-            QMessageBox::warning(this,"Error","Email already used.");
-        else if(chkp.next())
-            QMessageBox::warning(this,"Error","Phone number already used.");
+//        else if(chku.next() && check!=usernameg)
+//            QMessageBox::warning(this,"Error","Username already taken.");
+//        else if(chke.next() && checke!=usernameg)
+//            QMessageBox::warning(this,"Error","Email already used.");
+//        else if(chkp.next() && checkp!=usernameg)
+//            QMessageBox::warning(this,"Error","Phone number already used.");
         else if(!chkEmaila(email))
             QMessageBox::warning(this,"Error","Invalid email.");
         else
@@ -180,15 +191,12 @@ void editProfile::on_pushButton_clicked()
             if(qry.exec())
             {
                 QMessageBox::information(this,"Update","Updated successfully.");
-                QSqlDatabase::removeDatabase("QMYSQL");
             }
             else
             {
                 QMessageBox::warning(this,"Update","Update failed.");
-                QSqlDatabase::removeDatabase("QMYSQL");
             }
         }
-        QSqlDatabase::removeDatabase("QMYSQL");
     }
     data_info.close();
 }
