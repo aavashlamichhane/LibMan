@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>726</width>
-    <height>546</height>
+    <width>736</width>
+    <height>627</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -223,7 +223,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Book name:</string>
+               <string>Book name*:</string>
               </property>
              </widget>
             </item>
@@ -303,7 +303,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Author name:</string>
+               <string>Author name*:</string>
               </property>
              </widget>
             </item>
@@ -383,7 +383,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Published year:</string>
+               <string>Published year*:</string>
               </property>
              </widget>
             </item>
@@ -469,7 +469,7 @@
             <item>
              <widget class="QLabel" name="label_5">
               <property name="text">
-               <string>ISBN:</string>
+               <string>ISBN*:</string>
               </property>
              </widget>
             </item>
@@ -549,7 +549,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Published by:</string>
+               <string>Published by*:</string>
               </property>
              </widget>
             </item>
@@ -629,7 +629,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Number of copies:    </string>
+               <string>Number of copies*:    </string>
               </property>
              </widget>
             </item>
@@ -730,7 +730,7 @@
                </font>
               </property>
               <property name="text">
-               <string>Number of Pages:</string>
+               <string>Number of Pages*:</string>
               </property>
              </widget>
             </item>
