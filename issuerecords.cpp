@@ -16,7 +16,7 @@ IssueRecords::IssueRecords(QWidget *parent) :
     daib.open();
     QSqlQuery *qry= new QSqlQuery(daib);
 
-    qry->prepare("SELECT * FROM borrows ORDER BY date_taken");
+    qry->prepare("SELECT * FROM borrows ORDER BY date_taken desc");
 
     qry->exec();
     modal->setQuery(*qry);

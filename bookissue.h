@@ -23,6 +23,10 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void on_lineEdit_user_returnPressed();
+
+    void on_lineEdit_isbn_returnPressed();
+
 private:
     Ui::bookissue *ui;
     QSqlDatabase dabook;

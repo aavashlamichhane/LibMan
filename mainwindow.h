@@ -40,6 +40,7 @@ private slots:
 
     void on_password_login_returnPressed();
 
+
 private:
     Ui::MainWindow *ui;
     entry *Entry;

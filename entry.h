@@ -26,6 +26,20 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+    void on_lineEdit_name_returnPressed();
+
+    void on_lineEdit_author_returnPressed();
+
+    void on_lineEdit_year_returnPressed();
+
+    void on_lineEdit_isbn_returnPressed();
+
+    void on_lineEdit_pub_returnPressed();
+
+    void on_lineEdit_copies_returnPressed();
+
+    void on_lineEdit_page_returnPressed();
+
 private:
     Ui::entry *ui;
     QSqlDatabase dEntry;

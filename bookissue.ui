@@ -596,6 +596,14 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_user</tabstop>
+  <tabstop>lineEdit_isbn</tabstop>
+  <tabstop>dateEdit_issue</tabstop>
+  <tabstop>dateEdit_expiry</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_back</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>

@@ -25,6 +25,10 @@ private slots:
 
     void on_pushButton_back_clicked();
 
+    void on_lineEdit_num_returnPressed();
+
+    void on_lineEdit_copy_returnPressed();
+
 private:
     Ui::UpdateBook *ui;
     QSqlDatabase daub;
