@@ -122,7 +122,7 @@ void editProfile::on_pushButton_clicked()
 {
     if(data_info.open())
     {
-        QString user = ui->lineEdit_user->text();
+        QString user = ui->label_user->text();
         QString fN = ui->lineEdit_fN->text();
         QString mN = ui->lineEdit_mN->text();
         QString lN = ui->lineEdit_lN->text();
