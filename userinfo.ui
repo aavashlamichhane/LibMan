@@ -659,6 +659,10 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>pushButton_editprofile</tabstop>
+  <tabstop>pushButton_home</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>

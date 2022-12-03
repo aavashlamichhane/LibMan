@@ -62,3 +62,15 @@ void UpdateBook::on_pushButton_back_clicked()
     close();
 }
 
+
+void UpdateBook::on_lineEdit_num_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void UpdateBook::on_lineEdit_copy_returnPressed()
+{
+    on_pushButton_clicked();
+}
+

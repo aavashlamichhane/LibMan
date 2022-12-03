@@ -76,3 +76,16 @@ void returnBook::on_pushButton_back_clicked()
     close();
 }
 
+
+void returnBook::on_lineEdit_isbn_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void returnBook::on_lineEdit_user_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+

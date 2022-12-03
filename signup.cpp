@@ -162,3 +162,51 @@ void SignUp::on_pushButton_clicked()
     }
     database.close();
 }
+
+void SignUp::on_lineEdit_cpassword_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_lN_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_mN_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_fN_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_user_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_email_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_pNum_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void SignUp::on_lineEdit_password_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
