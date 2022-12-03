@@ -85,11 +85,10 @@ editProfile::editProfile(QWidget *parent) :
     pass=query.value(8).toString();
 
 
-
+    ui->label_user->setText(uN);
     ui->lineEdit_fN->setText(fN);
     ui->lineEdit_mN->setText(mN);
     ui->lineEdit_lN->setText(lN);
-    ui->lineEdit_user->setText(uN);
     ui->lineEdit_pH->setText(pN);
     ui->dateEdit->setDate(dob);
     int a;
