@@ -42,15 +42,6 @@ void adminpannel::on_pushButton_returnbook_clicked()
 
 }
 
-
-void adminpannel::on_pushButton_promote_clicked()
-{
-    prom = new promote(this);
-    prom->show();
-
-}
-
-
 void adminpannel::on_pushButton_updatebook_clicked()
 {
     upd = new UpdateBook(this);
@@ -70,5 +61,12 @@ void adminpannel::on_pushButton_record_clicked()
 {
     iss= new IssueRecords(this);
     iss->show();
+}
+
+
+void adminpannel::on_pushButton_remove_clicked()
+{
+    del = new removebook(this);
+    del->show();
 }
 

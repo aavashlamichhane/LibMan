@@ -623,7 +623,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QFrame" name="frame_promote">
+        <widget class="QFrame" name="frame_remove">
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
          </property>
@@ -647,7 +647,7 @@
            <number>0</number>
           </property>
           <item>
-           <widget class="QFrame" name="frame_promote_2">
+           <widget class="QFrame" name="frame_remove_2">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -671,7 +671,7 @@
               <number>0</number>
              </property>
              <item>
-              <widget class="QFrame" name="frame_promotelogo">
+              <widget class="QFrame" name="frame_removelogo">
                <property name="maximumSize">
                 <size>
                  <width>80</width>
@@ -699,7 +699,7 @@
                  </spacer>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_promote">
+                 <widget class="QLabel" name="label_remove">
                   <property name="maximumSize">
                    <size>
                     <width>40</width>
@@ -721,7 +721,7 @@
               </widget>
              </item>
              <item>
-              <widget class="QFrame" name="frame_promotetxt">
+              <widget class="QFrame" name="frame_removetxt">
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
                </property>
@@ -730,7 +730,7 @@
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_6">
                 <item>
-                 <widget class="QPushButton" name="pushButton_promote">
+                 <widget class="QPushButton" name="pushButton_remove">
                   <property name="maximumSize">
                    <size>
                     <width>190</width>
@@ -876,7 +876,7 @@
   <tabstop>pushButton_returnbook</tabstop>
   <tabstop>pushButton_updatebook</tabstop>
   <tabstop>pushButton_addbook</tabstop>
-  <tabstop>pushButton_promote</tabstop>
+  <tabstop>pushButton_remove</tabstop>
   <tabstop>pushButton_record</tabstop>
   <tabstop>pushButton</tabstop>
  </tabstops>

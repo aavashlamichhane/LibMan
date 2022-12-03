@@ -4,8 +4,9 @@
 #include <QMainWindow>
 #include "entry.h"
 #include "bookissue.h"
+#include "removebook.h"
 #include "returnbook.h"
-#include "promote.h"
+#include "returnbook.h"
 #include "updatebook.h"
 #include "issuerecords.h"
 
@@ -27,20 +28,20 @@ private slots:
 
     void on_pushButton_returnbook_clicked();
 
-    void on_pushButton_promote_clicked();
-
     void on_pushButton_updatebook_clicked();
 
     void on_pushButton_clicked();
 
     void on_pushButton_record_clicked();
 
+    void on_pushButton_remove_clicked();
+
 private:
     Ui::adminpannel *ui;
     entry *newbook;
     bookissue *issue;
     returnBook *returnbook;
-    promote *prom;
+    removebook *del;
     UpdateBook *upd;
     IssueRecords *iss;
 };
