@@ -27,7 +27,7 @@ void removebook::on_pushButton_back_clicked()
 
 void removebook::on_pushButton_clicked()
 {
-    daret = QSqlDatabase::addDatabase("QMYSQL","return");
+    daret = QSqlDatabase::addDatabase("QMYSQL","remove");
     daret.setHostName("127.0.0.1");
     daret.setUserName("root");
     daret.setPassword("rampyari1234");
@@ -47,6 +47,7 @@ void removebook::on_pushButton_clicked()
         else
         {
             qry_remo.prepare("DELETE FROM books WHERE isbn_no=:isbn_no");
+            qry_remo.bindValue(":isbn_no",iN);
             if(qry_remo.exec())
                 QMessageBox::information(this,"Remove","Book removed.");
             else
