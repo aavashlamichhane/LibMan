@@ -101,6 +101,8 @@ void SignUp::on_pushButton_clicked()
         QDate dob = ui->dateEdit_dob->date();
         QString password = ui->lineEdit_password->text();
         QString cpassword = ui->lineEdit_cpassword->text();
+        QString secques = ui->comboBox_ques1->currentText();
+        QString secans = ui->lineEdit_ans1->text();
         QSqlQuery chku(database),chke(database),chkp(database);
         chku.prepare("SELECT * FROM userbase WHERE username=:username");
         chku.bindValue(":username",user);
@@ -135,7 +137,7 @@ void SignUp::on_pushButton_clicked()
         else
         {
             QSqlQuery qry(database);
-            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number,sex)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number,:sex)");
+            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number,sex,security_ques,security_ans)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number,:sex,:security_ques,:security_ans)");
             qry.bindValue(":username",user);
             qry.bindValue(":password",password);
             qry.bindValue(":first_name",fN);
@@ -145,6 +147,8 @@ void SignUp::on_pushButton_clicked()
             qry.bindValue(":user_email",email);
             qry.bindValue(":phone_number",pNum);
             qry.bindValue(":sex",sex);
+            qry.bindValue(":security_ques",secques);
+            qry.bindValue(":security_ans",secans);
 
             if(qry.exec())
             {

@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+    <item alignment="Qt::AlignHCenter">
      <widget class="QFrame" name="frame_logo">
       <property name="maximumSize">
        <size>
@@ -30,43 +30,41 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
-       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
-        <widget class="QLabel" name="Logo">
+       <item>
+        <widget class="QLabel" name="Logo_2">
          <property name="minimumSize">
           <size>
-           <width>0</width>
-           <height>140</height>
+           <width>100</width>
+           <height>110</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>158</width>
-           <height>150</height>
+           <width>120</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="text">
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG.png</pixmap>
+          <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png</pixmap>
          </property>
          <property name="scaledContents">
           <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Cinzel</family>
+           <pointsize>72</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>LibMan</string>
          </property>
         </widget>
        </item>
@@ -485,11 +483,6 @@
                     <string>Name</string>
                    </property>
                   </item>
-                  <item>
-                   <property name="text">
-                    <string>ISBN</string>
-                   </property>
-                  </item>
                  </widget>
                 </item>
                </layout>
@@ -662,8 +655,8 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>561</width>
-                     <height>635</height>
+                     <width>588</width>
+                     <height>428</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_6">

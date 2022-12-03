@@ -239,62 +239,7 @@ void HomePage::on_pushButton_search_clicked()
 
 
 
-        else if(opp=="ISBN")
-            {
-                int check = QString::compare(search, strisbn, Qt::CaseInsensitive);
-                if(check==0)
-                {
 
-                    if ( ui->scrollcontent->layout() != NULL )
-                    {
-                        QLayoutItem* item;
-                        while ( ( item = ui->scrollcontent->layout()->takeAt( 0 ) ) != NULL )
-                        {
-                            delete item->widget();
-                            delete item;
-                        }
-                        delete ui->scrollcontent->layout();
-                    }
-
-                    ui->frame_display_head->hide();
-
-                    ui->frame_display->setGeometry(10,0,900,550);
-                    QLabel *lab1=new QLabel("Search Result For "+strisbn);
-                    // QFrame *line1=new QFrame;
-
-                    label=new QPushButton(strtitle);
-                    label->setObjectName(strtitle);
-
-                    QLabel *lab=new QLabel("ISBN : "+strisbn+", Author: "+strauthor+",Number of Copies: "+strcopies+".");
-                    QFrame *line=new QFrame;
-                    line->setFrameShape(QFrame::HLine);
-                    line->setFrameShadow(QFrame::Sunken);
-
-                    label->setStyleSheet(
-                                "   QPushButton {"
-                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:24px; color:black;"
-                                " }"
-                                " QPushButton:hover {"
-                                "     color: rgb(0, 0, 0);font-size:36px;"
-                                " }");
-
-                    lab1->setStyleSheet(
-                                "   QLabel {"
-                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:30px; color:black;"
-                                " }");
-
-                    lab->setStyleSheet(
-                                                "   QLabel {"
-                                                "     background:transparent; Text-align:left;font-family:Times New Roman;font-size:20px; color:black;"
-                                                " }");
-
-                    lay->addWidget(lab1);
-                    //lay->addWidget(line1);
-                    lay->addWidget(label);
-                    lay->addWidget(lab);
-                    lay->addWidget(line);
-                }
-            }
 
     ui->scrollcontent->setLayout(lay);
     //ui->scrollContents->setStyleSheet("background: transparent;border-color: rgb(62, 62, 62);padding-left:20px;padding-top:20px");

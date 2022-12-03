@@ -122,6 +122,7 @@ void editProfile::on_pushButton_clicked()
 {
     if(data_info.open())
     {
+        QString user = ui->label_user->text();
         QString fN = ui->lineEdit_fN->text();
         QString mN = ui->lineEdit_mN->text();
         QString lN = ui->lineEdit_lN->text();
@@ -187,10 +188,15 @@ void editProfile::on_pushButton_clicked()
 
             if(qry.exec())
             {
+
                 QMessageBox::information(this,"Update","Updated successfully.");
+                close();
+                info1=new UserInfo();
+                info1->showMaximized();
             }
             else
             {
+                qDebug() << qry.lastError().text()<<Qt::endl;
                 QMessageBox::warning(this,"Update","Update failed.");
             }
         }
