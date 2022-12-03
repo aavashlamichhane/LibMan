@@ -36,7 +36,7 @@ void removebook::on_pushButton_clicked()
 
     QString iN = ui->lineEdit_isbn->text();
     QSqlQuery qry_del(daret),qry_remo(daret);
-    qry_del.prepare("SELECT * FROM books WHERE isbn_no=:isbn_no");
+    qry_del.prepare("SELECT isbn_no FROM books WHERE isbn_no=:isbn_no");
     qry_del.bindValue(":isbn_no",iN);
     if(!qry_del.exec())
         QMessageBox::warning(this,"Remove","Try again");
@@ -46,14 +46,20 @@ void removebook::on_pushButton_clicked()
             QMessageBox::warning(this,"Remove","Book doesn't exist.");
         else
         {
-            qry_remo.prepare("REMOVE *FROM books WHERE isbn_no=:isbn_no");
+            qry_remo.prepare("DELETE FROM books WHERE isbn_no=:isbn_no");
             if(qry_remo.exec())
                 QMessageBox::information(this,"Remove","Book removed.");
             else
-                QMessageBox::warning(this,"Remove","Book revome failed.");
+                QMessageBox::warning(this,"Remove","Book remove failed.");
         }
     }
 
 
+}
+
+
+void removebook::on_lineEdit_isbn_returnPressed()
+{
+    on_pushButton_clicked();
 }
 

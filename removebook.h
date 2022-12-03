@@ -23,6 +23,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_lineEdit_isbn_returnPressed();
+
 private:
     Ui::removebook *ui;
     QSqlDatabase daret;
