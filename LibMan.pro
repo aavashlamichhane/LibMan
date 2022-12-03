@@ -27,6 +27,7 @@ SOURCES += \
     mybooklist.cpp \
     privacyandsecurity.cpp \
     promote.cpp \
+    removebook.cpp \
     request.cpp \
     returnbook.cpp \
     settings.cpp \
@@ -51,6 +52,7 @@ HEADERS += \
     mybooklist.h \
     privacyandsecurity.h \
     promote.h \
+    removebook.h \
     request.h \
     returnbook.h \
     settings.h \
@@ -75,6 +77,7 @@ FORMS += \
     mybooklist.ui \
     privacyandsecurity.ui \
     promote.ui \
+    removebook.ui \
     request.ui \
     returnbook.ui \
     settings.ui \
