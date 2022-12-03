@@ -449,6 +449,12 @@ hr { height: 1px; border-width: 0; }
                 <height>0</height>
                </size>
               </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>16777215</height>
+               </size>
+              </property>
               <property name="frameShape">
                <enum>QFrame::StyledPanel</enum>
               </property>
@@ -465,7 +471,7 @@ hr { height: 1px; border-width: 0; }
                   </font>
                  </property>
                  <property name="text">
-                  <string>Username*:</string>
+                  <string>Username:</string>
                  </property>
                 </widget>
                </item>
@@ -482,21 +488,21 @@ hr { height: 1px; border-width: 0; }
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_16">
                <item>
-                <widget class="QLineEdit" name="lineEdit_user">
+                <widget class="QLabel" name="label_user">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                  <property name="font">
                   <font>
                    <family>Times New Roman</family>
                    <pointsize>12</pointsize>
                   </font>
                  </property>
-                 <property name="inputMask">
-                  <string/>
-                 </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <property name="clearButtonEnabled">
-                  <bool>false</bool>
+                  <string>TextLabel</string>
                  </property>
                 </widget>
                </item>
@@ -1096,7 +1102,6 @@ hr { height: 1px; border-width: 0; }
   <tabstop>lineEdit_fN</tabstop>
   <tabstop>lineEdit_mN</tabstop>
   <tabstop>lineEdit_lN</tabstop>
-  <tabstop>lineEdit_user</tabstop>
   <tabstop>lineEdit_email</tabstop>
   <tabstop>lineEdit_pH</tabstop>
   <tabstop>dateEdit</tabstop>

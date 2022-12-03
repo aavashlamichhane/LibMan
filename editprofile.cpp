@@ -85,11 +85,10 @@ editProfile::editProfile(QWidget *parent) :
     pass=query.value(8).toString();
 
 
-
+    ui->label_user->setText(uN);
     ui->lineEdit_fN->setText(fN);
     ui->lineEdit_mN->setText(mN);
     ui->lineEdit_lN->setText(lN);
-    ui->lineEdit_user->setText(uN);
     ui->lineEdit_pH->setText(pN);
     ui->dateEdit->setDate(dob);
     int a;
@@ -126,7 +125,6 @@ void editProfile::on_pushButton_clicked()
         QString fN = ui->lineEdit_fN->text();
         QString mN = ui->lineEdit_mN->text();
         QString lN = ui->lineEdit_lN->text();
-        QString user = ui->lineEdit_user->text();
         QString email = ui->lineEdit_email->text();
         QString pNum = ui->lineEdit_pH->text();
         long long num = ui->lineEdit_pH->text().toLongLong();
@@ -160,7 +158,7 @@ void editProfile::on_pushButton_clicked()
         }
         else if(countDigitsss(num)!=10)
             QMessageBox::warning(this,"Error","Phone number is incorrect.");
-        else if(fN=="\0" || lN=="\0" || user=="\0" || email=="\0" || pNum=="\0")
+        else if(fN=="\0" || lN=="\0" || email=="\0" || pNum=="\0")
             QMessageBox::warning(this,"Error","Don't leave fields empty.");
         else if(!dob.isValid())
             QMessageBox::warning(this,"Error","Invalid Date.");
@@ -176,8 +174,7 @@ void editProfile::on_pushButton_clicked()
         {
             QSqlQuery qry(data_info);
             extern QString usernameg;
-            qry.prepare("UPDATE userbase SET username=:username,password=:password,first_name=:first_name,middle_name=:middle_name,last_name=:last_name,user_email=:user_email,date_of_birth=:date_of_birth,phone_number=:phone_number,sex=:sex WHERE username=:username1");
-            qry.bindValue(":username",user);
+            qry.prepare("UPDATE userbase SET password=:password,first_name=:first_name,middle_name=:middle_name,last_name=:last_name,user_email=:user_email,date_of_birth=:date_of_birth,phone_number=:phone_number,sex=:sex WHERE username=:username1");
             qry.bindValue(":password",password);
             qry.bindValue(":first_name",fN);
             qry.bindValue(":middle_name",mN);
