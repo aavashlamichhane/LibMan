@@ -69,6 +69,7 @@ void Request::on_pushButton_clicked()
             {
                 QMessageBox::information(this,"Request","Book request successful.");
                 QSqlDatabase::removeDatabase("QMYSQL");
+                close();
                 //hide();
                 //hp2=new HomePage(this);
                // hp2->show();

@@ -20,7 +20,7 @@
       <property name="spacing">
        <number>0</number>
       </property>
-      <item>
+      <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
        <widget class="QFrame" name="frame_logo">
         <property name="maximumSize">
          <size>
@@ -54,13 +54,13 @@
           <widget class="QLabel" name="Logo">
            <property name="minimumSize">
             <size>
-             <width>0</width>
-             <height>148</height>
+             <width>100</width>
+             <height>120</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>148</width>
+             <width>120</width>
              <height>16777215</height>
             </size>
            </property>
@@ -68,10 +68,23 @@
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG.png</pixmap>
+            <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <family>Cinzel</family>
+             <pointsize>72</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>LibMan</string>
            </property>
           </widget>
          </item>
@@ -490,11 +503,6 @@
                       <string>Name</string>
                      </property>
                     </item>
-                    <item>
-                     <property name="text">
-                      <string>ISBN</string>
-                     </property>
-                    </item>
                    </widget>
                   </item>
                  </layout>
@@ -659,8 +667,8 @@
                       <rect>
                        <x>0</x>
                        <y>0</y>
-                       <width>549</width>
-                       <height>635</height>
+                       <width>576</width>
+                       <height>428</height>
                       </rect>
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout">

@@ -63,19 +63,44 @@ void forgotpass::on_pushButton_clicked()
     fab.setPassword("rampyari1234");
     fab.setDatabaseName("libman");
     fab.open();
-    QString mail = ui->lineEdit->text();
+    QString mail = ui->lineEdit_mail->text();
+    QString user = ui->lineEdit_user->text();
+    long long ph=ui->lineEdit_ph->text().toLongLong();
+    QString ques = ui->comboBox_ques->currentText();
+    QString ans = ui->lineEdit_ans->text();
     QSqlQuery qry(fab);
-    qry.prepare("SELECT user_email FORM userbase WHERE user_email=:user_email");
+    qry.prepare("SELECT user_email,username,phone_number,security_ques,security_ans FORM userbase WHERE user_email=:user_email AND username=:username AND phone_number=:phone_number AND security_ques=:security_ques AND security_ans=:security_ans ");
     qry.bindValue(":user_email",mail);
+    qry.bindValue(":username",user);
+    qry.bindValue(":phone_number",ph);
+    qry.bindValue(":security_ques",ques);
+    qry.bindValue(":security_ans",ans);
     qry.exec();
     if(!qry.next())
     {
-        QMessageBox::warning(this,"Error","Given account does not exist.");
-        //qDebug<< qry.lastError();
+        qDebug() << qry.lastError().text()<<Qt::endl;
+        QMessageBox::warning(this,"Error","Invalid account. ");
+
     }
     else
     {
 //        ChilkatSample();
+
+        QString usermaildb=qry.value(0).toString();
+        QString usernamedb=qry.value(1).toString();
+        long long userphdb=qry.value(2).toLongLong();
+        QString userquesdb=qry.value(3).toString();
+        QString useransdb=qry.value(4).toString();
+
+        if(usermaildb==mail && usernamedb==user && userphdb==ph && userquesdb==ques && useransdb==ans)
+        {
+            QMessageBox::warning(this,"sucess","yay sucess. ");
+        }
+        else
+        {
+            qDebug() << qry.lastError().text()<<Qt::endl;
+            QMessageBox::warning(this,"Error","error");
+        }
     }
 
 }
