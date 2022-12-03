@@ -710,7 +710,7 @@
                    <string/>
                   </property>
                   <property name="pixmap">
-                   <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/promote.png</pixmap>
+                   <pixmap resource="Resource.qrc">:/rec/drive-download-20221026T014232Z-001/remove book.png</pixmap>
                   </property>
                   <property name="scaledContents">
                    <bool>true</bool>
@@ -744,7 +744,7 @@
                    </font>
                   </property>
                   <property name="text">
-                   <string>Promote to Admin</string>
+                   <string>Remove Books</string>
                   </property>
                  </widget>
                 </item>
@@ -871,6 +871,15 @@
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>pushButton_issuebook</tabstop>
+  <tabstop>pushButton_returnbook</tabstop>
+  <tabstop>pushButton_updatebook</tabstop>
+  <tabstop>pushButton_addbook</tabstop>
+  <tabstop>pushButton_promote</tabstop>
+  <tabstop>pushButton_record</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>

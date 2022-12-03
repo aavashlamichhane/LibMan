@@ -115,3 +115,15 @@ void bookissue::on_pushButton_back_clicked()
     close();
 }
 
+
+void bookissue::on_lineEdit_user_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void bookissue::on_lineEdit_isbn_returnPressed()
+{
+    on_pushButton_clicked();
+}
+

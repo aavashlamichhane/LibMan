@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1516</width>
     <height>687</height>
    </rect>
   </property>
@@ -1092,6 +1092,20 @@ hr { height: 1px; border-width: 0; }
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_fN</tabstop>
+  <tabstop>lineEdit_mN</tabstop>
+  <tabstop>lineEdit_lN</tabstop>
+  <tabstop>lineEdit_user</tabstop>
+  <tabstop>lineEdit_email</tabstop>
+  <tabstop>lineEdit_pH</tabstop>
+  <tabstop>dateEdit</tabstop>
+  <tabstop>comboBox_sex</tabstop>
+  <tabstop>lineEdit_pass</tabstop>
+  <tabstop>lineEdit_cpass</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>

@@ -146,6 +146,9 @@ void SignUp::on_pushButton_clicked()
             if(qry.exec())
             {
                 QMessageBox::information(this,"Sign Up","Signed up successfully.");
+                close();
+                login= new MainWindow();
+                login->showMaximized();
                 QSqlDatabase::removeDatabase("QMYSQL");
             }
             else

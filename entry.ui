@@ -914,6 +914,18 @@
    </item>
   </layout>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit_name</tabstop>
+  <tabstop>lineEdit_author</tabstop>
+  <tabstop>lineEdit_year</tabstop>
+  <tabstop>lineEdit_isbn</tabstop>
+  <tabstop>lineEdit_pub</tabstop>
+  <tabstop>lineEdit_copies</tabstop>
+  <tabstop>lineEdit_page</tabstop>
+  <tabstop>textEdit_description</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+ </tabstops>
  <resources>
   <include location="Resource.qrc"/>
  </resources>

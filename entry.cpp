@@ -106,3 +106,45 @@ void entry::on_pushButton_2_clicked()
     close();
 }
 
+
+void entry::on_lineEdit_name_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_author_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_year_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_isbn_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_pub_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_copies_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
+
+void entry::on_lineEdit_page_returnPressed()
+{
+    on_pushButton_clicked();
+}
+
