@@ -12,7 +12,7 @@ bookissue::bookissue(QWidget *parent) :
     this->setWindowTitle("LibMan");
     this->setWindowIcon(QIcon(":/rec/drive-download-20221026T014232Z-001/Logo no BG and text.png"));
     ui->dateEdit_issue->setDate(QDate::currentDate());
-    ui->dateEdit_expiry->setDate(QDate::currentDate().addMonths(1));
+    ui->dateEdit_expiry->setDate(QDate::currentDate().addDays(30));
 }
 
 bookissue::~bookissue()
@@ -81,7 +81,6 @@ void bookissue::on_pushButton_clicked()
         qry_in.prepare("INSERT INTO borrows(username,book_name,isbn_no,date_taken,date_tobeReturned)""VALUES(:username,:book_name,:isbn_no,:date_taken,:date_tobeReturned)");
         qry_in.bindValue(":username",uN);
         qry_in.bindValue(":book_name",title);
-
         qry_in.bindValue(":isbn_no",isbn);
         qry_in.bindValue(":date_taken",diss);
         qry_in.bindValue(":date_tobeReturned",dexp);
@@ -101,9 +100,7 @@ void bookissue::on_pushButton_clicked()
             qDebug() << qry_in.lastError().text()<<Qt::endl<<title<<dexp;
             QMessageBox::warning(this,"Issue","Book issue failed.");
             QSqlDatabase::removeDatabase("issue");
-
         }
-
     }
 }
 

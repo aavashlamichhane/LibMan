@@ -29,8 +29,8 @@ bool chkEmail(QString email)
 
     int at =-1, dot =-1;
 
-    for (int i = 0;
-         i < email.length(); i++) {
+    for (int i = 0;i<email.length(); i++)
+    {
 
         if (email[i] == '@') {
 
