@@ -63,7 +63,7 @@ void entry::on_pushButton_clicked()
         else
         {
             QSqlQuery qry(dEntry);
-            qry.prepare("INSERT INTO books(isbn_no,title,author,pages,published_date,published_by,num_copies,description,date_added)""VALUES(:isbn_no,:title,:author,:pages,:published_date,:published_by,:num_copies,:description,:date_added)");
+            qry.prepare("INSERT INTO books(isbn_no,title,author,pages,published_date,published_by,num_copies,date_added)""VALUES(:isbn_no,:title,:author,:pages,:published_date,:published_by,:num_copies,:date_added)");
             qry.bindValue(":title",bN);
             qry.bindValue(":author",aN);
             qry.bindValue(":pages",nP);
@@ -71,7 +71,6 @@ void entry::on_pushButton_clicked()
             qry.bindValue(":published_date",pD);
             qry.bindValue(":published_by",pB);
             qry.bindValue(":num_copies",nC);
-            qry.bindValue(":description",des);
             qry.bindValue(":date_added",today);
 
             if(qry.exec())

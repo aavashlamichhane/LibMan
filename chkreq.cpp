@@ -28,6 +28,7 @@ chkreq::chkreq(QWidget *parent) :
     modal->setHeaderData(4, Qt::Horizontal, tr("ISBN"));
 
     ui->tableView->setModel(modal);
+    ui->tableView->resizeColumnsToContents();
 }
 
 chkreq::~chkreq()

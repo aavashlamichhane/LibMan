@@ -88,7 +88,7 @@
               </item>
               <item>
                <property name="text">
-                <string>ISBN</string>
+                <string>ISBN-13</string>
                </property>
               </item>
              </widget>
