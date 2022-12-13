@@ -55,7 +55,7 @@ void IssueRecords::on_pushButton_update_clicked()
         ui->tableView->setModel(modal);
         ui->tableView->resizeColumnsToContents();
     }
-    else if(ui->comboBox->currentText()=="ISBN")
+    else if(ui->comboBox->currentText()=="ISBN-13")
     {
         un->prepare("SELECT * FROM borrows WHERE isbn_no=:isbn_no ORDER BY date_taken");
         un->bindValue(":isbn_no",ui->lineEdit->text());
@@ -71,7 +71,6 @@ void IssueRecords::on_pushButton_update_clicked()
         ui->tableView->setModel(modal);
         ui->tableView->resizeColumnsToContents();
     }
-
 }
 
 

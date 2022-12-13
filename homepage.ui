@@ -59,8 +59,8 @@
         <widget class="QLabel" name="label">
          <property name="font">
           <font>
-           <family>Cinzel</family>
-           <pointsize>72</pointsize>
+           <family>Segoe UI</family>
+           <pointsize>48</pointsize>
           </font>
          </property>
          <property name="text">
@@ -655,8 +655,8 @@
                     <rect>
                      <x>0</x>
                      <y>0</y>
-                     <width>588</width>
-                     <height>428</height>
+                     <width>561</width>
+                     <height>635</height>
                     </rect>
                    </property>
                    <layout class="QVBoxLayout" name="verticalLayout_6">

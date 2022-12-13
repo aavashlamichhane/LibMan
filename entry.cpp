@@ -55,11 +55,17 @@ void entry::on_pushButton_clicked()
         QString nP = ui->lineEdit_page->text();
         QString des = ui->textEdit_description->toPlainText();
         QDate today=QDate::currentDate();
+        QSqlQuery check(dEntry);
+        check.prepare("SELECT * FROM books WHERE isbn_no=:isbn_no");
+        check.bindValue(":isbn_no",iN);
+        check.exec();
 
         if(countDigit<long long>(chk)!=13)
             QMessageBox::warning(this,"Error","ISBN number is not correct. Please try again.");
         else if(countDigit<int>(yr)!=4)
             QMessageBox::warning(this,"Error","Date is not correct. Please try again.");
+        else if(check.next())
+            QMessageBox::warning(this,"Error","Book already exists.");
         else
         {
             QSqlQuery qry(dEntry);

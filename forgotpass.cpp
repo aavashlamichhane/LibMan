@@ -1,38 +1,12 @@
 #include "forgotpass.h"
 #include "ui_forgotpass.h"
 #include "mainwindow.h"
-//#include <CkMailMan.h>
-//#include <CkEmail.h>
+
 
 MainWindow *mwin;
-int code;
+QString usern;
 
-//void ChilkatSample(void)
-//{
-//    srand((unsigned) time(NULL));
-//    code = 1000+ (rand() % 8999);
-//    CkMailMan mailman;
-//    mailman.put_SmtpHost("mail.google.com");
-//    mailman.put_SmtpUsername("shisui.uchiha7601@gmail.com");
-//    mailman.put_SmtpPassword("sasuke.35");
-//    CkEmail email;
-//    email.put_Subject("Password Reset");
-//    email.put_Body("Use the code below to set up a new password for your account.If you did not request to reset your password,ignore this email.");
-//    email.put_From("Chilkat Support <support@chilkatsoft.com>");
-//    bool success = email.AddTo("Aavash Lamichhane","aavashlamichhane76@gmail.com");
-//    success = mailman.SendEmail(email);
-//    if (success != true)
-//    {
-//        qDebug()<< mailman.lastErrorText() << "\r\n";
-//        return;
-//    }
-//     success = mailman.CloseSmtpConnection();
-//    if (success != true)
-//    {
-//        qDebug() << "Connection to SMTP server not closed cleanly." << "\r\n";
-//    }
-//        qDebug() << "Mail Sent!" << "\r\n";
-//}
+
 forgotpass::forgotpass(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::forgotpass)
@@ -65,42 +39,29 @@ void forgotpass::on_pushButton_clicked()
     fab.open();
     QString mail = ui->lineEdit_mail->text();
     QString user = ui->lineEdit_user->text();
-    long long ph=ui->lineEdit_ph->text().toLongLong();
+    usern=user;
+    QString ph=ui->lineEdit_ph->text();
     QString ques = ui->comboBox_ques->currentText();
     QString ans = ui->lineEdit_ans->text();
     QSqlQuery qry(fab);
-    qry.prepare("SELECT user_email,username,phone_number,security_ques,security_ans FORM userbase WHERE user_email=:user_email AND username=:username AND phone_number=:phone_number AND security_ques=:security_ques AND security_ans=:security_ans ");
+    qry.prepare("SELECT * FROM userbase WHERE user_email=:user_email AND username=:username AND phone_number=:phone_number AND sec_ques=:sec_ques AND sec_ans=:sec_ans ");
     qry.bindValue(":user_email",mail);
     qry.bindValue(":username",user);
     qry.bindValue(":phone_number",ph);
-    qry.bindValue(":security_ques",ques);
-    qry.bindValue(":security_ans",ans);
+    qry.bindValue(":sec_ques",ques);
+    qry.bindValue(":sec_ans",ans);
     qry.exec();
     if(!qry.next())
     {
         qDebug() << qry.lastError().text()<<Qt::endl;
-        QMessageBox::warning(this,"Error","Invalid account. ");
+        QMessageBox::warning(this,"Error","Invalid account.");
 
     }
     else
     {
-//        ChilkatSample();
-
-        QString usermaildb=qry.value(0).toString();
-        QString usernamedb=qry.value(1).toString();
-        long long userphdb=qry.value(2).toLongLong();
-        QString userquesdb=qry.value(3).toString();
-        QString useransdb=qry.value(4).toString();
-
-        if(usermaildb==mail && usernamedb==user && userphdb==ph && userquesdb==ques && useransdb==ans)
-        {
-            QMessageBox::warning(this,"sucess","yay sucess. ");
-        }
-        else
-        {
-            qDebug() << qry.lastError().text()<<Qt::endl;
-            QMessageBox::warning(this,"Error","error");
-        }
+        close();
+        re = new resetpass(this);
+        re->show();
     }
 
 }

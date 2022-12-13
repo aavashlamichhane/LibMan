@@ -123,7 +123,7 @@ void SignUp::on_pushButton_clicked()
 
         }
         else if(fN=="\0" || lN=="\0" || user=="\0" || email=="\0" || pNum=="\0")
-            QMessageBox::warning(this,"Error","Don't leave fields empty.");
+            QMessageBox::warning(this,"Error","Fields marked * are mandatory.");
         else if(!dob.isValid())
             QMessageBox::warning(this,"Error","Invalid Date.");
         else if(chku.next())
@@ -137,7 +137,7 @@ void SignUp::on_pushButton_clicked()
         else
         {
             QSqlQuery qry(database);
-            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number,sex,security_ques,security_ans)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number,:sex,:security_ques,:security_ans)");
+            qry.prepare("INSERT INTO userbase(username,password,first_name,middle_name,last_name,user_email,date_of_birth,phone_number,sex,sec_ques,sec_ans)""VALUES(:username,:password,:first_name,:middle_name,:last_name,:user_email,:date_of_birth,:phone_number,:sex,:sec_ques,:sec_ans)");
             qry.bindValue(":username",user);
             qry.bindValue(":password",password);
             qry.bindValue(":first_name",fN);
@@ -147,8 +147,8 @@ void SignUp::on_pushButton_clicked()
             qry.bindValue(":user_email",email);
             qry.bindValue(":phone_number",pNum);
             qry.bindValue(":sex",sex);
-            qry.bindValue(":security_ques",secques);
-            qry.bindValue(":security_ans",secans);
+            qry.bindValue(":sec_ques",secques);
+            qry.bindValue(":sec_ans",secans);
 
             if(qry.exec())
             {

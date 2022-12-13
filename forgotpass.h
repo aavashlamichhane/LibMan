@@ -5,6 +5,7 @@
 #include<QtSql>
 #include<QSqlDatabase>
 #include<QMessageBox>
+#include "resetpass.h"
 
 
 namespace Ui {
@@ -27,6 +28,7 @@ private slots:
 private:
     Ui::forgotpass *ui;
     QSqlDatabase fab;
+    resetpass *re;
 };
 
 #endif // FORGOTPASS_H

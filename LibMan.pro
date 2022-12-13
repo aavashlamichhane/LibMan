@@ -29,6 +29,7 @@ SOURCES += \
     promote.cpp \
     removebook.cpp \
     request.cpp \
+    resetpass.cpp \
     returnbook.cpp \
     settings.cpp \
     signup.cpp \
@@ -54,6 +55,7 @@ HEADERS += \
     promote.h \
     removebook.h \
     request.h \
+    resetpass.h \
     returnbook.h \
     settings.h \
     signup.h \
@@ -79,6 +81,7 @@ FORMS += \
     promote.ui \
     removebook.ui \
     request.ui \
+    resetpass.ui \
     returnbook.ui \
     settings.ui \
     signup.ui \

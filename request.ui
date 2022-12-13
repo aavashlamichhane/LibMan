@@ -319,7 +319,14 @@
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
-             <widget class="QLineEdit" name="lineEdit_year"/>
+             <widget class="QLineEdit" name="lineEdit_year">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>

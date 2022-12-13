@@ -1055,6 +1055,9 @@ hr { height: 1px; border-width: 0; }
                     <pointsize>12</pointsize>
                    </font>
                   </property>
+                  <property name="placeholderText">
+                   <string>Answer</string>
+                  </property>
                  </widget>
                 </item>
                </layout>
